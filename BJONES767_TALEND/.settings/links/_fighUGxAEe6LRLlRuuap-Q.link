@@ -1,0 +1,18 @@
+{
+  "itemId" : "_fighUGxAEe6LRLlRuuap-Q",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_VuzLkGxAEe6LRLlRuuap-Q",
+    "parameterList" : [ {
+      "id" : "_VwAFcGxAEe6LRLlRuuap-Q",
+      "name" : "message"
+    } ]
+  }, {
+    "contextName" : "Test",
+    "repoId" : "_VuzLkGxAEe6LRLlRuuap-Q",
+    "parameterList" : [ {
+      "id" : "_VwAFcWxAEe6LRLlRuuap-Q",
+      "name" : "message"
+    } ]
+  } ]
+}
