@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='190' id='1' V190='11' inStruct='Structures/DEMO_BANK/DATA_INTEGRATION/GENERIC/TDI017_TDM_mainframe_processing/Transactions_copybook/TDI017_TDM_mainframe_processing_TRANSACTIONS.xml' outStruct='Structures/DEMO_BANK/DATA_INTEGRATION/GENERIC/TDI017_Mainframe_Processing_Standard/tHMap_1/output1.xml' inputRep='173' outputRep='178' nextMap='' inputStructUserName='TDI017_TDM_mainframe_processing_TRANSACTIONS' outputStructUserName='output1' V1='4' name='tHMap_1' incarnation='355'>
+  <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='266' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRANSACTIONS'>
+    <mapNode t='190' idref='1'/>
+    <child t='200' id='3' V200='8' input='true' rowElem='true' structElemExists='true' usedCount='241' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Record'>
+      <mapNode t='190' idref='1'/>
+      <child t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='25' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='2' maxSize='2' dataType='22' dataFormat='200' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='POSTING_TRANSIT' description='9(3)'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='5' V200='8' input='true' structElemExists='true' usedCount='25' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='4' maxSize='4' dataType='16' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='POSTING_ACCT_NUM' description='9(5)'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='6' V200='8' input='true' structElemExists='true' usedCount='25' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='19' maxSize='19' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='BUSINESS_DATE' description='X(19)'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='7' V200='8' input='true' structElemExists='true' usedCount='25' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='22' dataFormat='200' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SYSTEM_TIME' description='9(12)'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='8' V200='8' input='true' structElemExists='true' usedCount='25' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='19' maxSize='19' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='POSTING_DATE' description='X(19)'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='9' V200='8' input='true' structElemExists='true' usedCount='25' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='BUSINESS_DATE_IND' description='X'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='10' V200='8' input='true' structElemExists='true' usedCount='25' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='6' maxSize='6' dataType='22' dataFormat='202' decimalPositions='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TXN_AMT' description='9(8)V99'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='11' V200='8' input='true' structElemExists='true' usedCount='25' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DR_CR_IND' description='X'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='12' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='8' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PROC_DT' description='X(8)'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='13' V200='8' input='true' structElemExists='true' usedCount='25' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='2' maxSize='2' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='STATE'>
+        <mapNode t='190' idref='1'/>
+      </child>
+    </child>
+  </inputMapElem>
+  <outputMapElem t='200' id='14' V200='8' structElemExists='true' usedCount='277' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='root'>
+    <mapNode t='190' idref='1'/>
+    <loop>SimpleLoop([autoAdded="true"],in$/TRANSACTIONS,{Filter},{Sort Keys},{Contexts})</loop>
+    <child t='200' id='20' V200='8' structElemExists='true' usedCount='250' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='row'>
+      <mapNode t='190' idref='1'/>
+      <loop>SimpleLoop(in$/TRANSACTIONS/Record,{Filter},{Sort Keys},{Contexts})</loop>
+      <child t='200' id='21' V200='8' structElemExists='true' usedCount='25' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='posting_transit'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/TRANSACTIONS/Record/POSTING_TRANSIT</value>
+      </child>
+      <child t='200' id='22' V200='8' structElemExists='true' usedCount='25' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='posting_acct_num'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/TRANSACTIONS/Record/POSTING_ACCT_NUM</value>
+      </child>
+      <child t='200' id='23' V200='8' structElemExists='true' usedCount='25' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='business_date'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/TRANSACTIONS/Record/BUSINESS_DATE</value>
+      </child>
+      <child t='200' id='24' V200='8' structElemExists='true' usedCount='25' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='system_time'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/TRANSACTIONS/Record/SYSTEM_TIME</value>
+      </child>
+      <child t='200' id='25' V200='8' structElemExists='true' usedCount='25' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='posting_date'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/TRANSACTIONS/Record/POSTING_DATE</value>
+      </child>
+      <child t='200' id='26' V200='8' structElemExists='true' usedCount='25' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='business_date_indi'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/TRANSACTIONS/Record/BUSINESS_DATE_IND</value>
+      </child>
+      <child t='200' id='27' V200='8' structElemExists='true' usedCount='25' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='21' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='txn_amt'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/TRANSACTIONS/Record/TXN_AMT</value>
+      </child>
+      <child t='200' id='28' V200='8' structElemExists='true' usedCount='25' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='dr_cr_ind'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/TRANSACTIONS/Record/DR_CR_IND</value>
+      </child>
+      <child t='200' id='29' V200='8' structElemExists='true' usedCount='25' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='state'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/TRANSACTIONS/Record/STATE</value>
+      </child>
+    </child>
+  </outputMapElem>
+  <inputRepRuntime t='693' id='59' V693='1' delimiter=',' physicalEncoding='1' numberEncoding='1' positional='true' padOccurs='true' structName='Structures/DEMO_BANK/DATA_INTEGRATION/GENERIC/TDI017_TDM_mainframe_processing/Transactions_copybook/TDI017_TDM_mainframe_processing_TRANSACTIONS.xml' V690='1' padOutput='true' encoding='IBM037' trimInput='true'>
+  </inputRepRuntime>
+  <outputRepRuntime t='698' id='56' V698='1' V690='1' padOutput='true'>
+  </outputRepRuntime>
+  <valueSets></valueSets>
+  <inputXmlRepRuntime t='692' id='60' V692='1' V690='1'>
+  </inputXmlRepRuntime>
+  <child t='165' id='16' V1='4' name='Document Bindings'>
+    <child t='166' id='17' V166='5' docType='1' docReposPath='/LOCAL_PROJECT/Sample Data/Maps/Jobs/Mainframe_Processing_Standard/tHMap_1_input/mainframe_processing.dat' V1='4' name='in$/TRANSACTIONS'>
+      <elemNode t='200' idref='2'/>
+    </child>
+    <child t='166' id='18' V166='5' docType='2' V1='4' name='out$/root'>
+      <elemNode t='200' idref='14'/>
+    </child>
+  </child>
+  <child t='201' id='19' V1='4' name='Inherits From'>
+  </child>
+</root>

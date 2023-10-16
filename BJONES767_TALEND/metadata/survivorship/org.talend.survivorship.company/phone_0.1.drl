@@ -1,0 +1,14 @@
+package org.talend.survivorship.company 
+
+rule "phone"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "phoneGroup"
+when
+    $input : RecordIn( dataset.isLongest( phone, "phone", true) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "phone", drools.getRule().getName());
+
+end
+
+

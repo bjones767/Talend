@@ -1,0 +1,979 @@
+2020-06-19 09:56:03.664;641;Thomas;Tyler;9815 N Kentwood;Lincoln;MD;A
+2020-06-19 09:56:03.664;424;Bill;Roosevelt;2501 Fontaine Road;Des Moines;WV;A
+2020-06-19 09:56:03.664;189;Woodrow;Jefferson;6792 Santa Monica Road;Raleigh;MN;B
+2020-06-19 09:56:03.664;249;Jimmy;Carter;9346 Harry S Truman Blvd;Salt Lake City;VA;C
+2020-06-19 09:56:03.664;840;Ronald;Arthur;8703 North Ventu Park Road;Jackson;SC;C
+2020-06-19 09:56:03.664;960;Jimmy;Taft;2920 Erringer Road;Harrisburg;IN;C
+2020-06-19 09:56:03.664;632;Herbert;Carter;2674 East Fry Blvd.;Little Rock;SD;C
+2020-06-19 09:56:03.664;144;Zachary;McKinley;9037 East Main Street;Phoenix;PA;A
+2020-06-19 09:56:03.664;596;George;Roosevelt;3486 N Harrison St;Springfield;DE;B
+2020-06-19 09:56:03.664;742;William;Wilson;7722 Monroe Street;Nashville;TX;A
+2020-06-19 09:56:03.664;929;Herbert;Grant;7325 Camelback Rd;Charleston;IN;C
+2020-06-19 09:56:03.664;582;Woodrow;Taft;948 North Preisker Lane;Des Moines;LA;B
+2020-06-19 09:56:03.664;338;Millard;Garfield;9222 Woodson Rd.;Jefferson City;IL;A
+2020-06-19 09:56:03.664;294;Franklin;Jefferson;6872 W. Russell St.;Concord;NM;A
+2020-06-19 09:56:03.664;739;Lyndon;Reagan;7491 Carpinteria North;Austin;NM;B
+2020-06-19 09:56:03.664;63;Ronald;Polk;6003 North Broadway Street;Des Moines;VT;B
+2020-06-19 09:56:03.664;13;Herbert;Coolidge;4037 Harbor Dr;Des Moines;NJ;C
+2020-06-19 09:56:03.664;836;Ronald;Adams;9018 Padre Boulevard;Carson City;OR;C
+2020-06-19 09:56:03.664;657;Ronald;Johnson;2427 Cerrillos Road;Jefferson City;SC;A
+2020-06-19 09:56:03.664;1;Jimmy;Nixon;5584 Moreno Drive;Lincoln;CT;A
+2020-06-19 09:56:03.664;747;Herbert;Taft;9191 Harbor Dr;Little Rock;WV;C
+2020-06-19 09:56:03.664;445;Woodrow;Harding;1358 Via Real;Harrisburg;OR;C
+2020-06-19 09:56:03.664;124;Bill;Cleveland;9505 San Simeon;Indianapolis;HI;A
+2020-06-19 09:56:03.664;195;Franklin;Hoover;223 French Camp Turnpike Road;Concord;NM;B
+2020-06-19 09:56:03.664;132;Ulysses;Grant;2554 San Marcos;Bismarck;OK;A
+2020-06-19 09:56:03.664;815;James;Coolidge;8906 Harbor Dr;Jackson;IN;A
+2020-06-19 09:56:03.664;480;William;Pierce;4834 San Luis Obispo North;Concord;UT;B
+2020-06-19 09:56:03.664;651;Chester;Adams;8488 Jean de la Fontaine;Atlanta;MO;B
+2020-06-19 09:56:03.664;51;Andrew;Roosevelt;4501 S Rustle St;Jackson;SC;A
+2020-06-19 09:56:03.664;296;Chester;Harrison;8028 San Simeon;Atlanta;NC;B
+2020-06-19 09:56:03.664;831;Ulysses;Cleveland;2960 Bailard Avenue;Hartford;DE;A
+2020-06-19 09:56:03.664;74;Grover;Tyler;3590 El Camino Real;Jefferson City;HI;A
+2020-06-19 09:56:03.664;785;John;Adams;2134 Cleveland Ave.;Albany;NE;C
+2020-06-19 09:56:03.664;280;Abraham;Polk;9337 Richmond Hill;Harrisburg;CO;B
+2020-06-19 09:56:03.664;411;Theodore;Adams;9721 Milpas Street;Nashville;OK;C
+2020-06-19 09:56:03.664;524;Dwight;Coolidge;8631 Calle Real;Denver;NH;B
+2020-06-19 09:56:03.664;654;Woodrow;Johnson;4749 S Rustle St;Jefferson City;VT;B
+2020-06-19 09:56:03.664;824;Andrew;Cleveland;9071 Newbury Road;Trenton;MA;C
+2020-06-19 09:56:03.664;919;Calvin;Nixon;9559 Lake Tahoe Blvd.;Providence;LA;B
+2020-06-19 09:56:03.664;749;Harry;Coolidge;7969 Katella Avenue;Helena;AZ;B
+2020-06-19 09:56:03.664;650;Lyndon;Pierce;818 North Preisker Lane;Columbia;RI;A
+2020-06-19 09:56:03.664;56;Gerald;Harrison;165 North Atherton Street;Topeka;NV;A
+2020-06-19 09:56:03.664;510;Andrew;Pierce;7531 Newbury Road;Lansing;IL;A
+2020-06-19 09:56:03.664;492;Andrew;Grant;6130 Grandview Drive;Sacramento;ME;A
+2020-06-19 09:56:03.664;877;Richard;Eisenhower;530 Woodson Rd.;Topeka;HI;A
+2020-06-19 09:56:03.664;207;Thomas;Eisenhower;5537 North Broadway Street;Boston;ID;A
+2020-06-19 09:56:03.664;840;Ulysses;Taft;9905 Tully Road East;Montpelier;CT;B
+2020-06-19 09:56:03.664;884;Harry;Nixon;1737 Carpinteria North;Denver;OH;A
+2020-06-19 09:56:03.664;600;Grover;Carter;1060 Cleveland Ave.;Springfield;AK;B
+2020-06-19 09:56:03.664;212;Zachary;Taylor;1489 Corona Del Mar;Baton Rouge;DE;C
+2020-06-19 09:56:03.664;201;Ulysses;Reagan;4586 San Luis Obispo North;Trenton;ND;B
+2020-06-19 09:56:03.664;660;Bill;Hayes;602 Carpinteria South;Little Rock;DE;B
+2020-06-19 09:56:03.664;218;Dwight;Truman;6237 Bayshore Freeway;Tallahassee;AR;C
+2020-06-19 09:56:03.664;298;Calvin;Clinton;906 S Rustle St;Lincoln;SC;C
+2020-06-19 09:56:03.664;198;Ulysses;Roosevelt;4535 Fairview Avenue;Charleston;NV;B
+2020-06-19 09:56:03.664;177;Martin;Johnson;6153 Lake Tahoe Blvd.;Olympia;MS;C
+2020-06-19 09:56:03.664;355;Millard;Truman;8406 Jones Road;Annapolis;NV;A
+2020-06-19 09:56:03.664;292;James;Clinton;3572 San Diego Freeway;Juneau;MD;C
+2020-06-19 09:56:03.664;771;Andrew;Polk;9992 Grandview Drive;Helena;OR;B
+2020-06-19 09:56:03.664;677;Chester;Truman;5450 Via Real;Juneau;WY;C
+2020-06-19 09:56:03.664;212;Millard;Hoover;6627 Jean de la Fontaine;Madison;NY;C
+2020-06-19 09:56:03.664;963;Harry;Ford;7053 W. Russell St.;Phoenix;MS;C
+2020-06-19 09:56:03.664;519;Herbert;Harrison;612 Milpas Street;Honolulu;MO;C
+2020-06-19 09:56:03.664;93;Chester;Jackson;8211 Padre Boulevard;Denver;AZ;B
+2020-06-19 09:56:03.664;293;Theodore;Wilson;518 Harry S Truman Blvd;Des Moines;OH;A
+2020-06-19 09:56:03.664;387;Chester;Harrison;1176 San Ysidro Blvd;Indianapolis;CO;B
+2020-06-19 09:56:03.664;370;Lyndon;Ford;4537 Carpinteria South;Dover;OK;C
+2020-06-19 09:56:03.664;839;George;Hayes;9294 Burnett Road;Indianapolis;NJ;B
+2020-06-19 09:56:03.664;702;Martin;Madison;5207 Tanger Blvd;Concord;IL;C
+2020-06-19 09:56:03.664;32;Ronald;Pierce;7746 San Ysidro Blvd;Dover;HI;A
+2020-06-19 09:56:03.664;560;Warren;Van Buren;3381 Richmond Hill;Santa Fe;SC;A
+2020-06-19 09:56:03.664;417;Lyndon;Nixon;6000 Milpas Street;Concord;SC;A
+2020-06-19 09:56:03.664;273;Dwight;Madison;3374 Milpas Street;Baton Rouge;TN;A
+2020-06-19 09:56:03.664;381;James;Pierce;1136 North Atherton Street;Charleston;NY;B
+2020-06-19 09:56:03.664;715;Woodrow;McKinley;3296 Harry S Truman Blvd;Annapolis;ND;A
+2020-06-19 09:56:03.664;306;Benjamin;Truman;4617 Redwood Highway;Oklahoma City;NM;A
+2020-06-19 09:56:03.664;38;William;Cleveland;8104 North Ventu Park Road;Bismarck;LA;B
+2020-06-19 09:56:03.664;161;Richard;McKinley;8134 Monroe Street;Cheyenne;OH;B
+2020-06-19 09:56:03.664;403;Harry;Johnson;4246 Fontaine Road;Providence;UT;C
+2020-06-19 09:56:03.664;733;Warren;Clinton;9196 South Highway;Juneau;MI;C
+2020-06-19 09:56:03.664;628;Theodore;Ford;4021 Newbury Road;Annapolis;IA;A
+2020-06-19 09:56:03.664;678;James;Hayes;2527 Fontaine Road;Frankfort;NH;C
+2020-06-19 09:56:03.664;905;Martin;Arthur;6944 San Ysidro Blvd;Bismarck;WI;A
+2020-06-19 09:56:03.664;767;Gerald;Johnson;453 North Ventu Park Road;Austin;FL;A
+2020-06-19 09:56:03.664;987;Gerald;Pierce;3788 North Preisker Lane;Salt Lake City;IN;C
+2020-06-19 09:56:03.664;518;Lyndon;Buchanan;5054 San Ysidro Blvd;Richmond;CO;A
+2020-06-19 09:56:03.664;290;Martin;Van Buren;9926 El Camino Real;Concord;WA;C
+2020-06-19 09:56:03.664;390;Franklin;Harrison;3652 North Ventu Park Road;Jefferson City;OR;A
+2020-06-19 09:56:03.664;495;Franklin;Roosevelt;7793 Greenwood Road;Lincoln;NJ;B
+2020-06-19 09:56:03.664;926;Martin;Cleveland;3288 Bowles Avenue;Montpelier;NM;B
+2020-06-19 09:56:03.664;866;Franklin;Wilson;312 E Fowler Avenue;Providence;MO;C
+2020-06-19 09:56:03.665;137;Lyndon;Wilson;231 Harry S Truman Blvd;Boise;MN;A
+2020-06-19 09:56:03.665;343;Franklin;Roosevelt;4642 Pacific Hwy S;Annapolis;NY;C
+2020-06-19 09:56:03.665;737;Herbert;Grant;4652 Westside Freeway;Juneau;TN;C
+2020-06-19 09:56:03.665;365;Martin;Reagan;5362 Tanger Blvd;Indianapolis;UT;A
+2020-06-19 09:56:03.665;608;John;Johnson;4091 Woodson Rd.;Madison;OH;C
+2020-06-19 09:56:03.665;212;Calvin;Truman;7263 North Erringer Road;Albany;PA;A
+2020-06-19 09:56:03.665;536;Rutherford;Ford;1751 Castillo Drive;Frankfort;SC;C
+2020-06-19 09:56:03.665;678;Harry;Van Buren;670 Newbury Road;Boise;NE;B
+2020-06-19 09:56:03.665;895;John;Harrison;9273 Bailard Avenue;Lincoln;AZ;A
+2020-06-19 09:56:03.665;140;Warren;Roosevelt;292 Calle Real;Charleston;AK;B
+2020-06-19 09:56:03.665;589;Dwight;Monroe;3671 Cleveland Ave.;Montgomery;FL;A
+2020-06-19 09:56:03.665;40;Woodrow;Hoover;5689 San Simeon;Santa Fe;MN;B
+2020-06-19 09:56:03.665;20;Ulysses;Jackson;2527 Woodson Rd.;Springfield;UT;C
+2020-06-19 09:56:03.665;184;Millard;Harding;3053 Grandview Drive;Austin;MS;B
+2020-06-19 09:56:03.665;780;Bill;Madison;3094 Cabrillo Highway;Phoenix;FL;B
+2020-06-19 09:56:03.665;777;Richard;Hoover;9635 Lawrenceville Suwanee;Saint Paul;WA;A
+2020-06-19 09:56:03.665;200;Abraham;Kennedy;2689 Cabrillo Highway;Jefferson City;AZ;C
+2020-06-19 09:56:03.665;484;Millard;Reagan;1330 Santa Rosa South;Lincoln;AR;B
+2020-06-19 09:56:03.665;817;Calvin;Taylor;604 Cleveland Ave.;Madison;RI;A
+2020-06-19 09:56:03.665;802;Warren;Jefferson;7735 Via Real;Pierre;TX;A
+2020-06-19 09:56:03.665;217;Franklin;Buchanan;2480 Padre Boulevard;Augusta;CA;B
+2020-06-19 09:56:03.665;568;Herbert;Eisenhower;1659 Bayshore Freeway;Jackson;PA;B
+2020-06-19 09:56:03.665;105;Ronald;Adams;6550 North Ventu Park Road;Jackson;MI;B
+2020-06-19 09:56:03.665;117;Franklin;Fillmore;9512 Erringer Road;Columbia;GA;B
+2020-06-19 09:56:03.665;108;Millard;Monroe;4281 Castillo Drive;Saint Paul;ME;C
+2020-06-19 09:56:03.665;390;Millard;Cleveland;8445 Richmond Hill;Montpelier;OR;B
+2020-06-19 09:56:03.665;106;Chester;Hayes;4275 San Simeon;Des Moines;VA;C
+2020-06-19 09:56:03.665;153;James;Harding;7008 S Rustle St;Salem;NC;A
+2020-06-19 09:56:03.665;206;Jimmy;Arthur;7598 Steele Lane;Trenton;CA;A
+2020-06-19 09:56:03.665;919;Thomas;Harrison;4751 Castillo Drive;Boston;NE;C
+2020-06-19 09:56:03.665;191;Franklin;Buchanan;7067 Cleveland Ave.;Cheyenne;TX;C
+2020-06-19 09:56:03.665;180;Martin;Arthur;4619 South Highway;Honolulu;OH;A
+2020-06-19 09:56:03.665;126;Theodore;Roosevelt;244 East Calle Primera;Oklahoma City;HI;A
+2020-06-19 09:56:03.665;943;Richard;Truman;1645 French Camp Turnpike Road;Montgomery;SD;B
+2020-06-19 09:56:03.665;925;Lyndon;Monroe;1843 Timberlane Drive;Phoenix;MA;B
+2020-06-19 09:56:03.665;233;Thomas;Washington;6384 Tully Road East;Cheyenne;IN;C
+2020-06-19 09:56:03.665;939;Dwight;Hayes;159 Grandview Drive;Nashville;CA;A
+2020-06-19 09:56:03.665;888;Franklin;Taft;3703 East Main Street;Lansing;CA;C
+2020-06-19 09:56:03.665;116;Dwight;Washington;1167 North Erringer Road;Baton Rouge;NH;B
+2020-06-19 09:56:03.665;453;John;McKinley;8608 Santa Ana Freeway;Madison;WA;C
+2020-06-19 09:56:03.665;608;George;Hoover;8086 El Camino Real;Jackson;AK;B
+2020-06-19 09:56:03.665;822;John;Johnson;7215 Steele Lane;Jefferson City;ND;A
+2020-06-19 09:56:03.665;729;Herbert;Taft;3076 Erringer Road;Hartford;NY;C
+2020-06-19 09:56:03.665;536;Rutherford;Madison;1204 Harbor Dr;Oklahoma City;VA;A
+2020-06-19 09:56:03.665;826;Martin;Washington;3841 Cabrillo Highway;Indianapolis;FL;A
+2020-06-19 09:56:03.665;393;Warren;Cleveland;5264 Camelback Rd;Nashville;TX;A
+2020-06-19 09:56:03.665;562;Woodrow;Carter;4305 Fontaine Road;Lincoln;ME;C
+2020-06-19 09:56:03.665;610;Chester;Nixon;1427 Cleveland Ave.;Concord;RI;A
+2020-06-19 09:56:03.665;937;Bill;Fillmore;9721 Erringer Road;Denver;NC;A
+2020-06-19 09:56:03.665;213;Warren;Nixon;7366 Fairview Avenue;Oklahoma City;OH;C
+2020-06-19 09:56:03.665;984;Calvin;Johnson;1115 Westside Freeway;Phoenix;CA;A
+2020-06-19 09:56:03.665;334;Zachary;Polk;4474 East 1st Street;Hartford;SC;A
+2020-06-19 09:56:03.665;709;Grover;Johnson;2001 San Simeon;Little Rock;MT;C
+2020-06-19 09:56:03.665;78;Warren;Tyler;6263 Jean de la Fontaine;Carson City;WA;A
+2020-06-19 09:56:03.665;264;Benjamin;Tyler;2071 San Simeon;Denver;MO;A
+2020-06-19 09:56:03.665;968;Benjamin;Roosevelt;571 Richmond Hill;Annapolis;OH;B
+2020-06-19 09:56:03.665;644;Grover;Wilson;4822 Carpinteria South;Topeka;AR;B
+2020-06-19 09:56:03.665;6;Millard;Roosevelt;6816 North Preisker Lane;Concord;KY;B
+2020-06-19 09:56:03.665;938;Dwight;Hoover;7077 Jean de la Fontaine;Bismarck;SD;B
+2020-06-19 09:56:03.665;122;Jimmy;Coolidge;2571 N Harrison St;Boston;GA;B
+2020-06-19 09:56:03.665;684;John;Eisenhower;2651 Monroe Street;Tallahassee;NV;C
+2020-06-19 09:56:03.665;397;Calvin;Ford;7344 Milpas Street;Sacramento;KY;A
+2020-06-19 09:56:03.665;853;Harry;Carter;3349 Cerrillos Road;Bismarck;MO;C
+2020-06-19 09:56:03.665;324;William;Grant;9863 North Ventu Park Road;Lincoln;TX;A
+2020-06-19 09:56:03.665;309;James;Grant;4883 South Roosevelt Drive;Carson City;NC;A
+2020-06-19 09:56:03.665;84;Lyndon;McKinley;8850 E Fowler Avenue;Montpelier;NJ;A
+2020-06-19 09:56:03.665;621;Herbert;Madison;5410 Tully Road East;Santa Fe;NJ;B
+2020-06-19 09:56:03.665;983;Woodrow;Johnson;998 Carpinteria North;Austin;WY;C
+2020-06-19 09:56:03.665;248;Herbert;Buchanan;9415 Cleveland Ave.;Carson City;OH;B
+2020-06-19 09:56:03.665;684;Ulysses;Taft;7452 Santa Rosa South;Charleston;DE;B
+2020-06-19 09:56:03.665;219;Franklin;Harding;1782 Tully Road East;Austin;MA;C
+2020-06-19 09:56:03.665;240;Theodore;Cleveland;3656 Moreno Drive;Lincoln;AK;A
+2020-06-19 09:56:03.665;752;Richard;McKinley;2203 Lawrenceville Suwanee;Honolulu;TX;C
+2020-06-19 09:56:03.665;816;Ulysses;Tyler;7350 W. Russell St.;Boise;IL;C
+2020-06-19 09:56:03.665;581;Gerald;Harding;9965 Fairview Avenue;Sacramento;TN;C
+2020-06-19 09:56:03.665;395;Benjamin;Wilson;2369 Richmond Hill;Helena;AR;A
+2020-06-19 09:56:03.665;409;Rutherford;McKinley;6784 East 1st Street;Saint Paul;SD;A
+2020-06-19 09:56:03.665;450;James;Kennedy;6405 Jean de la Fontaine;Augusta;WA;B
+2020-06-19 09:56:03.665;613;Millard;Truman;653 Camelback Rd;Boston;MA;B
+2020-06-19 09:56:03.665;892;George;Reagan;1613 Milpas Street;Augusta;CA;C
+2020-06-19 09:56:03.665;341;George;Johnson;4976 Lake Tahoe Blvd.;Salem;MO;C
+2020-06-19 09:56:03.665;68;Richard;Lincoln;3357 Lindbergh Blvd;Atlanta;OH;B
+2020-06-19 09:56:03.665;335;Lyndon;Wilson;2163 E Fowler Avenue;Dover;TX;B
+2020-06-19 09:56:03.665;660;Richard;Roosevelt;1214 Bailard Avenue;Concord;KY;A
+2020-06-19 09:56:03.665;116;Lyndon;McKinley;1649 North Atherton Street;Columbus;HI;B
+2020-06-19 09:56:03.665;358;Martin;McKinley;8229 Greenwood Road;Richmond;VA;C
+2020-06-19 09:56:03.665;825;Calvin;Jackson;9225 Padre Boulevard;Tallahassee;NM;A
+2020-06-19 09:56:03.665;167;Zachary;Washington;7966 Grandview Drive;Salem;PA;C
+2020-06-19 09:56:03.665;207;Harry;Pierce;8550 N Harrison St;Montpelier;IL;B
+2020-06-19 09:56:03.666;768;Jimmy;Roosevelt;2976 Pacific Hwy S;Frankfort;WA;C
+2020-06-19 09:56:03.666;648;Ulysses;Clinton;313 Greenwood Road;Des Moines;KY;B
+2020-06-19 09:56:03.666;776;Franklin;Adams;6926 Santa Rosa North;Albany;CA;B
+2020-06-19 09:56:03.666;937;Zachary;Jefferson;7678 Jean de la Fontaine;Madison;WV;C
+2020-06-19 09:56:03.666;651;Theodore;Eisenhower;4336 Woodson Rd.;Harrisburg;CT;A
+2020-06-19 09:56:03.666;900;Ronald;Carter;4518 Newbury Road;Augusta;NY;A
+2020-06-19 09:56:03.666;283;Warren;Eisenhower;2141 South Highway;Austin;AK;C
+2020-06-19 09:56:03.666;161;Millard;Reagan;2584 Fairview Avenue;Saint Paul;AZ;B
+2020-06-19 09:56:03.666;52;Bill;Washington;1778 Cerrillos Road;Boise;AR;C
+2020-06-19 09:56:03.666;604;William;Pierce;7961 Santa Ana Freeway;Salem;CO;B
+2020-06-19 09:56:03.666;36;Ronald;Garfield;4716 Corona Del Mar;Augusta;NV;C
+2020-06-19 09:56:03.666;519;Benjamin;Harrison;7887 East 1st Street;Lansing;MA;C
+2020-06-19 09:56:03.666;291;Andrew;Johnson;4175 N Harrison St;Springfield;MA;B
+2020-06-19 09:56:03.666;508;Andrew;Fillmore;395 Fontaine Road;Honolulu;TX;A
+2020-06-19 09:56:03.666;617;Richard;Johnson;2332 Tanger Blvd;Salem;MD;B
+2020-06-19 09:56:03.666;548;Woodrow;Johnson;4379 San Simeon;Nashville;MD;C
+2020-06-19 09:56:03.666;586;Bill;Buchanan;8988 Burnett Road;Harrisburg;NY;B
+2020-06-19 09:56:03.666;311;Ulysses;Ford;3167 Santa Rosa South;Helena;DE;C
+2020-06-19 09:56:03.666;888;Bill;Truman;7450 Lake Tahoe Blvd.;Nashville;KS;C
+2020-06-19 09:56:03.666;528;Rutherford;Grant;4508 Santa Rosa North;Santa Fe;FL;A
+2020-06-19 09:56:03.666;133;Bill;Taylor;5311 El Camino Real;Dover;CT;C
+2020-06-19 09:56:03.666;558;Andrew;Grant;6391 North Erringer Road;Montgomery;FL;A
+2020-06-19 09:56:03.666;281;Herbert;Hayes;8754 North Preisker Lane;Salem;MN;A
+2020-06-19 09:56:03.666;497;James;Madison;4618 El Camino Real;Denver;MD;C
+2020-06-19 09:56:03.666;67;Richard;Taft;6778 North Ventu Park Road;Madison;MN;A
+2020-06-19 09:56:03.666;500;William;Harrison;3567 Bowles Avenue;Carson City;ME;A
+2020-06-19 09:56:03.666;883;Andrew;Adams;6333 Redwood Highway;Bismarck;CO;A
+2020-06-19 09:56:03.666;703;John;Johnson;6009 Castillo Drive;Salt Lake City;MO;C
+2020-06-19 09:56:03.666;983;Warren;McKinley;3060 East Calle Primera;Providence;MA;C
+2020-06-19 09:56:03.666;419;Jimmy;Quincy;4685 San Luis Obispo North;Pierre;IN;C
+2020-06-19 09:56:03.666;992;Andrew;Adams;9001 Bailard Avenue;Helena;IA;B
+2020-06-19 09:56:03.666;862;Benjamin;Hoover;7574 Harry S Truman Blvd;Jefferson City;AL;C
+2020-06-19 09:56:03.666;747;John;Harrison;5279 Pacific Hwy S;Indianapolis;HI;C
+2020-06-19 09:56:03.666;302;Lyndon;Harding;3225 N Harrison St;Lincoln;IN;A
+2020-06-19 09:56:03.666;693;Warren;Adams;1684 San Simeon;Hartford;AL;C
+2020-06-19 09:56:03.666;797;Rutherford;Hoover;7335 North Preisker Lane;Richmond;AZ;A
+2020-06-19 09:56:03.666;99;Andrew;Monroe;9036 Lake Tahoe Blvd.;Des Moines;CO;C
+2020-06-19 09:56:03.666;63;Warren;Lincoln;4055 Cabrillo Highway;Charleston;WI;B
+2020-06-19 09:56:03.666;365;Harry;Buchanan;8876 Jones Road;Jackson;UT;A
+2020-06-19 09:56:03.666;284;Millard;Wilson;1887 Redwood Highway;Raleigh;OH;A
+2020-06-19 09:56:03.666;788;Grover;Buchanan;6820 Hutchinson Rd;Nashville;NV;A
+2020-06-19 09:56:03.666;253;Dwight;Kennedy;5787 Santa Rosa South;Little Rock;MO;C
+2020-06-19 09:56:03.666;246;Herbert;Kennedy;4041 S Rustle St;Helena;ND;B
+2020-06-19 09:56:03.666;123;Woodrow;Pierce;3588 San Diego Freeway;Columbia;NY;B
+2020-06-19 09:56:03.666;949;William;Carter;902 South Highway;Lincoln;HI;B
+2020-06-19 09:56:03.666;968;Grover;Harrison;9285 Jean de la Fontaine;Albany;VT;B
+2020-06-19 09:56:03.666;222;John;Quincy;9755 Lawrenceville Suwanee;Indianapolis;IN;C
+2020-06-19 09:56:03.666;113;Gerald;Grant;748 East Main Street;Topeka;SC;B
+2020-06-19 09:56:03.666;454;William;Garfield;1883 Carpinteria South;Bismarck;IA;C
+2020-06-19 09:56:03.666;943;Richard;Tyler;9125 Carpinteria Avenue;Albany;NE;A
+2020-06-19 09:56:03.666;345;James;Arthur;4179 W. Russell St.;Boston;AK;A
+2020-06-19 09:56:03.666;973;Andrew;Eisenhower;9935 Westside Freeway;Austin;UT;B
+2020-06-19 09:56:03.666;929;Warren;Grant;1682 Carpinteria North;Honolulu;NV;A
+2020-06-19 09:56:03.666;576;Theodore;Harrison;5515 North Broadway Street;Tallahassee;PA;C
+2020-06-19 09:56:03.666;96;Thomas;Quincy;173 Calle Real;Concord;DE;C
+2020-06-19 09:56:03.666;221;Franklin;Roosevelt;8442 Milpas Street;Annapolis;MN;A
+2020-06-19 09:56:03.666;882;Theodore;Adams;6326 French Camp Turnpike Road;Frankfort;IA;C
+2020-06-19 09:56:03.666;669;Bill;Monroe;6750 N Kentwood;Oklahoma City;WA;A
+2020-06-19 09:56:03.666;127;Harry;Roosevelt;541 Lindbergh Blvd;Austin;ID;B
+2020-06-19 09:56:03.666;721;Warren;Monroe;6009 S Rustle St;Lincoln;NH;B
+2020-06-19 09:56:03.666;928;Bill;Hoover;4774 French Camp Turnpike Road;Frankfort;KS;B
+2020-06-19 09:56:03.666;81;Warren;Reagan;468 Grandview Drive;Jackson;ND;A
+2020-06-19 09:56:03.666;945;Abraham;Fillmore;8247 Fontaine Road;Concord;IA;B
+2020-06-19 09:56:03.666;2;Lyndon;Van Buren;1403 East Calle Primera;Boise;DE;A
+2020-06-19 09:56:03.666;666;Calvin;Truman;8310 Timberlane Drive;Juneau;UT;B
+2020-06-19 09:56:03.666;141;William;Grant;5604 San Diego Freeway;Baton Rouge;MN;A
+2020-06-19 09:56:03.666;836;Gerald;Wilson;8396 North Atherton Street;Montpelier;NV;B
+2020-06-19 09:56:03.666;548;Rutherford;Jefferson;4136 East Fry Blvd.;Trenton;ID;A
+2020-06-19 09:56:03.666;371;Benjamin;Clinton;6654 Richmond Hill;Jackson;WV;A
+2020-06-19 09:56:03.666;723;George;Quincy;8889 Greenwood Road;Bismarck;WV;A
+2020-06-19 09:56:03.666;104;Benjamin;Adams;1705 Calle Real;Montgomery;TX;C
+2020-06-19 09:56:03.666;177;Calvin;Harding;7076 Cleveland Ave.;Columbia;DE;A
+2020-06-19 09:56:03.666;905;Richard;Jackson;271 San Diego Freeway;Trenton;OR;A
+2020-06-19 09:56:03.666;284;Richard;Truman;8541 Apalachee Parkway;Harrisburg;MN;B
+2020-06-19 09:56:03.667;230;Theodore;Adams;6349 San Diego Freeway;Albany;DE;C
+2020-06-19 09:56:03.667;146;Millard;Jackson;9987 Burnett Road;Pierre;GA;B
+2020-06-19 09:56:03.667;385;Herbert;Adams;2981 Westside Freeway;Boise;NJ;C
+2020-06-19 09:56:03.667;845;Chester;Wilson;7265 N Harrison St;Indianapolis;VT;B
+2020-06-19 09:56:03.667;666;Martin;Harrison;4685 San Diego Freeway;Annapolis;IN;C
+2020-06-19 09:56:03.667;604;Ulysses;Jefferson;8651 Harbor Dr;Jefferson City;OK;A
+2020-06-19 09:56:03.667;308;Lyndon;Arthur;8438 Harbor Dr;Charleston;WV;C
+2020-06-19 09:56:03.667;817;Martin;Johnson;7343 East Main Street;Charleston;CA;B
+2020-06-19 09:56:03.667;460;Andrew;Hayes;9626 Cerrillos Road;Tallahassee;SC;B
+2020-06-19 09:56:03.667;751;Harry;Jackson;964 N Kentwood;Sacramento;NC;A
+2020-06-19 09:56:03.667;14;Grover;Pierce;3528 Jones Road;Boise;NM;C
+2020-06-19 09:56:03.667;625;Woodrow;Jackson;9062 Timberlane Drive;Augusta;AZ;B
+2020-06-19 09:56:03.667;354;Richard;Hayes;4036 Santa Monica Road;Frankfort;ME;C
+2020-06-19 09:56:03.667;760;Calvin;Adams;5330 Calle Real;Juneau;OK;B
+2020-06-19 09:56:03.667;432;Benjamin;Clinton;261 San Luis Obispo North;Atlanta;CA;A
+2020-06-19 09:56:03.667;984;Martin;Coolidge;5591 Tanger Blvd;Little Rock;HI;A
+2020-06-19 09:56:03.667;690;Richard;Kennedy;8235 Carpinteria North;Honolulu;NJ;B
+2020-06-19 09:56:03.667;531;Woodrow;Pierce;7440 San Luis Obispo North;Santa Fe;TX;C
+2020-06-19 09:56:03.667;640;John;Cleveland;1643 Tully Road East;Charleston;WA;C
+2020-06-19 09:56:03.667;312;William;Hayes;7149 Steele Lane;Springfield;VT;A
+2020-06-19 09:56:03.667;425;Abraham;Monroe;4640 Hutchinson Rd;Raleigh;AR;B
+2020-06-19 09:56:03.667;672;George;Tyler;6051 Pacific Hwy S;Salem;MN;A
+2020-06-19 09:56:03.667;677;Ulysses;Coolidge;4540 Steele Lane;Albany;OH;C
+2020-06-19 09:56:03.667;625;Calvin;Arthur;4341 Monroe Street;Nashville;PA;A
+2020-06-19 09:56:03.667;389;Martin;Hoover;435 Grandview Drive;Carson City;OR;C
+2020-06-19 09:56:03.667;146;Thomas;Roosevelt;5504 W. Russell St.;Lansing;KY;C
+2020-06-19 09:56:03.667;382;Franklin;Harding;4575 Greenwood Road;Helena;OK;C
+2020-06-19 09:56:03.667;932;Dwight;Reagan;3788 Jones Road;Tallahassee;KY;C
+2020-06-19 09:56:03.667;759;Richard;Polk;8123 Carpinteria Avenue;Hartford;IA;A
+2020-06-19 09:56:03.667;722;Chester;Arthur;5679 South Roosevelt Drive;Bismarck;MN;B
+2020-06-19 09:56:03.667;525;Grover;Nixon;9085 San Ysidro Blvd;Salt Lake City;MS;C
+2020-06-19 09:56:03.667;13;Lyndon;Cleveland;267 Moreno Drive;Raleigh;NE;A
+2020-06-19 09:56:03.667;67;Dwight;Cleveland;8645 Calle Real;Juneau;AR;C
+2020-06-19 09:56:03.667;27;Woodrow;Carter;2553 Padre Boulevard;Denver;AZ;C
+2020-06-19 09:56:03.667;459;Harry;Reagan;444 S Rustle St;Lincoln;NH;B
+2020-06-19 09:56:03.667;508;Herbert;Van Buren;8430 Carpinteria South;Columbus;NC;A
+2020-06-19 09:56:03.667;432;Harry;Truman;6517 North Erringer Road;Juneau;IA;A
+2020-06-19 09:56:03.667;404;Calvin;Washington;2672 Cleveland Ave.;Providence;WI;A
+2020-06-19 09:56:03.667;74;Andrew;Quincy;5006 Lindbergh Blvd;Madison;TX;B
+2020-06-19 09:56:03.667;661;Andrew;Monroe;4825 Westside Freeway;Des Moines;KS;A
+2020-06-19 09:56:03.667;943;Abraham;Madison;4556 Redwood Highway;Nashville;TN;B
+2020-06-19 09:56:03.667;985;Calvin;Cleveland;7065 Santa Monica Road;Honolulu;IN;A
+2020-06-19 09:56:03.667;184;Jimmy;Arthur;2028 Burnett Road;Topeka;MI;B
+2020-06-19 09:56:03.667;704;Harry;Coolidge;6478 Pacific Hwy S;Trenton;HI;B
+2020-06-19 09:56:03.667;717;Dwight;Madison;8150 East Calle Primera;Augusta;AR;A
+2020-06-19 09:56:03.667;199;Dwight;Polk;7863 Katella Avenue;Harrisburg;MI;C
+2020-06-19 09:56:03.667;35;Martin;Garfield;6719 Lawrenceville Suwanee;Carson City;HI;A
+2020-06-19 09:56:03.667;968;Rutherford;Johnson;2817 Tanger Blvd;Olympia;IA;A
+2020-06-19 09:56:03.667;713;John;Harrison;354 Carpinteria Avenue;Little Rock;ME;C
+2020-06-19 09:56:03.667;474;Rutherford;Roosevelt;728 Erringer Road;Indianapolis;WV;B
+2020-06-19 09:56:03.667;393;John;Eisenhower;8421 Westside Freeway;Helena;NY;B
+2020-06-19 09:56:03.667;256;Theodore;Harrison;7056 Carpinteria North;Raleigh;OK;B
+2020-06-19 09:56:03.667;269;George;Quincy;561 Carpinteria South;Columbia;NE;A
+2020-06-19 09:56:03.667;568;John;Johnson;7590 North Broadway Street;Little Rock;ND;B
+2020-06-19 09:56:03.667;644;Richard;Adams;1695 Carpinteria North;Concord;IL;C
+2020-06-19 09:56:03.667;837;Grover;Ford;3862 Tanger Blvd;Little Rock;WV;B
+2020-06-19 09:56:03.667;405;Lyndon;Adams;4327 E Fowler Avenue;Providence;TN;C
+2020-06-19 09:56:03.667;508;Ulysses;Adams;2236 Steele Lane;Nashville;ME;B
+2020-06-19 09:56:03.667;138;Herbert;Van Buren;4757 East Main Street;Salem;HI;A
+2020-06-19 09:56:03.667;501;Herbert;Grant;456 Pacific Hwy S;Oklahoma City;FL;A
+2020-06-19 09:56:03.667;982;Franklin;Coolidge;9880 San Luis Obispo North;Santa Fe;NE;C
+2020-06-19 09:56:03.667;921;Harry;McKinley;443 North Erringer Road;Honolulu;KY;B
+2020-06-19 09:56:03.667;342;Bill;Clinton;7094 Redwood Highway;Lansing;MN;C
+2020-06-19 09:56:03.667;262;George;McKinley;8805 Timberlane Drive;Frankfort;AK;B
+2020-06-19 09:56:03.667;92;William;Carter;373 East Calle Primera;Albany;NH;B
+2020-06-19 09:56:03.667;202;Franklin;Fillmore;4523 Cerrillos Road;Hartford;NJ;C
+2020-06-19 09:56:03.667;787;Dwight;Johnson;3027 El Camino Real;Columbia;OK;B
+2020-06-19 09:56:03.667;239;Harry;Jackson;7966 S Rustle St;Sacramento;NJ;C
+2020-06-19 09:56:03.667;483;Lyndon;Clinton;6365 Bailard Avenue;Bismarck;KY;C
+2020-06-19 09:56:03.667;724;Rutherford;Quincy;7731 Fairview Avenue;Jackson;MN;B
+2020-06-19 09:56:03.667;171;Zachary;Adams;3032 Via Real;Springfield;CA;B
+2020-06-19 09:56:03.667;365;Andrew;Arthur;4184 E Fowler Avenue;Dover;OR;C
+2020-06-19 09:56:03.667;841;Woodrow;Carter;633 East Fry Blvd.;Salt Lake City;WI;C
+2020-06-19 09:56:03.667;585;Woodrow;Kennedy;6615 French Camp Turnpike Road;Jackson;NV;B
+2020-06-19 09:56:03.667;648;Zachary;Clinton;3688 Westside Freeway;Tallahassee;CT;A
+2020-06-19 09:56:03.667;670;Ulysses;Adams;881 Carpinteria Avenue;Raleigh;NV;B
+2020-06-19 09:56:03.667;549;Chester;Harding;374 Richmond Hill;Cheyenne;KY;A
+2020-06-19 09:56:03.667;231;Richard;Jefferson;9771 Grandview Drive;Concord;VT;A
+2020-06-19 09:56:03.667;898;John;Johnson;1158 Katella Avenue;Albany;CA;A
+2020-06-19 09:56:03.667;553;George;Grant;5058 Greenwood Road;Richmond;DE;B
+2020-06-19 09:56:03.667;449;Lyndon;Nixon;2707 East Fry Blvd.;Salt Lake City;IA;B
+2020-06-19 09:56:03.667;230;Dwight;Wilson;2967 Calle Real;Bismarck;MT;B
+2020-06-19 09:56:03.667;650;Chester;Johnson;2232 East Fry Blvd.;Olympia;CT;A
+2020-06-19 09:56:03.667;240;Woodrow;Johnson;6251 French Camp Turnpike Road;Little Rock;MI;A
+2020-06-19 09:56:03.668;153;Rutherford;Coolidge;586 Cleveland Ave.;Juneau;CA;A
+2020-06-19 09:56:03.668;229;Rutherford;Fillmore;5979 Greenwood Road;Dover;AZ;B
+2020-06-19 09:56:03.668;896;Benjamin;Kennedy;1207 Corona Del Mar;Lincoln;SD;A
+2020-06-19 09:56:03.668;353;Harry;Harding;7447 Westside Freeway;Little Rock;CA;B
+2020-06-19 09:56:03.668;327;Zachary;Adams;3058 Lake Tahoe Blvd.;Springfield;NY;A
+2020-06-19 09:56:03.668;59;Jimmy;Johnson;9140 Fontaine Road;Denver;ND;A
+2020-06-19 09:56:03.668;536;Harry;Nixon;2397 North Broadway Street;Montgomery;OR;A
+2020-06-19 09:56:03.668;188;Ulysses;Reagan;3221 North Atherton Street;Columbus;PA;A
+2020-06-19 09:56:03.668;337;Calvin;Harding;3826 Pacific Hwy S;Saint Paul;OK;A
+2020-06-19 09:56:03.668;770;John;Ford;1351 Santa Monica Road;Jackson;KY;C
+2020-06-19 09:56:03.668;632;Abraham;Hayes;657 Greenwood Road;Nashville;KY;A
+2020-06-19 09:56:03.668;193;Ulysses;Eisenhower;530 Corona Del Mar;Little Rock;TN;C
+2020-06-19 09:56:03.668;92;Millard;Arthur;8026 San Simeon;Indianapolis;ND;C
+2020-06-19 09:56:03.668;366;Ulysses;Clinton;2028 Lake Tahoe Blvd.;Jefferson City;VA;C
+2020-06-19 09:56:03.668;708;Rutherford;Coolidge;253 East Fry Blvd.;Providence;OR;A
+2020-06-19 09:56:03.668;554;John;Jackson;2002 Santa Rosa North;Carson City;OH;A
+2020-06-19 09:56:03.668;494;Benjamin;Roosevelt;9464 Santa Rosa North;Austin;TN;C
+2020-06-19 09:56:03.668;555;Franklin;Truman;4740 San Marcos;Cheyenne;PA;A
+2020-06-19 09:56:03.668;76;Dwight;Madison;8269 Cabrillo Highway;Hartford;NE;B
+2020-06-19 09:56:03.668;275;Millard;Tyler;5837 San Ysidro Blvd;Lincoln;MO;A
+2020-06-19 09:56:03.668;560;Chester;Roosevelt;1197 Cerrillos Road;Albany;SD;A
+2020-06-19 09:56:03.668;482;Bill;Monroe;5198 Calle Real;Baton Rouge;ME;C
+2020-06-19 09:56:03.668;199;Benjamin;Washington;2616 French Camp Turnpike Road;Oklahoma City;TX;A
+2020-06-19 09:56:03.668;451;Bill;Kennedy;6747 Harbor Dr;Saint Paul;MA;C
+2020-06-19 09:56:03.668;204;Grover;Johnson;2350 East Fry Blvd.;Helena;MI;C
+2020-06-19 09:56:03.668;114;Zachary;Hoover;9077 Steele Lane;Saint Paul;UT;B
+2020-06-19 09:56:03.668;603;Herbert;Roosevelt;7284 East Fry Blvd.;Sacramento;FL;B
+2020-06-19 09:56:03.668;154;Warren;Eisenhower;8323 Corona Del Mar;Santa Fe;FL;C
+2020-06-19 09:56:03.668;560;Thomas;Lincoln;582 Katella Avenue;Boise;OH;B
+2020-06-19 09:56:03.668;500;Zachary;Buchanan;8732 Castillo Drive;Springfield;IN;C
+2020-06-19 09:56:03.668;469;Warren;Reagan;6825 East Main Street;Santa Fe;CA;C
+2020-06-19 09:56:03.668;681;Harry;Eisenhower;4003 North Atherton Street;Des Moines;ID;A
+2020-06-19 09:56:03.668;483;Grover;Adams;9395 El Camino Real;Denver;MO;A
+2020-06-19 09:56:03.668;941;Calvin;Quincy;3918 Jones Road;Salem;WA;B
+2020-06-19 09:56:03.668;389;Franklin;Ford;7636 Hutchinson Rd;Lincoln;NJ;C
+2020-06-19 09:56:03.668;156;Woodrow;McKinley;8365 Lindbergh Blvd;Juneau;RI;A
+2020-06-19 09:56:03.668;237;Ronald;Quincy;7496 South Roosevelt Drive;Annapolis;CO;A
+2020-06-19 09:56:03.668;72;James;Polk;9990 Redwood Highway;Augusta;GA;A
+2020-06-19 09:56:03.668;646;Calvin;Adams;9374 North Ventu Park Road;Helena;SC;C
+2020-06-19 09:56:03.668;549;Thomas;Harrison;9065 Via Real;Helena;VA;C
+2020-06-19 09:56:03.668;325;Dwight;Hayes;8567 San Simeon;Helena;LA;C
+2020-06-19 09:56:03.668;814;John;Harrison;3473 North Atherton Street;Providence;GA;A
+2020-06-19 09:56:03.668;319;Martin;Washington;8576 North Ventu Park Road;Montpelier;OR;A
+2020-06-19 09:56:03.668;486;Benjamin;Roosevelt;1395 Camelback Rd;Baton Rouge;MI;B
+2020-06-19 09:56:03.668;16;Richard;Lincoln;8919 N Kentwood;Oklahoma City;CT;A
+2020-06-19 09:56:03.668;229;Woodrow;Washington;4441 Carpinteria North;Honolulu;CA;A
+2020-06-19 09:56:03.668;464;Jimmy;Adams;2392 Bowles Avenue;Annapolis;OK;C
+2020-06-19 09:56:03.668;531;Benjamin;Arthur;4309 North Ventu Park Road;Lincoln;IA;C
+2020-06-19 09:56:03.668;128;Rutherford;Tyler;3497 Via Real;Lansing;NY;A
+2020-06-19 09:56:03.668;179;Lyndon;Tyler;8179 Burnett Road;Baton Rouge;ME;C
+2020-06-19 09:56:03.668;988;Zachary;Johnson;6933 Carpinteria Avenue;Saint Paul;AL;A
+2020-06-19 09:56:03.668;765;William;Wilson;3406 Erringer Road;Harrisburg;CT;A
+2020-06-19 09:56:03.668;806;Gerald;Harding;6976 San Marcos;Phoenix;MD;B
+2020-06-19 09:56:03.668;486;Theodore;Van Buren;6570 N Harrison St;Saint Paul;UT;B
+2020-06-19 09:56:03.668;78;Theodore;Taft;294 Apalachee Parkway;Montpelier;IN;A
+2020-06-19 09:56:03.668;749;Andrew;Van Buren;6197 Erringer Road;Hartford;WV;C
+2020-06-19 09:56:03.668;879;William;Van Buren;1746 Cleveland Ave.;Phoenix;MA;B
+2020-06-19 09:56:03.668;735;Harry;Roosevelt;6226 Via Real;Helena;KY;B
+2020-06-19 09:56:03.668;878;Harry;Monroe;2896 Cabrillo Highway;Augusta;AL;B
+2020-06-19 09:56:03.668;352;Ronald;Wilson;5624 Cerrillos Road;Boise;NM;A
+2020-06-19 09:56:03.668;276;Richard;Fillmore;9940 Carpinteria North;Augusta;MI;A
+2020-06-19 09:56:03.668;878;Theodore;Madison;6228 El Camino Real;Dover;MT;B
+2020-06-19 09:56:03.668;746;John;Buchanan;5183 Greenwood Road;Augusta;TX;A
+2020-06-19 09:56:03.668;994;Franklin;Arthur;4992 North Broadway Street;Lincoln;NH;A
+2020-06-19 09:56:03.668;134;George;McKinley;6646 Calle Real;Tallahassee;WV;C
+2020-06-19 09:56:03.668;836;Warren;Washington;9433 San Diego Freeway;Helena;UT;A
+2020-06-19 09:56:03.668;379;Andrew;Adams;3649 Santa Ana Freeway;Hartford;ID;C
+2020-06-19 09:56:03.668;140;George;Taylor;9192 Lawrenceville Suwanee;Indianapolis;VT;B
+2020-06-19 09:56:03.668;463;Gerald;Johnson;7796 North Erringer Road;Charleston;MD;B
+2020-06-19 09:56:03.668;483;John;Roosevelt;6894 South Roosevelt Drive;Providence;LA;C
+2020-06-19 09:56:03.668;462;Richard;Roosevelt;1572 Apalachee Parkway;Baton Rouge;TN;B
+2020-06-19 09:56:03.668;829;Zachary;Clinton;2725 North Broadway Street;Albany;CT;C
+2020-06-19 09:56:03.668;473;William;Clinton;7144 East Main Street;Jefferson City;ME;B
+2020-06-19 09:56:03.668;444;William;Adams;6313 Steele Lane;Lincoln;NC;B
+2020-06-19 09:56:03.668;670;James;Madison;8842 Grandview Drive;Jefferson City;SD;C
+2020-06-19 09:56:03.668;560;Theodore;Taylor;4197 Harry S Truman Blvd;Charleston;NM;C
+2020-06-19 09:56:03.668;128;Jimmy;Polk;991 Redwood Highway;Albany;KS;B
+2020-06-19 09:56:03.668;961;Chester;Johnson;1909 Redwood Highway;Denver;AK;C
+2020-06-19 09:56:03.668;706;John;Jefferson;2532 Newbury Road;Austin;AZ;C
+2020-06-19 09:56:03.668;560;Grover;Kennedy;7348 North Ventu Park Road;Little Rock;ID;C
+2020-06-19 09:56:03.668;759;Gerald;Quincy;3949 Via Real;Salem;AL;B
+2020-06-19 09:56:03.668;647;Chester;Truman;7808 Santa Ana Freeway;Hartford;GA;B
+2020-06-19 09:56:03.668;231;Benjamin;Reagan;6959 East 1st Street;Indianapolis;AZ;C
+2020-06-19 09:56:03.668;494;Martin;Pierce;3050 North Ventu Park Road;Bismarck;AK;C
+2020-06-19 09:56:03.668;458;Jimmy;Cleveland;9548 Calle Real;Nashville;NC;C
+2020-06-19 09:56:03.668;813;Martin;Van Buren;9491 Via Real;Harrisburg;VT;B
+2020-06-19 09:56:03.668;593;Lyndon;Arthur;1780 South Highway;Jackson;WY;A
+2020-06-19 09:56:03.668;452;Woodrow;Harrison;4843 East Main Street;Austin;KS;C
+2020-06-19 09:56:03.668;583;Warren;Clinton;5695 Hutchinson Rd;Columbia;NH;C
+2020-06-19 09:56:03.669;286;John;Arthur;2985 Corona Del Mar;Montgomery;ID;B
+2020-06-19 09:56:03.669;1;Warren;Washington;7842 Santa Ana Freeway;Topeka;AZ;A
+2020-06-19 09:56:03.669;447;Franklin;Harrison;3197 Harry S Truman Blvd;Bismarck;OR;C
+2020-06-19 09:56:03.669;616;Woodrow;Coolidge;6417 Lindbergh Blvd;Jefferson City;NC;A
+2020-06-19 09:56:03.669;80;Martin;Arthur;1740 Calle Real;Harrisburg;NE;A
+2020-06-19 09:56:03.669;794;Rutherford;Harding;713 Fairview Avenue;Albany;LA;C
+2020-06-19 09:56:03.669;920;Thomas;Monroe;5639 East Fry Blvd.;Des Moines;VA;C
+2020-06-19 09:56:03.669;291;Gerald;Roosevelt;8011 Lawrenceville Suwanee;Columbus;NM;C
+2020-06-19 09:56:03.669;515;Grover;Madison;1193 Harbor Dr;Richmond;CA;C
+2020-06-19 09:56:03.669;164;Lyndon;Wilson;9829 Steele Lane;Tallahassee;NC;C
+2020-06-19 09:56:03.669;543;Ronald;Roosevelt;1838 El Camino Real;Albany;CO;B
+2020-06-19 09:56:03.669;318;Harry;McKinley;2790 Milpas Street;Jefferson City;KS;C
+2020-06-19 09:56:03.669;88;Herbert;Cleveland;9771 Pacific Hwy S;Atlanta;KY;C
+2020-06-19 09:56:03.669;942;Martin;Kennedy;7823 Fairview Avenue;Atlanta;KS;A
+2020-06-19 09:56:03.669;400;Richard;Reagan;9259 Camelback Rd;Topeka;AR;C
+2020-06-19 09:56:03.669;682;Lyndon;Eisenhower;5659 San Diego Freeway;Jefferson City;KY;C
+2020-06-19 09:56:03.669;947;William;Ford;8285 East 1st Street;Santa Fe;DE;B
+2020-06-19 09:56:03.669;8;Thomas;Adams;6333 Richmond Hill;Montpelier;ME;A
+2020-06-19 09:56:03.669;402;William;Polk;8422 N Kentwood;Salem;NH;A
+2020-06-19 09:56:03.669;500;Millard;Hoover;4225 N Kentwood;Des Moines;AR;C
+2020-06-19 09:56:03.669;913;Theodore;Jackson;3671 Harbor Dr;Dover;PA;B
+2020-06-19 09:56:03.669;1000;Abraham;Harding;6351 North Atherton Street;Columbia;IL;C
+2020-06-19 09:56:03.669;795;Harry;Fillmore;5309 Pacific Hwy S;Albany;NJ;C
+2020-06-19 09:56:03.669;104;Richard;Quincy;313 Jones Road;Pierre;KS;A
+2020-06-19 09:56:03.669;574;George;Johnson;5538 San Diego Freeway;Charleston;OK;A
+2020-06-19 09:56:03.669;54;Abraham;Washington;7803 San Marcos;Salem;MO;A
+2020-06-19 09:56:03.669;922;Harry;Harding;9032 Hutchinson Rd;Atlanta;WV;B
+2020-06-19 09:56:03.669;250;Chester;Tyler;315 Hutchinson Rd;Phoenix;CT;A
+2020-06-19 09:56:03.669;835;Herbert;Madison;4878 Santa Monica Road;Olympia;UT;A
+2020-06-19 09:56:03.669;207;Rutherford;Roosevelt;9962 Santa Rosa South;Atlanta;NC;C
+2020-06-19 09:56:03.669;46;Benjamin;Coolidge;3182 Fairview Avenue;Harrisburg;KS;A
+2020-06-19 09:56:03.669;34;Ulysses;Grant;3375 North Ventu Park Road;Phoenix;NE;C
+2020-06-19 09:56:03.669;464;Jimmy;Fillmore;6183 El Camino Real;Charleston;DE;A
+2020-06-19 09:56:03.669;11;Thomas;Taft;6449 South Roosevelt Drive;Columbia;MS;A
+2020-06-19 09:56:03.669;191;Benjamin;Adams;3814 East Main Street;Harrisburg;NE;B
+2020-06-19 09:56:03.669;589;Ulysses;Johnson;5543 Santa Monica Road;Pierre;NJ;B
+2020-06-19 09:56:03.669;215;John;Johnson;9307 Carpinteria North;Concord;NV;B
+2020-06-19 09:56:03.669;793;Bill;Coolidge;5087 Bowles Avenue;Oklahoma City;TX;A
+2020-06-19 09:56:03.669;48;Zachary;Carter;5757 Lawrenceville Suwanee;Salem;KS;A
+2020-06-19 09:56:03.669;601;Ronald;Johnson;1093 Harry S Truman Blvd;Concord;MD;B
+2020-06-19 09:56:03.669;667;Chester;Arthur;461 Grandview Drive;Atlanta;IL;C
+2020-06-19 09:56:03.669;377;Thomas;Harrison;8863 East 1st Street;Lansing;SC;C
+2020-06-19 09:56:03.669;659;Jimmy;Quincy;1682 Camelback Rd;Richmond;WI;A
+2020-06-19 09:56:03.669;625;Jimmy;Adams;5316 Steele Lane;Jefferson City;OH;C
+2020-06-19 09:56:03.669;84;Richard;Roosevelt;2285 N Kentwood;Boston;SC;B
+2020-06-19 09:56:03.669;685;Ulysses;Roosevelt;3568 South Highway;Tallahassee;MN;A
+2020-06-19 09:56:03.669;441;Jimmy;Taft;2822 Lawrenceville Suwanee;Madison;MO;C
+2020-06-19 09:56:03.669;214;Franklin;Adams;7098 Padre Boulevard;Little Rock;AK;A
+2020-06-19 09:56:03.669;499;Millard;Harding;9964 Cleveland Ave.;Des Moines;WA;C
+2020-06-19 09:56:03.669;573;Grover;Tyler;4439 San Marcos;Jefferson City;AK;B
+2020-06-19 09:56:03.669;155;George;Harrison;7128 Richmond Hill;Salem;WA;B
+2020-06-19 09:56:03.669;373;Calvin;Harrison;495 Timberlane Drive;Little Rock;MI;A
+2020-06-19 09:56:03.669;415;Martin;Tyler;3045 Hutchinson Rd;Providence;NJ;A
+2020-06-19 09:56:03.669;105;John;Van Buren;4361 Greenwood Road;Montpelier;VT;B
+2020-06-19 09:56:03.669;468;Zachary;Cleveland;6167 North Atherton Street;Boise;AZ;C
+2020-06-19 09:56:03.669;567;Thomas;Coolidge;8807 South Roosevelt Drive;Nashville;ID;B
+2020-06-19 09:56:03.669;221;Calvin;Quincy;7376 Jean de la Fontaine;Oklahoma City;AL;A
+2020-06-19 09:56:03.669;59;Grover;Carter;8180 Castillo Drive;Albany;NM;B
+2020-06-19 09:56:03.669;650;John;Taft;7566 Fairview Avenue;Salem;AZ;C
+2020-06-19 09:56:03.669;860;Chester;Johnson;6316 Jean de la Fontaine;Oklahoma City;OR;B
+2020-06-19 09:56:03.669;577;Chester;Taylor;6218 Carpinteria Avenue;Pierre;ND;A
+2020-06-19 09:56:03.669;509;Lyndon;Nixon;5809 East Calle Primera;Hartford;SC;B
+2020-06-19 09:56:03.669;608;Andrew;Adams;8595 San Luis Obispo North;Boise;CT;A
+2020-06-19 09:56:03.669;244;Calvin;Monroe;8749 East Main Street;Annapolis;FL;B
+2020-06-19 09:56:03.669;195;Lyndon;Carter;2485 Cabrillo Highway;Hartford;NE;B
+2020-06-19 09:56:03.669;464;James;Harrison;5657 Carpinteria South;Des Moines;OK;B
+2020-06-19 09:56:03.669;770;Calvin;Fillmore;6681 San Luis Obispo North;Columbia;NM;A
+2020-06-19 09:56:03.669;957;Richard;Johnson;2820 North Erringer Road;Baton Rouge;WA;A
+2020-06-19 09:56:03.669;710;Herbert;Arthur;8766 Via Real;Sacramento;OK;A
+2020-06-19 09:56:03.669;379;James;Roosevelt;4652 North Atherton Street;Santa Fe;NV;B
+2020-06-19 09:56:03.669;718;Herbert;Eisenhower;8785 Jean de la Fontaine;Little Rock;NE;A
+2020-06-19 09:56:03.669;19;Ulysses;Lincoln;6947 Westside Freeway;Springfield;PA;B
+2020-06-19 09:56:03.669;974;John;Hayes;1411 Padre Boulevard;Olympia;KS;A
+2020-06-19 09:56:03.669;231;John;Coolidge;4219 Milpas Street;Tallahassee;DE;C
+2020-06-19 09:56:03.669;637;James;Jackson;1880 Tanger Blvd;Olympia;MN;B
+2020-06-19 09:56:03.669;375;Ulysses;Taft;7175 E Fowler Avenue;Des Moines;ND;A
+2020-06-19 09:56:03.669;467;Martin;Fillmore;9089 Richmond Hill;Bismarck;CT;A
+2020-06-19 09:56:03.669;183;Ulysses;Pierce;3635 Moreno Drive;Boston;AK;A
+2020-06-19 09:56:03.669;952;Grover;Taft;8625 Grandview Drive;Montpelier;RI;C
+2020-06-19 09:56:03.669;437;Dwight;Madison;432 Monroe Street;Juneau;LA;B
+2020-06-19 09:56:03.669;44;Dwight;Garfield;4671 Santa Monica Road;Nashville;ND;C
+2020-06-19 09:56:03.669;16;Herbert;Fillmore;8702 Santa Rosa South;Santa Fe;TN;C
+2020-06-19 09:56:03.669;308;Ulysses;Quincy;8070 Jones Road;Montpelier;VT;C
+2020-06-19 09:56:03.669;39;Franklin;Truman;2375 Greenwood Road;Tallahassee;MO;B
+2020-06-19 09:56:03.669;750;Calvin;Polk;5843 South Roosevelt Drive;Sacramento;KS;C
+2020-06-19 09:56:03.669;218;John;Hayes;6803 Jean de la Fontaine;Topeka;PA;C
+2020-06-19 09:56:03.669;39;Ronald;Washington;9523 S Rustle St;Frankfort;NH;A
+2020-06-19 09:56:03.669;92;Theodore;Harrison;8106 San Marcos;Tallahassee;HI;C
+2020-06-19 09:56:03.669;789;Theodore;Nixon;1000 W. Russell St.;Richmond;ND;B
+2020-06-19 09:56:03.669;507;Gerald;Van Buren;1621 South Highway;Concord;HI;C
+2020-06-19 09:56:03.669;1;Ulysses;Johnson;751 Santa Ana Freeway;Des Moines;WI;B
+2020-06-19 09:56:03.669;351;William;Polk;4779 San Ysidro Blvd;Sacramento;NY;B
+2020-06-19 09:56:03.669;183;Herbert;Cleveland;9227 French Camp Turnpike Road;Lincoln;DE;A
+2020-06-19 09:56:03.669;648;Jimmy;Monroe;711 Pacific Hwy S;Saint Paul;TN;A
+2020-06-19 09:56:03.669;795;Woodrow;Harrison;508 Hutchinson Rd;Salem;SC;A
+2020-06-19 09:56:03.669;199;Dwight;Jackson;4315 Lake Tahoe Blvd.;Topeka;NE;A
+2020-06-19 09:56:03.669;613;Warren;Polk;5106 Newbury Road;Jefferson City;AR;C
+2020-06-19 09:56:03.670;305;Bill;Tyler;8702 Cleveland Ave.;Boise;FL;B
+2020-06-19 09:56:03.670;335;Thomas;Ford;6791 San Ysidro Blvd;Santa Fe;NV;C
+2020-06-19 09:56:03.670;260;Thomas;Hayes;8420 South Highway;Honolulu;MD;C
+2020-06-19 09:56:03.670;329;Bill;Harrison;5408 Monroe Street;Hartford;CT;A
+2020-06-19 09:56:03.670;988;Martin;Adams;955 S Rustle St;Richmond;NE;A
+2020-06-19 09:56:03.670;110;Abraham;Johnson;792 San Simeon;Springfield;GA;B
+2020-06-19 09:56:03.670;833;Bill;Harding;1624 North Broadway Street;Richmond;KS;C
+2020-06-19 09:56:03.670;59;Warren;Reagan;8670 Pacific Hwy S;Dover;WY;A
+2020-06-19 09:56:03.670;132;Martin;Buchanan;7543 North Preisker Lane;Lincoln;GA;B
+2020-06-19 09:56:03.670;155;Millard;Jackson;1417 Katella Avenue;Saint Paul;DE;A
+2020-06-19 09:56:03.670;853;Theodore;Harding;9081 San Marcos;Helena;VA;A
+2020-06-19 09:56:03.670;81;Theodore;Roosevelt;7299 Lindbergh Blvd;Des Moines;MA;B
+2020-06-19 09:56:03.670;204;John;Ford;9176 East Fry Blvd.;Jackson;NY;C
+2020-06-19 09:56:03.670;981;Franklin;Washington;5125 South Roosevelt Drive;Springfield;UT;C
+2020-06-19 09:56:03.670;933;Grover;Johnson;5879 Santa Ana Freeway;Baton Rouge;AZ;B
+2020-06-19 09:56:03.670;24;Woodrow;Jefferson;6527 San Luis Obispo North;Olympia;NH;C
+2020-06-19 09:56:03.670;56;Andrew;Fillmore;8131 South Highway;Honolulu;VT;C
+2020-06-19 09:56:03.670;894;Herbert;Johnson;3852 South Highway;Atlanta;AR;B
+2020-06-19 09:56:03.670;755;Zachary;Kennedy;3136 San Diego Freeway;Atlanta;AZ;B
+2020-06-19 09:56:03.670;645;Chester;Coolidge;8346 Redwood Highway;Honolulu;MA;B
+2020-06-19 09:56:03.670;874;Andrew;Madison;1097 Carpinteria North;Baton Rouge;TX;A
+2020-06-19 09:56:03.670;707;George;Garfield;3553 South Highway;Bismarck;NJ;C
+2020-06-19 09:56:03.670;740;Franklin;Taylor;9547 Grandview Drive;Honolulu;NJ;C
+2020-06-19 09:56:03.670;681;Dwight;Carter;8878 Bayshore Freeway;Jefferson City;SC;A
+2020-06-19 09:56:03.670;113;James;Monroe;5829 Tully Road East;Honolulu;CT;B
+2020-06-19 09:56:03.670;513;William;Reagan;184 French Camp Turnpike Road;Hartford;IL;B
+2020-06-19 09:56:03.670;201;Theodore;Taylor;5567 San Marcos;Columbia;WI;C
+2020-06-19 09:56:03.670;236;Woodrow;Van Buren;4428 East Main Street;Albany;AL;A
+2020-06-19 09:56:03.670;990;Thomas;Garfield;2195 San Diego Freeway;Montpelier;MN;B
+2020-06-19 09:56:03.670;943;Ulysses;Adams;1682 Camelback Rd;Hartford;TN;A
+2020-06-19 09:56:03.670;334;Harry;McKinley;1004 Santa Monica Road;Carson City;FL;A
+2020-06-19 09:56:03.670;124;Lyndon;Reagan;7855 Bayshore Freeway;Springfield;WV;B
+2020-06-19 09:56:03.670;684;Martin;Jackson;5688 East Calle Primera;Madison;LA;C
+2020-06-19 09:56:03.670;977;Herbert;Taylor;3461 Lindbergh Blvd;Jackson;CA;A
+2020-06-19 09:56:03.670;211;Gerald;Eisenhower;1968 Via Real;Baton Rouge;IA;A
+2020-06-19 09:56:03.670;855;George;Hoover;1145 Burnett Road;Frankfort;ID;B
+2020-06-19 09:56:03.670;178;Warren;Carter;7942 Erringer Road;Sacramento;SC;A
+2020-06-19 09:56:03.670;12;Franklin;Taft;8347 Newbury Road;Madison;KS;C
+2020-06-19 09:56:03.670;388;Woodrow;Roosevelt;6066 N Harrison St;Helena;CA;B
+2020-06-19 09:56:03.670;123;Bill;Fillmore;8275 Santa Rosa South;Columbia;ME;A
+2020-06-19 09:56:03.670;453;Benjamin;Hoover;8976 Carpinteria Avenue;Dover;SC;B
+2020-06-19 09:56:03.670;632;Rutherford;Fillmore;1850 Castillo Drive;Pierre;VA;A
+2020-06-19 09:56:03.670;554;Thomas;Coolidge;6795 Santa Monica Road;Columbia;MT;B
+2020-06-19 09:56:03.670;847;James;Taylor;575 North Erringer Road;Des Moines;OH;C
+2020-06-19 09:56:03.670;932;Gerald;Garfield;4743 Jones Road;Columbus;VT;C
+2020-06-19 09:56:03.670;239;Lyndon;Wilson;4322 Pacific Hwy S;Sacramento;HI;A
+2020-06-19 09:56:03.670;304;Bill;Madison;5168 Apalachee Parkway;Charleston;KY;C
+2020-06-19 09:56:03.670;162;Andrew;Eisenhower;7813 North Preisker Lane;Montpelier;NM;C
+2020-06-19 09:56:03.670;351;Dwight;Van Buren;6623 Monroe Street;Jackson;ID;B
+2020-06-19 09:56:03.670;623;Theodore;Johnson;4529 Monroe Street;Raleigh;AR;B
+2020-06-19 09:56:03.670;91;Millard;Carter;6540 Castillo Drive;Frankfort;IL;B
+2020-06-19 09:56:03.670;544;Thomas;Coolidge;8985 Lindbergh Blvd;Annapolis;UT;C
+2020-06-19 09:56:03.670;366;George;Coolidge;1928 Carpinteria South;Albany;SD;B
+2020-06-19 09:56:03.670;315;Chester;Madison;8874 Burnett Road;Juneau;SC;A
+2020-06-19 09:56:03.670;820;Woodrow;Harrison;3223 San Luis Obispo North;Springfield;VT;A
+2020-06-19 09:56:03.670;751;Grover;McKinley;3082 South Roosevelt Drive;Salt Lake City;NV;B
+2020-06-19 09:56:03.670;413;Ronald;Roosevelt;3284 Santa Ana Freeway;Denver;OH;B
+2020-06-19 09:56:03.670;937;Theodore;Pierce;2471 San Simeon;Saint Paul;MI;B
+2020-06-19 09:56:03.670;912;Richard;Ford;3661 Harbor Dr;Denver;AR;C
+2020-06-19 09:56:03.670;712;Ulysses;Buchanan;7499 N Harrison St;Albany;NC;C
+2020-06-19 09:56:03.670;77;Andrew;Adams;717 North Ventu Park Road;Santa Fe;MI;A
+2020-06-19 09:56:03.670;240;Lyndon;Clinton;7748 Steele Lane;Augusta;MO;A
+2020-06-19 09:56:03.670;731;Grover;Johnson;5734 Castillo Drive;Jackson;OH;A
+2020-06-19 09:56:03.670;2;Lyndon;Arthur;1927 Greenwood Road;Sacramento;CO;A
+2020-06-19 09:56:03.670;757;Ulysses;Eisenhower;2943 Calle Real;Trenton;AZ;B
+2020-06-19 09:56:03.670;749;William;Reagan;9979 E Fowler Avenue;Hartford;NV;B
+2020-06-19 09:56:03.670;13;Richard;Madison;8747 Lake Tahoe Blvd.;Lincoln;WI;B
+2020-06-19 09:56:03.670;531;Harry;Adams;3588 Santa Ana Freeway;Austin;DE;C
+2020-06-19 09:56:03.670;31;Grover;Nixon;1081 Carpinteria North;Tallahassee;CT;A
+2020-06-19 09:56:03.670;824;Benjamin;Taft;1755 San Ysidro Blvd;Annapolis;RI;B
+2020-06-19 09:56:03.670;292;Richard;McKinley;9048 Grandview Drive;Indianapolis;CT;A
+2020-06-19 09:56:03.670;744;Bill;Cleveland;2659 Harbor Dr;Topeka;NV;B
+2020-06-19 09:56:03.670;70;Herbert;Reagan;4732 Grandview Drive;Springfield;NC;A
+2020-06-19 09:56:03.670;481;Bill;Hoover;7981 Harbor Dr;Little Rock;RI;C
+2020-06-19 09:56:03.670;707;Grover;Garfield;1656 Grandview Drive;Charleston;NE;B
+2020-06-19 09:56:03.670;937;Richard;Harding;5884 French Camp Turnpike Road;Concord;NJ;A
+2020-06-19 09:56:03.670;874;William;Eisenhower;1494 El Camino Real;Des Moines;CA;A
+2020-06-19 09:56:03.670;154;Millard;Pierce;3340 Katella Avenue;Topeka;CT;A
+2020-06-19 09:56:03.670;950;Bill;McKinley;7947 Fairview Avenue;Baton Rouge;VT;A
+2020-06-19 09:56:03.670;580;Lyndon;Madison;6499 San Ysidro Blvd;Topeka;GA;A
+2020-06-19 09:56:03.670;838;Gerald;Kennedy;4617 Carpinteria North;Salt Lake City;MS;A
+2020-06-19 09:56:03.670;926;Herbert;Buchanan;3159 Greenwood Road;Harrisburg;WA;C
+2020-06-19 09:56:03.670;205;Abraham;Johnson;9104 N Kentwood;Atlanta;OR;C
+2020-06-19 09:56:03.670;381;Woodrow;Monroe;9486 Carpinteria Avenue;Columbus;NE;B
+2020-06-19 09:56:03.670;39;Ulysses;Reagan;3165 Cabrillo Highway;Carson City;OR;A
+2020-06-19 09:56:03.670;388;Franklin;Madison;8634 Cleveland Ave.;Atlanta;PA;C
+2020-06-19 09:56:03.670;849;Warren;Madison;895 North Erringer Road;Boston;SC;B
+2020-06-19 09:56:03.670;389;Warren;Jackson;2591 Greenwood Road;Montpelier;NE;A
+2020-06-19 09:56:03.670;46;Franklin;Harding;1507 Grandview Drive;Salt Lake City;MD;A
+2020-06-19 09:56:03.670;914;Jimmy;Nixon;8176 Santa Rosa North;Carson City;NJ;B
+2020-06-19 09:56:03.670;27;Millard;Buchanan;8595 East Calle Primera;Madison;MN;C
+2020-06-19 09:56:03.670;403;Warren;Adams;8212 Grandview Drive;Trenton;NJ;A
+2020-06-19 09:56:03.670;152;Jimmy;Clinton;6107 Moreno Drive;Boston;RI;C
+2020-06-19 09:56:03.670;201;Millard;Wilson;3644 Harbor Dr;Baton Rouge;WY;A
+2020-06-19 09:56:03.670;540;Ulysses;Jefferson;2559 Santa Monica Road;Annapolis;KY;B
+2020-06-19 09:56:03.670;962;Millard;Buchanan;8209 Bayshore Freeway;Hartford;NJ;A
+2020-06-19 09:56:03.670;620;Thomas;Roosevelt;1822 North Erringer Road;Atlanta;AZ;C
+2020-06-19 09:56:03.670;186;William;Grant;9360 North Ventu Park Road;Springfield;OH;B
+2020-06-19 09:56:03.670;755;Theodore;Johnson;7710 San Luis Obispo North;Hartford;CT;A
+2020-06-19 09:56:03.671;589;Thomas;Eisenhower;4109 Bayshore Freeway;Tallahassee;PA;A
+2020-06-19 09:56:03.671;754;Benjamin;Eisenhower;7327 W. Russell St.;Albany;DE;C
+2020-06-19 09:56:03.671;394;Andrew;Grant;7736 Lindbergh Blvd;Santa Fe;WI;B
+2020-06-19 09:56:03.671;334;Millard;Monroe;6309 Harbor Dr;Sacramento;OH;C
+2020-06-19 09:56:03.671;44;Thomas;Tyler;2170 Fairview Avenue;Dover;IA;A
+2020-06-19 09:56:03.671;414;Chester;Arthur;448 Jones Road;Jefferson City;NH;B
+2020-06-19 09:56:03.671;233;Rutherford;Johnson;8083 Fontaine Road;Jefferson City;NV;B
+2020-06-19 09:56:03.671;943;Ulysses;Adams;8817 Newbury Road;Harrisburg;IL;C
+2020-06-19 09:56:03.671;441;George;Clinton;2441 N Kentwood;Annapolis;NC;B
+2020-06-19 09:56:03.671;455;William;Roosevelt;1367 North Ventu Park Road;Boston;AZ;B
+2020-06-19 09:56:03.671;183;William;Hoover;7709 East Fry Blvd.;Baton Rouge;FL;A
+2020-06-19 09:56:03.671;335;Jimmy;Adams;8645 N Kentwood;Columbia;AL;A
+2020-06-19 09:56:03.671;42;Jimmy;Roosevelt;5880 Fontaine Road;Indianapolis;AK;B
+2020-06-19 09:56:03.671;346;Calvin;Pierce;8760 Jean de la Fontaine;Jefferson City;HI;A
+2020-06-19 09:56:03.671;902;Andrew;Roosevelt;3131 Bailard Avenue;Des Moines;NJ;C
+2020-06-19 09:56:03.671;615;Jimmy;Jackson;399 Woodson Rd.;Austin;NV;A
+2020-06-19 09:56:03.671;45;Calvin;Roosevelt;7372 East Main Street;Boston;OH;A
+2020-06-19 09:56:03.671;578;Millard;Carter;3597 North Preisker Lane;Honolulu;KS;B
+2020-06-19 09:56:03.671;908;William;Harrison;5888 Newbury Road;Des Moines;ND;B
+2020-06-19 09:56:03.671;909;William;Van Buren;1123 Richmond Hill;Dover;NE;B
+2020-06-19 09:56:03.671;366;Chester;Van Buren;1717 Hutchinson Rd;Annapolis;NM;B
+2020-06-19 09:56:03.671;398;Dwight;Washington;6966 Richmond Hill;Salem;UT;A
+2020-06-19 09:56:03.671;452;John;Polk;1422 Padre Boulevard;Baton Rouge;AZ;C
+2020-06-19 09:56:03.671;875;Franklin;Adams;8735 Lindbergh Blvd;Indianapolis;AR;B
+2020-06-19 09:56:03.671;200;Millard;Kennedy;1536 Moreno Drive;Saint Paul;WY;B
+2020-06-19 09:56:03.671;180;Zachary;Grant;5297 French Camp Turnpike Road;Annapolis;NE;A
+2020-06-19 09:56:03.671;52;Richard;Ford;8949 Westside Freeway;Columbus;TN;C
+2020-06-19 09:56:03.671;461;Ronald;Hoover;114 Steele Lane;Baton Rouge;CT;C
+2020-06-19 09:56:03.671;883;William;Grant;4660 Santa Rosa North;Baton Rouge;NM;C
+2020-06-19 09:56:03.671;309;Calvin;Monroe;6029 Via Real;Jefferson City;WV;C
+2020-06-19 09:56:03.671;787;Theodore;Harrison;6228 Milpas Street;Bismarck;MS;B
+2020-06-19 09:56:03.671;57;Richard;Roosevelt;6940 Carpinteria South;Tallahassee;UT;C
+2020-06-19 09:56:03.671;813;Chester;Arthur;2131 Bayshore Freeway;Des Moines;OH;B
+2020-06-19 09:56:03.671;972;Dwight;Fillmore;1665 E Fowler Avenue;Bismarck;TX;A
+2020-06-19 09:56:03.671;472;Dwight;Hoover;4059 San Simeon;Harrisburg;FL;C
+2020-06-19 09:56:03.671;996;Zachary;Monroe;7766 Via Real;Salt Lake City;VA;A
+2020-06-19 09:56:03.671;716;Chester;Truman;8386 Calle Real;Frankfort;AZ;A
+2020-06-19 09:56:03.671;846;Theodore;Buchanan;8260 Steele Lane;Des Moines;OR;B
+2020-06-19 09:56:03.671;698;Abraham;Quincy;6528 Katella Avenue;Olympia;OH;A
+2020-06-19 09:56:03.671;240;Harry;Cleveland;8939 N Harrison St;Frankfort;IL;C
+2020-06-19 09:56:03.671;686;Warren;Grant;1789 Westside Freeway;Sacramento;NH;B
+2020-06-19 09:56:03.671;644;Franklin;Nixon;2810 Greenwood Road;Juneau;MD;A
+2020-06-19 09:56:03.671;948;James;Monroe;4454 Milpas Street;Annapolis;AL;C
+2020-06-19 09:56:03.671;185;Rutherford;Roosevelt;7478 Cabrillo Highway;Little Rock;WV;C
+2020-06-19 09:56:03.671;557;Andrew;Pierce;2925 Jean de la Fontaine;Madison;PA;C
+2020-06-19 09:56:03.671;41;Gerald;Clinton;8251 San Marcos;Madison;NV;B
+2020-06-19 09:56:03.671;346;Franklin;Kennedy;1659 North Atherton Street;Columbia;KY;B
+2020-06-19 09:56:03.671;617;Harry;Jefferson;4055 Timberlane Drive;Columbia;VA;B
+2020-06-19 09:56:03.671;546;Richard;Cleveland;5129 San Marcos;Sacramento;IL;B
+2020-06-19 09:56:03.671;451;Millard;Grant;6372 Lake Tahoe Blvd.;Annapolis;NM;C
+2020-06-19 09:56:03.671;744;Millard;Taft;7694 Westside Freeway;Harrisburg;RI;B
+2020-06-19 09:56:03.671;294;John;Quincy;111 Padre Boulevard;Sacramento;SC;B
+2020-06-19 09:56:03.671;180;Ronald;Adams;6857 Jean de la Fontaine;Augusta;IA;C
+2020-06-19 09:56:03.671;528;Theodore;Eisenhower;625 Cabrillo Highway;Springfield;CO;A
+2020-06-19 09:56:03.671;445;Martin;Coolidge;6700 Carpinteria North;Augusta;CA;C
+2020-06-19 09:56:03.671;636;Thomas;Taft;7645 San Ysidro Blvd;Jackson;OR;B
+2020-06-19 09:56:03.671;985;Andrew;Madison;2332 Greenwood Road;Saint Paul;NM;A
+2020-06-19 09:56:03.671;628;George;Jackson;2843 Burnett Road;Madison;FL;C
+2020-06-19 09:56:03.671;716;Zachary;Garfield;7622 Cleveland Ave.;Lincoln;SD;B
+2020-06-19 09:56:03.671;470;Millard;Carter;551 Erringer Road;Oklahoma City;VT;C
+2020-06-19 09:56:03.671;253;John;Monroe;1403 East Calle Primera;Salem;OH;C
+2020-06-19 09:56:03.671;283;Abraham;Jefferson;251 East 1st Street;Santa Fe;MN;C
+2020-06-19 09:56:03.671;898;Ronald;Taft;7913 Fairview Avenue;Pierre;SD;A
+2020-06-19 09:56:03.671;883;Richard;Roosevelt;251 Carpinteria South;Topeka;OR;B
+2020-06-19 09:56:03.671;287;Chester;Clinton;7693 Harry S Truman Blvd;Hartford;VA;A
+2020-06-19 09:56:03.671;423;Chester;Fillmore;2394 Castillo Drive;Baton Rouge;HI;C
+2020-06-19 09:56:03.671;740;Franklin;Arthur;6103 Katella Avenue;Denver;AZ;B
+2020-06-19 09:56:03.671;95;James;McKinley;3779 Santa Ana Freeway;Oklahoma City;VA;B
+2020-06-19 09:56:03.671;358;Gerald;Harrison;2781 Jean de la Fontaine;Denver;NH;C
+2020-06-19 09:56:03.671;989;Richard;Tyler;5841 Corona Del Mar;Dover;VA;B
+2020-06-19 09:56:03.671;761;Herbert;Arthur;4463 Carpinteria North;Jefferson City;OK;A
+2020-06-19 09:56:03.671;689;James;Coolidge;3483 E Fowler Avenue;Bismarck;DE;A
+2020-06-19 09:56:03.671;257;Millard;Pierce;9362 Corona Del Mar;Springfield;OR;B
+2020-06-19 09:56:03.671;428;Martin;Garfield;1216 Bailard Avenue;Topeka;LA;A
+2020-06-19 09:56:03.671;573;George;Hayes;6056 El Camino Real;Lincoln;IA;C
+2020-06-19 09:56:03.671;223;Grover;Adams;5590 Grandview Drive;Providence;NE;A
+2020-06-19 09:56:03.671;821;John;Johnson;5610 Erringer Road;Columbus;NY;A
+2020-06-19 09:56:03.671;813;Warren;Reagan;2777 Richmond Hill;Jackson;MS;B
+2020-06-19 09:56:03.671;841;Gerald;Harrison;4319 Hutchinson Rd;Tallahassee;OR;A
+2020-06-19 09:56:03.671;968;Thomas;Fillmore;2266 Timberlane Drive;Oklahoma City;MN;C
+2020-06-19 09:56:03.671;81;Dwight;Arthur;253 San Marcos;Santa Fe;PA;C
+2020-06-19 09:56:03.671;120;Rutherford;Hayes;4111 Jean de la Fontaine;Providence;WI;B
+2020-06-19 09:56:03.671;547;Benjamin;Truman;3986 Santa Monica Road;Sacramento;CT;C
+2020-06-19 09:56:03.671;897;Harry;Jackson;7808 W. Russell St.;Annapolis;KS;C
+2020-06-19 09:56:03.671;114;Thomas;Garfield;973 Erringer Road;Columbus;NE;B
+2020-06-19 09:56:03.671;419;Ronald;Tyler;3718 South Highway;Nashville;MI;B
+2020-06-19 09:56:03.671;841;Grover;Truman;5130 Jones Road;Honolulu;FL;C
+2020-06-19 09:56:03.671;187;Chester;Kennedy;9116 Katella Avenue;Carson City;LA;C
+2020-06-19 09:56:03.671;500;Theodore;Harding;1863 Bowles Avenue;Charleston;CA;C
+2020-06-19 09:56:03.671;845;Theodore;Washington;539 Cabrillo Highway;Montgomery;CT;C
+2020-06-19 09:56:03.671;116;Gerald;Wilson;7510 North Atherton Street;Nashville;TX;B
+2020-06-19 09:56:03.671;22;Theodore;Fillmore;5570 Milpas Street;Raleigh;NY;C
+2020-06-19 09:56:03.671;934;Warren;McKinley;2613 North Erringer Road;Oklahoma City;ID;B
+2020-06-19 09:56:03.671;400;Thomas;Monroe;468 S Rustle St;Dover;LA;A
+2020-06-19 09:56:03.672;528;Benjamin;Quincy;5167 San Marcos;Lincoln;MI;C
+2020-06-19 09:56:03.672;425;Warren;Van Buren;5096 Steele Lane;Boise;KS;A
+2020-06-19 09:56:03.672;612;James;Van Buren;3621 Katella Avenue;Lansing;NM;B
+2020-06-19 09:56:03.672;964;Thomas;Kennedy;3070 East Calle Primera;Bismarck;OH;A
+2020-06-19 09:56:03.672;509;Jimmy;Harrison;9271 Grandview Drive;Nashville;KS;B
+2020-06-19 09:56:03.672;600;Theodore;Carter;9046 Cleveland Ave.;Little Rock;OR;A
+2020-06-19 09:56:03.672;84;Martin;Hayes;4549 Padre Boulevard;Springfield;WA;B
+2020-06-19 09:56:03.672;971;Herbert;Kennedy;5262 Santa Monica Road;Santa Fe;NE;B
+2020-06-19 09:56:03.672;986;James;Adams;570 N Harrison St;Pierre;AR;B
+2020-06-19 09:56:03.672;388;William;Adams;4501 Fontaine Road;Phoenix;DE;C
+2020-06-19 09:56:03.672;228;Herbert;Tyler;2931 South Roosevelt Drive;Concord;MA;A
+2020-06-19 09:56:03.672;641;Gerald;Washington;8127 San Diego Freeway;Madison;NE;B
+2020-06-19 09:56:03.672;822;George;Taft;5395 Moreno Drive;Columbus;OK;C
+2020-06-19 09:56:03.672;291;Bill;Jackson;6782 San Diego Freeway;Providence;UT;C
+2020-06-19 09:56:03.672;69;Benjamin;Hoover;2080 Pacific Hwy S;Baton Rouge;MO;C
+2020-06-19 09:56:03.672;983;Grover;Jefferson;5004 El Camino Real;Honolulu;WA;A
+2020-06-19 09:56:03.672;813;William;Clinton;8260 Carpinteria Avenue;Helena;MA;A
+2020-06-19 09:56:03.672;592;Thomas;Monroe;1842 Monroe Street;Saint Paul;NJ;C
+2020-06-19 09:56:03.672;965;Andrew;Polk;4125 North Atherton Street;Oklahoma City;CA;B
+2020-06-19 09:56:03.672;907;Franklin;Harrison;2481 E Fowler Avenue;Annapolis;CT;C
+2020-06-19 09:56:03.672;148;Theodore;Fillmore;3199 Via Real;Bismarck;MA;A
+2020-06-19 09:56:03.672;800;Andrew;McKinley;4173 San Diego Freeway;Little Rock;AR;B
+2020-06-19 09:56:03.672;665;Benjamin;McKinley;5779 San Diego Freeway;Boise;NC;B
+2020-06-19 09:56:03.672;580;Grover;Lincoln;4264 Padre Boulevard;Indianapolis;FL;A
+2020-06-19 09:56:03.672;871;Theodore;Madison;3691 South Highway;Charleston;LA;C
+2020-06-19 09:56:03.672;738;Harry;Garfield;5205 Via Real;Juneau;CA;A
+2020-06-19 09:56:03.672;322;Rutherford;Harrison;8367 Lindbergh Blvd;Montgomery;TX;A
+2020-06-19 09:56:03.672;937;Bill;Grant;4840 San Simeon;Concord;RI;B
+2020-06-19 09:56:03.672;203;Theodore;Truman;305 Tully Road East;Raleigh;SD;C
+2020-06-19 09:56:03.672;140;Ronald;Madison;1642 Tanger Blvd;Albany;NY;C
+2020-06-19 09:56:03.672;299;Woodrow;Taft;9767 Camelback Rd;Sacramento;MI;A
+2020-06-19 09:56:03.672;722;John;Roosevelt;2995 Lindbergh Blvd;Boise;MI;C
+2020-06-19 09:56:03.672;688;Ulysses;Hayes;3159 Milpas Street;Providence;AK;A
+2020-06-19 09:56:03.672;325;Thomas;Tyler;8458 Jones Road;Montpelier;FL;B
+2020-06-19 09:56:03.672;241;Lyndon;Wilson;3401 Moreno Drive;Harrisburg;VT;B
+2020-06-19 09:56:03.672;225;Gerald;Garfield;5407 Jean de la Fontaine;Topeka;TN;C
+2020-06-19 09:56:03.672;98;Richard;Quincy;974 Tanger Blvd;Concord;NC;B
+2020-06-19 09:56:03.672;308;Jimmy;Grant;6442 Grandview Drive;Topeka;NJ;A
+2020-06-19 09:56:03.672;923;Theodore;Taylor;5905 Pacific Hwy S;Baton Rouge;FL;A
+2020-06-19 09:56:03.672;336;Benjamin;Roosevelt;4029 Cabrillo Highway;Annapolis;MN;B
+2020-06-19 09:56:03.672;821;Woodrow;Garfield;4714 Corona Del Mar;Springfield;VA;C
+2020-06-19 09:56:03.672;855;Millard;Pierce;6607 Carpinteria Avenue;Atlanta;AR;A
+2020-06-19 09:56:03.672;807;Warren;McKinley;8765 Burnett Road;Madison;WV;C
+2020-06-19 09:56:03.672;979;Warren;Kennedy;7163 Padre Boulevard;Atlanta;NV;A
+2020-06-19 09:56:03.672;359;Jimmy;Adams;1717 El Camino Real;Columbus;GA;B
+2020-06-19 09:56:03.672;463;Chester;Jackson;2704 San Ysidro Blvd;Jefferson City;NE;A
+2020-06-19 09:56:03.672;661;Benjamin;Johnson;6602 Lindbergh Blvd;Juneau;PA;B
+2020-06-19 09:56:03.672;212;George;Taylor;2350 San Marcos;Springfield;TN;C
+2020-06-19 09:56:03.672;205;Thomas;Buchanan;6998 Carpinteria South;Honolulu;OH;A
+2020-06-19 09:56:03.672;93;Rutherford;McKinley;3475 Jones Road;Cheyenne;OR;A
+2020-06-19 09:56:03.672;261;Benjamin;Johnson;5175 Cabrillo Highway;Sacramento;NM;C
+2020-06-19 09:56:03.672;188;Herbert;Adams;7461 Harry S Truman Blvd;Harrisburg;OK;C
+2020-06-19 09:56:03.672;665;Gerald;Coolidge;8992 Bowles Avenue;Topeka;NY;B
+2020-06-19 09:56:03.672;354;George;Johnson;4995 Lake Tahoe Blvd.;Indianapolis;NJ;C
+2020-06-19 09:56:03.672;782;Harry;Hoover;1359 Steele Lane;Columbus;OK;B
+2020-06-19 09:56:03.672;386;Calvin;Ford;5055 Redwood Highway;Bismarck;NV;A
+2020-06-19 09:56:03.672;21;Andrew;Johnson;3821 San Luis Obispo North;Tallahassee;MT;B
+2020-06-19 09:56:03.672;363;Benjamin;Washington;1441 N Harrison St;Columbus;WA;A
+2020-06-19 09:56:03.672;818;Bill;Garfield;5671 Hutchinson Rd;Montpelier;MN;B
+2020-06-19 09:56:03.672;343;Rutherford;Nixon;7041 Westside Freeway;Lincoln;PA;A
+2020-06-19 09:56:03.672;394;William;Truman;2254 Corona Del Mar;Springfield;CO;A
+2020-06-19 09:56:03.672;546;Dwight;Tyler;5850 Greenwood Road;Jefferson City;SC;B
+2020-06-19 09:56:03.672;424;Rutherford;Harrison;2572 Santa Rosa South;Salt Lake City;WY;A
+2020-06-19 09:56:03.672;947;Richard;Washington;9811 Cleveland Ave.;Concord;OH;A
+2020-06-19 09:56:03.672;632;Lyndon;Kennedy;8101 Milpas Street;Boston;OH;B
+2020-06-19 09:56:03.672;747;Bill;Adams;8647 French Camp Turnpike Road;Little Rock;GA;B
+2020-06-19 09:56:03.672;848;Thomas;Reagan;8816 Santa Monica Road;Little Rock;HI;C
+2020-06-19 09:56:03.672;660;Calvin;Clinton;9728 El Camino Real;Santa Fe;NM;C
+2020-06-19 09:56:03.672;373;Jimmy;Harrison;124 East 1st Street;Trenton;VA;C
+2020-06-19 09:56:03.672;884;Andrew;Cleveland;2664 San Ysidro Blvd;Raleigh;NH;B
+2020-06-19 09:56:03.672;930;Abraham;Eisenhower;225 Woodson Rd.;Little Rock;NV;B
+2020-06-19 09:56:03.672;698;Martin;Hoover;9824 Timberlane Drive;Jackson;PA;C
+2020-06-19 09:56:03.672;975;George;Johnson;975 Jean de la Fontaine;Carson City;NV;A
+2020-06-19 09:56:03.672;616;Lyndon;Harding;581 Lindbergh Blvd;Olympia;MD;B
+2020-06-19 09:56:03.672;340;Herbert;Hoover;4848 Lawrenceville Suwanee;Baton Rouge;CA;A
+2020-06-19 09:56:03.672;867;Harry;Clinton;9206 N Harrison St;Raleigh;RI;A
+2020-06-19 09:56:03.672;594;Dwight;Monroe;6717 Bailard Avenue;Jefferson City;PA;A
+2020-06-19 09:56:03.672;188;Millard;Washington;2493 Fontaine Road;Columbus;MA;A
+2020-06-19 09:56:03.672;423;Warren;Hoover;2602 Fairview Avenue;Providence;VT;C
+2020-06-19 09:56:03.672;202;Gerald;Harrison;3908 North Erringer Road;Helena;UT;A
+2020-06-19 09:56:03.672;853;Grover;Adams;5145 Harbor Dr;Albany;OR;C
+2020-06-19 09:56:03.672;912;James;Arthur;2540 Bowles Avenue;Tallahassee;VT;B
+2020-06-19 09:56:03.672;535;Jimmy;Madison;7482 Hutchinson Rd;Tallahassee;WI;B
+2020-06-19 09:56:03.672;30;James;Tyler;1207 Milpas Street;Concord;WV;A
+2020-06-19 09:56:03.672;803;Ronald;Reagan;2563 N Harrison St;Nashville;ME;C
+2020-06-19 09:56:03.672;770;Ronald;Harrison;5508 North Erringer Road;Denver;SD;B
+2020-06-19 09:56:03.672;378;Franklin;Taft;8306 Grandview Drive;Little Rock;NE;B
+2020-06-19 09:56:03.672;460;Chester;Truman;5827 Carpinteria North;Hartford;AZ;C
+2020-06-19 09:56:03.672;688;William;Adams;3908 Newbury Road;Santa Fe;CA;A
+2020-06-19 09:56:03.672;570;Bill;Harrison;6349 Corona Del Mar;Carson City;MS;B
+2020-06-19 09:56:03.672;654;Benjamin;Buchanan;8101 E Fowler Avenue;Madison;IA;C
+2020-06-19 09:56:03.672;610;Thomas;Grant;2631 Lake Tahoe Blvd.;Columbia;IL;B
+2020-06-19 09:56:03.672;946;Woodrow;Ford;1011 Fontaine Road;Oklahoma City;ID;B
+2020-06-19 09:56:03.672;415;Lyndon;Nixon;4084 Padre Boulevard;Atlanta;OR;B
+2020-06-19 09:56:03.672;582;Calvin;Harrison;8470 Harbor Dr;Albany;FL;C
+2020-06-19 09:56:03.673;233;Ronald;Fillmore;4876 Fairview Avenue;Hartford;TX;C
+2020-06-19 09:56:03.673;582;Theodore;Roosevelt;3172 Monroe Street;Augusta;UT;A
+2020-06-19 09:56:03.673;366;Warren;Nixon;1310 Tully Road East;Helena;PA;C
+2020-06-19 09:56:03.673;36;James;Truman;767 Burnett Road;Saint Paul;TN;C
+2020-06-19 09:56:03.673;636;Theodore;Adams;775 Lake Tahoe Blvd.;Montgomery;ID;C
+2020-06-19 09:56:03.673;647;Richard;Adams;1373 Camelback Rd;Boise;WI;A
+2020-06-19 09:56:03.673;64;Ulysses;Van Buren;3950 Bowles Avenue;Sacramento;MT;C
+2020-06-19 09:56:03.673;985;Theodore;Cleveland;1842 El Camino Real;Providence;WV;C
+2020-06-19 09:56:03.673;838;Warren;Grant;4879 East Calle Primera;Concord;NC;B
+2020-06-19 09:56:03.673;716;Ronald;Carter;3219 Jones Road;Phoenix;WI;A
+2020-06-19 09:56:03.673;516;Gerald;Pierce;8395 Apalachee Parkway;Sacramento;NH;B
+2020-06-19 09:56:03.673;611;Andrew;Pierce;4676 Carpinteria Avenue;Jefferson City;KY;A
+2020-06-19 09:56:03.673;600;William;Carter;8761 El Camino Real;Montgomery;SC;A
+2020-06-19 09:56:03.673;290;Millard;Eisenhower;4801 Santa Rosa South;Oklahoma City;IA;B
+2020-06-19 09:56:03.673;649;Zachary;Truman;1186 San Diego Freeway;Cheyenne;IN;B
+2020-06-19 09:56:03.673;35;Rutherford;Taft;5424 Padre Boulevard;Salem;UT;C
+2020-06-19 09:56:03.673;62;Jimmy;Harrison;1136 San Ysidro Blvd;Carson City;MD;C
+2020-06-19 09:56:03.673;958;Ronald;Van Buren;1701 San Diego Freeway;Hartford;VT;B
+2020-06-19 09:56:03.673;443;Jimmy;Van Buren;4751 Apalachee Parkway;Annapolis;UT;B
+2020-06-19 09:56:03.673;25;Richard;Ford;1838 Lindbergh Blvd;Oklahoma City;TN;A
+2020-06-19 09:56:03.673;581;Rutherford;Polk;9652 Greenwood Road;Columbus;UT;A
+2020-06-19 09:56:03.673;793;Benjamin;Monroe;6655 North Atherton Street;Providence;SD;C
+2020-06-19 09:56:03.673;240;Theodore;Adams;6592 Bayshore Freeway;Augusta;FL;C
+2020-06-19 09:56:03.673;630;Ulysses;Harrison;7558 Carpinteria South;Saint Paul;OH;C
+2020-06-19 09:56:03.673;139;Ulysses;Grant;5350 Pacific Hwy S;Topeka;AR;C
+2020-06-19 09:56:03.673;101;Ulysses;Madison;2411 North Atherton Street;Charleston;NC;C
+2020-06-19 09:56:03.673;755;Bill;Harrison;4796 El Camino Real;Pierre;IN;A
+2020-06-19 09:56:03.673;754;Bill;Adams;5893 Fairview Avenue;Salem;OH;C
+2020-06-19 09:56:03.673;101;Richard;Van Buren;1960 Richmond Hill;Austin;CT;A
+2020-06-19 09:56:03.673;417;Jimmy;Adams;2287 North Broadway Street;Providence;IN;A
+2020-06-19 09:56:03.673;945;Ronald;Madison;8190 Cerrillos Road;Jefferson City;GA;B
+2020-06-19 09:56:03.673;955;Calvin;Roosevelt;9146 Redwood Highway;Raleigh;RI;A
+2020-06-19 09:56:03.673;386;Dwight;Hayes;6403 Hutchinson Rd;Lincoln;MA;C
+2020-06-19 09:56:03.673;819;Richard;McKinley;9338 Calle Real;Concord;GA;B
+2020-06-19 09:56:03.673;270;Ronald;Wilson;1736 South Roosevelt Drive;Raleigh;TN;C
+2020-06-19 09:56:03.673;373;Abraham;Tyler;263 Corona Del Mar;Saint Paul;TN;A
+2020-06-19 09:56:03.673;466;Franklin;Taft;7101 San Marcos;Lansing;HI;C
+2020-06-19 09:56:03.673;471;Ulysses;McKinley;5039 Padre Boulevard;Albany;TX;B
+2020-06-19 09:56:03.673;489;Andrew;Harding;3386 East Fry Blvd.;Charleston;LA;B
+2020-06-19 09:56:03.673;457;Herbert;Adams;5389 South Roosevelt Drive;Sacramento;CO;A
+2020-06-19 09:56:03.673;738;Chester;Taft;6140 South Roosevelt Drive;Albany;MI;A
+2020-06-19 09:56:03.673;107;John;Harrison;1547 Via Real;Harrisburg;AK;B
+2020-06-19 09:56:03.673;726;Calvin;Harrison;9609 W. Russell St.;Olympia;MN;C
+2020-06-19 09:56:03.673;169;Richard;Lincoln;8759 Harbor Dr;Madison;ND;A
+2020-06-19 09:56:03.673;200;Martin;Buchanan;2872 Fairview Avenue;Austin;NH;A
+2020-06-19 09:56:03.673;262;Bill;Lincoln;4332 Via Real;Tallahassee;WA;B
+2020-06-19 09:56:03.673;33;Calvin;Clinton;7238 Jean de la Fontaine;Santa Fe;IA;A
+2020-06-19 09:56:03.673;638;William;Taylor;2417 San Marcos;Nashville;NC;A
+2020-06-19 09:56:03.673;193;Woodrow;Van Buren;4434 S Rustle St;Concord;VT;C
+2020-06-19 09:56:03.673;200;Martin;Johnson;3491 Timberlane Drive;Lincoln;CT;B
+2020-06-19 09:56:03.673;497;Abraham;Washington;9280 North Ventu Park Road;Pierre;OH;B
+2020-06-19 09:56:03.673;226;Lyndon;Nixon;6212 San Marcos;Albany;GA;B
+2020-06-19 09:56:03.673;675;Rutherford;Garfield;5044 Via Real;Jefferson City;AK;B
+2020-06-19 09:56:03.673;76;Rutherford;Van Buren;2464 Katella Avenue;Trenton;WY;A
+2020-06-19 09:56:03.673;593;Gerald;McKinley;4301 Greenwood Road;Richmond;MO;B
+2020-06-19 09:56:03.673;268;Theodore;Harding;2905 East Main Street;Charleston;NH;A
+2020-06-19 09:56:03.673;206;Lyndon;Garfield;1892 Moreno Drive;Bismarck;MN;C
+2020-06-19 09:56:03.673;651;Grover;Roosevelt;6914 E Fowler Avenue;Little Rock;FL;B
+2020-06-19 09:56:03.673;964;Gerald;Adams;1595 Via Real;Indianapolis;WA;A
+2020-06-19 09:56:03.673;246;John;Roosevelt;1970 Santa Rosa South;Baton Rouge;VT;C
+2020-06-19 09:56:03.673;539;Calvin;McKinley;6027 El Camino Real;Madison;ME;A
+2020-06-19 09:56:03.673;564;Franklin;Adams;182 Woodson Rd.;Columbia;KY;B
+2020-06-19 09:56:03.673;493;Ulysses;Johnson;2560 Cabrillo Highway;Bismarck;OR;A
+2020-06-19 09:56:03.673;809;Herbert;Johnson;8223 Corona Del Mar;Des Moines;VA;B
+2020-06-19 09:56:03.673;549;Rutherford;Roosevelt;1547 San Ysidro Blvd;Frankfort;NC;A
+2020-06-19 09:56:03.673;171;Calvin;Ford;5608 South Highway;Boston;NE;C
+2020-06-19 09:56:03.673;899;Andrew;Truman;3924 N Harrison St;Providence;MO;B
+2020-06-19 09:56:03.673;181;Dwight;Jackson;1408 South Roosevelt Drive;Frankfort;OK;C
+2020-06-19 09:56:03.673;692;Andrew;Tyler;7859 East 1st Street;Salem;NE;B
+2020-06-19 09:56:03.673;624;Woodrow;Jackson;3741 San Simeon;Indianapolis;IN;C
+2020-06-19 09:56:03.673;495;Grover;Van Buren;1504 East 1st Street;Nashville;MI;B
+2020-06-19 09:56:03.673;291;William;Quincy;5904 Via Real;Jackson;WV;B
+2020-06-19 09:56:03.673;212;Dwight;Hayes;6603 Richmond Hill;Annapolis;GA;C
+2020-06-19 09:56:03.673;118;William;Hayes;4981 East 1st Street;Concord;TN;A
+2020-06-19 09:56:03.673;711;Herbert;Polk;7030 Newbury Road;Harrisburg;FL;C
+2020-06-19 09:56:03.673;987;Richard;Hoover;8351 South Roosevelt Drive;Tallahassee;NM;B
+2020-06-19 09:56:03.673;455;Gerald;Clinton;1569 Jones Road;Tallahassee;DE;B
+2020-06-19 09:56:03.673;608;Andrew;Hayes;8655 Lindbergh Blvd;Providence;WV;B
+2020-06-19 09:56:03.673;563;Jimmy;Tyler;8739 Monroe Street;Richmond;OH;A
+2020-06-19 09:56:03.673;897;Thomas;Buchanan;4355 Monroe Street;Tallahassee;FL;B
+2020-06-19 09:56:03.673;383;Woodrow;Harding;1794 Milpas Street;Juneau;IA;A
+2020-06-19 09:56:03.673;747;Warren;Wilson;7436 Greenwood Road;Dover;NY;C
+2020-06-19 09:56:03.673;198;Martin;Jackson;1624 Carpinteria Avenue;Charleston;DE;C
+2020-06-19 09:56:03.673;275;Martin;Polk;6974 Erringer Road;Albany;WA;A
+2020-06-19 09:56:03.673;94;John;Washington;4202 San Simeon;Little Rock;TN;C
+2020-06-19 09:56:03.673;830;Franklin;Ford;5476 Timberlane Drive;Little Rock;NC;C
+2020-06-19 09:56:03.673;971;George;Monroe;8919 Richmond Hill;Dover;NC;A
+2020-06-19 09:56:03.673;42;Woodrow;Roosevelt;1674 Westside Freeway;Indianapolis;HI;B
+2020-06-19 09:56:03.673;15;Dwight;Taylor;3261 Jean de la Fontaine;Trenton;MT;C
+2020-06-19 09:56:03.673;984;Franklin;Taft;4135 Lake Tahoe Blvd.;Dover;TN;C
+2020-06-19 09:56:03.673;532;Warren;Eisenhower;916 S Rustle St;Lansing;CT;C
+2020-06-19 09:56:03.673;758;George;Van Buren;9607 Camelback Rd;Indianapolis;HI;B
+2020-06-19 09:56:03.673;293;Harry;Grant;3901 Woodson Rd.;Madison;OR;C
+2020-06-19 09:56:03.674;477;Franklin;Hoover;8282 Camelback Rd;Annapolis;CA;C
+2020-06-19 09:56:03.674;432;Chester;Tyler;9743 W. Russell St.;Boston;NH;A
+2020-06-19 09:56:03.674;330;James;Van Buren;7116 Bayshore Freeway;Little Rock;MS;C
+2020-06-19 09:56:03.674;916;Millard;Kennedy;5108 Tanger Blvd;Des Moines;DE;A
+2020-06-19 09:56:03.674;787;Grover;Nixon;4776 Apalachee Parkway;Raleigh;NV;B
+2020-06-19 09:56:03.674;776;Benjamin;Clinton;2998 Burnett Road;Augusta;NE;C
+2020-06-19 09:56:03.674;687;Franklin;Hayes;4937 San Diego Freeway;Richmond;OR;A
+2020-06-19 09:56:03.674;26;William;Reagan;3797 Apalachee Parkway;Columbus;WI;B
+2020-06-19 09:56:03.674;560;Jimmy;Pierce;8237 Woodson Rd.;Indianapolis;IA;B
+2020-06-19 09:56:03.674;47;George;Jefferson;9616 Santa Ana Freeway;Columbus;TX;A
+2020-06-19 09:56:03.674;74;Warren;Buchanan;5815 Apalachee Parkway;Montpelier;MT;A
+2020-06-19 09:56:03.674;163;Harry;Eisenhower;1429 Tanger Blvd;Columbus;OK;B
+2020-06-19 09:56:03.674;660;Franklin;Lincoln;160 San Luis Obispo North;Santa Fe;ND;A
+2020-06-19 09:56:03.674;195;Dwight;Harding;4754 Redwood Highway;Annapolis;WV;C
+2020-06-19 09:56:03.674;689;Martin;Roosevelt;4325 Cerrillos Road;Salem;RI;B
+2020-06-19 09:56:03.674;160;Calvin;Truman;9662 North Erringer Road;Trenton;OH;A
+2020-06-19 09:56:03.674;955;Martin;Ford;9995 South Roosevelt Drive;Augusta;OK;C
+2020-06-19 09:56:03.674;841;James;Madison;2405 Bailard Avenue;Oklahoma City;MS;C
+2020-06-19 09:56:03.674;233;Thomas;Monroe;8507 Bayshore Freeway;Olympia;KS;B
+2020-06-19 09:56:03.674;182;George;Tyler;8796 San Luis Obispo North;Raleigh;PA;B
+2020-06-19 09:56:03.674;329;John;Wilson;3173 East Main Street;Boston;LA;A
+2020-06-19 09:56:03.674;959;Martin;Kennedy;5895 Santa Rosa South;Little Rock;FL;A
+2020-06-19 09:56:03.674;170;Ulysses;Nixon;2139 San Simeon;Des Moines;AL;C
+2020-06-19 09:56:03.674;912;Andrew;Roosevelt;4867 Bowles Avenue;Columbia;MO;A
+2020-06-19 09:56:03.674;502;Franklin;McKinley;5749 San Diego Freeway;Annapolis;NH;A
+2020-06-19 09:56:03.674;826;Benjamin;Adams;1310 Cabrillo Highway;Boston;AL;C
+2020-06-19 09:56:03.674;395;Benjamin;Pierce;1488 E Fowler Avenue;Carson City;OR;C
+2020-06-19 09:56:03.674;599;Dwight;Van Buren;8812 Redwood Highway;Columbia;OR;B
+2020-06-19 09:56:03.674;986;Abraham;Harrison;3713 San Luis Obispo North;Phoenix;ME;B
+2020-06-19 09:56:03.674;96;Andrew;Jefferson;3321 Moreno Drive;Juneau;KY;A
+2020-06-19 09:56:03.674;671;Richard;Coolidge;267 Monroe Street;Concord;NY;C
+2020-06-19 09:56:03.674;653;Rutherford;Lincoln;9573 Lawrenceville Suwanee;Raleigh;WI;A
+2020-06-19 09:56:03.674;824;Dwight;Carter;8978 East Calle Primera;Bismarck;NY;A
+2020-06-19 09:56:03.674;976;Richard;Washington;410 French Camp Turnpike Road;Concord;HI;C
+2020-06-19 09:56:03.674;219;Rutherford;Taft;3789 East Calle Primera;Frankfort;SC;B
+2020-06-19 09:56:03.674;708;Thomas;Arthur;7622 Santa Rosa North;Indianapolis;OK;A
+2020-06-19 09:56:03.674;501;John;Jefferson;9691 Corona Del Mar;Montgomery;IN;A
+2020-06-19 09:56:03.674;490;Woodrow;Johnson;1702 North Erringer Road;Hartford;MA;A
+2020-06-19 09:56:03.674;86;William;Wilson;3986 Corona Del Mar;Augusta;CT;B
+2020-06-19 09:56:03.674;258;Harry;Ford;1079 Bayshore Freeway;Montpelier;NC;B
+2020-06-19 09:56:03.674;967;Thomas;Truman;7667 Padre Boulevard;Pierre;KS;C
+2020-06-19 09:56:03.674;426;James;Quincy;6662 East 1st Street;Charleston;NE;A
+2020-06-19 09:56:03.674;537;Franklin;Tyler;9363 Santa Rosa South;Saint Paul;MT;C
+2020-06-19 09:56:03.674;227;Franklin;Van Buren;1142 Bayshore Freeway;Helena;IN;B
+2020-06-19 09:56:03.674;322;Zachary;Johnson;1152 East Fry Blvd.;Harrisburg;NH;A
+2020-06-19 09:56:03.674;105;Thomas;Eisenhower;8176 Bailard Avenue;Topeka;WA;C
+2020-06-19 09:56:03.674;954;Grover;Buchanan;558 Pacific Hwy S;Harrisburg;WA;B
+2020-06-19 09:56:03.674;926;Bill;Kennedy;5721 Bowles Avenue;Little Rock;MD;C
+2020-06-19 09:56:03.674;855;Herbert;Madison;5601 Pacific Hwy S;Topeka;MI;B
+2020-06-19 09:56:03.674;249;Theodore;Johnson;6386 Carpinteria South;Springfield;WV;C
+2020-06-19 09:56:03.674;294;Thomas;Polk;9836 Redwood Highway;Sacramento;SD;C
+2020-06-19 09:56:03.674;891;Richard;Jackson;473 S Rustle St;Nashville;NE;B
+2020-06-19 09:56:03.674;107;Dwight;Quincy;9468 S Rustle St;Bismarck;LA;B
+2020-06-19 09:56:03.674;408;Millard;Madison;4986 W. Russell St.;Baton Rouge;OH;B
+2020-06-19 09:56:03.674;159;Herbert;Hoover;9251 Lake Tahoe Blvd.;Albany;NV;C
+2020-06-19 09:56:03.674;686;John;Tyler;5500 East Main Street;Dover;UT;A
+2020-06-19 09:56:03.674;277;Thomas;Harrison;1396 Bayshore Freeway;Little Rock;SC;B
+2020-06-19 09:56:03.674;745;Woodrow;Quincy;2722 East Calle Primera;Lansing;KS;B
+2020-06-19 09:56:03.674;478;Dwight;Harding;4416 Lindbergh Blvd;Springfield;NY;C
+2020-06-19 09:56:03.674;631;Bill;Eisenhower;3478 Jones Road;Jefferson City;AL;A
+2020-06-19 09:56:03.674;550;Dwight;Jefferson;4902 Harbor Dr;Des Moines;NC;B
+2020-06-19 09:56:03.674;572;Millard;Johnson;853 Lawrenceville Suwanee;Sacramento;AR;A
+2020-06-19 09:56:03.674;186;Woodrow;Johnson;7866 Richmond Hill;Columbia;MT;A
+2020-06-19 09:56:03.674;682;Bill;Harrison;537 North Broadway Street;Tallahassee;ME;C
+2020-06-19 09:56:03.674;717;Benjamin;Taylor;2466 Westside Freeway;Des Moines;FL;C
+2020-06-19 09:56:03.674;784;Lyndon;Eisenhower;1060 Grandview Drive;Montpelier;OH;A
+2020-06-19 09:56:03.674;532;Thomas;McKinley;3084 North Preisker Lane;Nashville;OR;B
+2020-06-19 09:56:03.674;993;Chester;Grant;4835 Santa Ana Freeway;Honolulu;OH;B
+2020-06-19 09:56:03.674;408;Theodore;Wilson;4961 Carpinteria North;Annapolis;OR;A
+2020-06-19 09:56:03.674;15;Warren;Grant;7243 Tully Road East;Madison;RI;C
+2020-06-19 09:56:03.674;304;Dwight;Ford;9452 San Simeon;Lincoln;HI;A
+2020-06-19 09:56:03.674;501;Dwight;Adams;8841 Pacific Hwy S;Salem;NE;A
+2020-06-19 09:56:03.674;475;Richard;Roosevelt;8459 Westside Freeway;Baton Rouge;NV;B
+2020-06-19 09:56:03.674;387;Ulysses;Harrison;7261 San Marcos;Olympia;NJ;B

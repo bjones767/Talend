@@ -1,0 +1,38 @@
+package routines;
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.util.Date;
+import java.util.regex.Pattern;
+
+
+public class TBD002_Movies {
+
+    public static String getValidJson(String MovieID, String Json, String Tag) {
+    	if (Relational.ISNULL(Json ) || Relational.ISNULL(MovieID ))
+    		return "";
+        return  "{\"id\": "+MovieID+" ,\""+Tag+"\":"+((Pattern.compile("\"\"").matcher(Json).replaceAll("'")).replace("\"","'")).replace("{'","{\"").replace("':","\":").replace(": '",": \"").replace(", '",", \"").replace("',","\",").replace("'}","\"}").replace("None","\"None\"").replace("''","'")+"}";
+        
+
+    }
+    public static String getValidJson(Integer MovieID, String Json, String Tag) {
+    	if (Relational.ISNULL(Json ) || Relational.ISNULL(MovieID ))
+    		return "";
+        return  "{\"id\": "+MovieID+" ,\""+Tag+"\":"+((Pattern.compile("\"\"").matcher(Json).replaceAll("'")).replace("\"","'")).replace("{'","{\"").replace("':","\":").replace(": '",": \"").replace(", '",", \"").replace("',","\",").replace("'}","\"}").replace("None","\"None\"").replace("''","'")+"}";
+        
+
+    }
+    public static int extractYear(Date date) {
+
+    	if (Relational.ISNULL(date))
+    		return 0;
+    	LocalDate localDate = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+    	return localDate.getYear();
+
+        
+
+    }
+    
+    
+    
+   
+   }

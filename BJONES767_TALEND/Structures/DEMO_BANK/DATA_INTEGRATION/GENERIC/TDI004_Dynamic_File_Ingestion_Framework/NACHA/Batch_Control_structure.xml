@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='150' id='1' V150='13' creationTimestamp='0x16c8c37225a' V1='4' name='Batch_Control_structure' incarnation='17'>
+  <rootElem t='167' id='2' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Root'>
+    <structNode t='150' idref='1'/>
+    <child t='167' id='3' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Row' checksumValid='true' checksum='tdpnGVtCPBKfTzRmx+CKY//jOkg='>
+      <structNode t='150' idref='1'/>
+      <child t='167' id='4' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Record_Type_Code_' description='  '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='5' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='3' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Service_Class_' description='Numeric '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='6' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='6' maxSize='6' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Entry_Count_' description='Numeric. Fill with zeros to left '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='7' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='10' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Entry_Hash_' description='Numeric '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='8' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='12' maxSize='12' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Total_Debit_Amount_' description='Numeric. Fill with zeros to left '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='9' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='12' maxSize='12' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Total_Credit_Amount_' description='Numeric. Fill with zeros to left '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='10' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='10' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Company_ID_' description='  '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='11' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='25' maxSize='25' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Filler_' description='Blanks '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='12' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='8' maxSize='8' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Origination_ID_' description='Numeric. Fill with zeros to left '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='13' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Sequence_' description='Numeric. Fill with zeros to left '>
+        <structNode t='150' idref='1'/>
+      </child>
+    </child>
+  </rootElem>
+  <child t='162' id='14' V1='4' name='Representations'>
+  </child>
+  <child t='165' id='15' V1='4' name='Document Bindings'>
+  </child>
+</root>

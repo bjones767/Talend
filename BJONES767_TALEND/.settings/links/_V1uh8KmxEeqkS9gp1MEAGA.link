@@ -1,0 +1,23 @@
+{
+  "itemId" : "_V1uh8KmxEeqkS9gp1MEAGA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_pj-VkKmuEeqkS9gp1MEAGA",
+    "parameterList" : [ {
+      "id" : "_btztkMCEEeq8_boSsrrDsQ",
+      "name" : "ActiveMQ_Broker_Name"
+    }, {
+      "id" : "_btztkcCEEeq8_boSsrrDsQ",
+      "name" : "ActiveMQ_Broker_Host"
+    }, {
+      "id" : "_btztksCEEeq8_boSsrrDsQ",
+      "name" : "ActiveMQ_Broker_Port"
+    }, {
+      "id" : "_btztk8CEEeq8_boSsrrDsQ",
+      "name" : "ActiveMQ_Broker_IsPersistent"
+    }, {
+      "id" : "_btztlMCEEeq8_boSsrrDsQ",
+      "name" : "ActiveMQ_Broker_Persistence_Dir"
+    } ]
+  } ]
+}

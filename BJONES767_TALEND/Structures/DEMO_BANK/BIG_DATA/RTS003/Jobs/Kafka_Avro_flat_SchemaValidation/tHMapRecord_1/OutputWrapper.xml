@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='150' id='1' V150='13' creationTimestamp='0x166a01ee266' V1='4' name='OutputWrapper' incarnation='31'>
+  <rootElem t='167' id='27' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
+    <structNode t='150' idref='1'/>
+    <child t='167' id='28' V167='21' differentFromInheritedCount='1' inheritsFromIncarnation='13' inheritsFromTimestamp='0x166a01ee110' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='out'>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='29' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='out'>
+      </savedDerivedCopy>
+      <child t='167' id='33' V167='21' differentFromInherited='true' inheritsFromIncarnation='13' inheritsFromTimestamp='0x166a01ee110' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='outRecord' checksumValid='true' checksum='0G78DDSF6EYQD/15G+lOBbvBOAE='>
+        <structNode t='150' idref='1'/>
+        <savedOrigCopy t='167' id='34' V167='21' inheritsFromIncarnation='19' inheritsFromTimestamp='0x166a01ee0d1' inheritsInThisStruct='true' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='outRecord' checksumValid='true' checksum='0Ovb1NgK8j/X2oFWQQKQmpBw73Y='>
+        </savedOrigCopy>
+        <child t='167' id='35' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' V1='4' name='username'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='36' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' V1='4' name='username'>
+          </savedOrigCopy>
+        </child>
+        <child t='167' id='37' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' avroNullPosition='1' V281='13' V1='4' name='age'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='38' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' avroNullPosition='1' V281='13' V1='4' name='age'>
+          </savedOrigCopy>
+        </child>
+        <child t='167' id='39' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' V1='4' name='phone'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='40' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' V1='4' name='phone'>
+          </savedOrigCopy>
+        </child>
+        <child t='167' id='41' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' V1='4' name='country'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='42' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' V1='4' name='country'>
+          </savedOrigCopy>
+        </child>
+        <child t='167' id='43' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' V1='4' name='housenum'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='44' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' V1='4' name='housenum'>
+          </savedOrigCopy>
+        </child>
+        <child t='167' id='45' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' V1='4' name='street'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='46' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' V1='4' name='street'>
+          </savedOrigCopy>
+        </child>
+        <child t='167' id='47' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' V1='4' name='zip'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='48' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' V1='4' name='zip'>
+          </savedOrigCopy>
+        </child>
+        <child t='167' id='49' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' V1='4' name='city'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='50' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' V1='4' name='city'>
+          </savedOrigCopy>
+        </child>
+      </child>
+    </child>
+  </rootElem>
+  <defaultRep t='179' id='30' V179='1' V170='10' V699='1' V690='1' ignoreExcluded='true' fixInvalidCharacters='true' V1='4' name='AVRO'>
+  </defaultRep>
+  <child t='162' id='6' V1='4' name='Representations'>
+    <child t='177' id='31' V177='1' V170='10' V697='1' V690='1' padOutput='true' ignoreExcluded='true' fixInvalidCharacters='true' V1='4' name='JSON'>
+    </child>
+    <child t='179' idref='30'/>
+    <child t='172' id='32' V172='6' autoFixNamespaceMismatch='true' V170='10' V692='1' V690='1' ignoreExcluded='true' fixInvalidCharacters='true' V1='4' name='XML'>
+    </child>
+  </child>
+  <child t='165' id='9' V1='4' name='Document Bindings'>
+    <child t='166' id='26' V166='5' docType='1' V1='4' name='/root'>
+      <elemNode t='167' idref='27'/>
+    </child>
+  </child>
+</root>

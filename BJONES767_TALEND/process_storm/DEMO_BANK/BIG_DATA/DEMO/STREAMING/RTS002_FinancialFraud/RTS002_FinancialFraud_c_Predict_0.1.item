@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" framework="Spark_Streaming" jobType="Big_Data_Streaming" xmi:id="_kHRHJWxaEe6LRLlRuuap-Q" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default" xmi:id="_kHRHJmxaEe6LRLlRuuap-Q">
+    <contextParameter comment="" internalId="_dKP2YMCEEeq8_boSsrrDsQ" name="demo_data_limit" prompt="demo_data_limit?" promptNeeded="true" type="id_Integer" value="500000" xmi:id="_kHRHJ2xaEe6LRLlRuuap-Q"/>
+    <contextParameter comment="" internalId="_dKP2YcCEEeq8_boSsrrDsQ" name="kafka_broker" prompt="kafka_broker?" promptNeeded="false" type="id_String" value="localhost:9092" xmi:id="_kHRHKGxaEe6LRLlRuuap-Q"/>
+    <contextParameter comment="" internalId="_dKP2YsCEEeq8_boSsrrDsQ" name="kafka_root_dir" prompt="kafka_root_dir?" promptNeeded="true" type="id_String" value="/tmp/kafka/bin/windows/" xmi:id="_kHRHKWxaEe6LRLlRuuap-Q"/>
+    <contextParameter comment="" internalId="_dKP2Y8CEEeq8_boSsrrDsQ" name="kafka_topic_name" prompt="kafka_topic_name?" promptNeeded="false" type="id_String" value="fin_transactions" xmi:id="_kHRHKmxaEe6LRLlRuuap-Q"/>
+    <contextParameter comment="" internalId="_dKP2ZMCEEeq8_boSsrrDsQ" name="ml_model_parameter_file" prompt="ml_model_parameter_file?" promptNeeded="true" type="id_String" value="/tmp/Fraud/Financial_Fraud_Model/" xmi:id="_kHRHK2xaEe6LRLlRuuap-Q"/>
+    <contextParameter comment="" internalId="_dKP2ZcCEEeq8_boSsrrDsQ" name="mysql_db" prompt="mysql_db?" promptNeeded="true" type="id_String" value="fraud_demo" xmi:id="_kHRHLGxaEe6LRLlRuuap-Q"/>
+    <contextParameter comment="" internalId="_dKP2ZsCEEeq8_boSsrrDsQ" name="mysql_host" prompt="mysql_host?" promptNeeded="true" type="id_String" value="localhost" xmi:id="_kHRHLWxaEe6LRLlRuuap-Q"/>
+    <contextParameter comment="" internalId="_dKP2Z8CEEeq8_boSsrrDsQ" name="mysql_password" prompt="mysql_password?" promptNeeded="true" type="id_Password" value="enc:system.encryption.key.v1:h95SUvHTd7xGKEUywyNq1aup43Sx7JnURSboGNmqbMG06jrB" xmi:id="_kHRHLmxaEe6LRLlRuuap-Q"/>
+    <contextParameter comment="" internalId="_dKP2aMCEEeq8_boSsrrDsQ" name="mysql_table" prompt="mysql_table?" promptNeeded="false" type="id_String" value="fin_transactions" xmi:id="_kHRHL2xaEe6LRLlRuuap-Q"/>
+    <contextParameter comment="" internalId="_dKP2acCEEeq8_boSsrrDsQ" name="mysql_user" prompt="mysql_user?" promptNeeded="true" type="id_String" value="root" xmi:id="_kHRHMGxaEe6LRLlRuuap-Q"/>
+    <contextParameter comment="" internalId="_dKP2asCEEeq8_boSsrrDsQ" name="payment_input_file" prompt="payment_input_file?" promptNeeded="true" type="id_String" value="/tmp/Fraud/data/PS_20174392719_1491204439457_log.csv" xmi:id="_kHRHMWxaEe6LRLlRuuap-Q"/>
+    <contextParameter comment="" internalId="_dKP2a8CEEeq8_boSsrrDsQ" name="payments_balanced_file" prompt="payments_balanced_file?" promptNeeded="true" type="id_String" value="/tmp/Fraud/paysim_train_balanced" xmi:id="_kHRHMmxaEe6LRLlRuuap-Q"/>
+    <contextParameter comment="" internalId="_dKP2bMCEEeq8_boSsrrDsQ" name="streaming_duration" prompt="streaming_duration?" promptNeeded="false" type="id_Integer" value="10000" xmi:id="_kHRHM2xaEe6LRLlRuuap-Q"/>
+    <contextParameter comment="" internalId="_dKP2bcCEEeq8_boSsrrDsQ" name="zookeeper_qourum" prompt="zookeeper_qourum?" promptNeeded="false" type="id_String" value="localhost:2181" xmi:id="_kHRHNGxaEe6LRLlRuuap-Q"/>
+  </context>
+  <parameters xmi:id="_kHRHNWxaEe6LRLlRuuap-Q">
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0" xmi:id="_kHRHNmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0" xmi:id="_kHRHN2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value="" xmi:id="_kHRHOGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value="" xmi:id="_kHRHOWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value="" xmi:id="_kHRHOmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value="" xmi:id="_kHRHO2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value="" xmi:id="_kHRHPGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value="" xmi:id="_kHRHPWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value="" xmi:id="_kHRHPmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value="" xmi:id="_kHRHP2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value="" xmi:id="_kHRHQGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value="" xmi:id="_kHRHQWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value="" xmi:id="_kHRHQmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value="" xmi:id="_kHRHQ2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value="" xmi:id="_kHRHRGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value="" xmi:id="_kHRHRWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value="" xmi:id="_kHRHRmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true" xmi:id="_kHRHR2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true" xmi:id="_kHRHSGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false" xmi:id="_kHRHSWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000" xmi:id="_kHRHSmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false" xmi:id="_kHRHS2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false" xmi:id="_kHRHTGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false" xmi:id="_kHRHTWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;" xmi:id="_kHRHTmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;" xmi:id="_kHRHT2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false" xmi:id="_kHRHUGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15" xmi:id="_kHRHUWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15" xmi:id="_kHRHUmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value="" xmi:id="_kHRHU2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value="" xmi:id="_kHRHVGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_kHRHVWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false" xmi:id="_kHRHVmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_kHRHV2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_kHRHWGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_kHRHWWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_kHRHWmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_kHRHW2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_kHRHXGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_kHRHXWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_kHRHXmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:w5SSaevUxUaSbhEqpKWzUuYmdBrO8xKS+qzvBURl" xmi:id="_kHRHX2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_kHRHYGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_kHRHYWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;" xmi:id="_kHRHYmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning" xmi:id="_kHRHY2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning" xmi:id="_kHRHZGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false" xmi:id="_kHRHZWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false" xmi:id="_kHRHZmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false" xmi:id="_kHRHZ2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false" xmi:id="_kHRHaGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false" xmi:id="_kHRHaWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false" xmi:id="_kHRHamxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false" xmi:id="_kHRHa2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false" xmi:id="_kHRHbGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false" xmi:id="_kHRHbWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend/Cloud/Talend-Studio-20200219_1130-V7.3.1/workspace/.metadata&quot;" xmi:id="_kHRHbmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;" xmi:id="_kHRHb2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;" xmi:id="_kHRHcGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;" xmi:id="_kHRHcWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15" xmi:id="_kHRHcmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15" xmi:id="_kHRHc2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false" xmi:id="_kHRHdGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput" xmi:id="_kHRHdWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12" xmi:id="_kHRHdmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;" xmi:id="_kHRHd2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false" xmi:id="_kHRHeGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;" xmi:id="_kHRHeWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;" xmi:id="_kHRHemxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;" xmi:id="_kHRHe2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;" xmi:id="_kHRHfGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;" xmi:id="_kHRHfWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;" xmi:id="_kHRHfmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;" xmi:id="_kHRHf2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;" xmi:id="_kHRHgGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;" xmi:id="_kHRHgWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:gTVMWDJLKPI3VM7Rbx01nf1dq5tZEGLmOUo4HxgZ" xmi:id="_kHRHgmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;" xmi:id="_kHRHg2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;" xmi:id="_kHRHhGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;" xmi:id="_kHRHhWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;" xmi:id="_kHRHhmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true" xmi:id="_kHRHh2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true" xmi:id="_kHRHiGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true" xmi:id="_kHRHiWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false" xmi:id="_kHRHimxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value="" xmi:id="_kHRHi2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false" xmi:id="_kHRHjGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value="" xmi:id="_kHRHjWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value="" xmi:id="_kHRHjmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value="" xmi:id="_kHRHj2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value="" xmi:id="_kHRHkGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false" xmi:id="_kHRHkWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value="" xmi:id="_kHRHkmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value="" xmi:id="_kHRHk2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value="" xmi:id="_kHRHlGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="SPARK_LOCAL_MODE" value="true" xmi:id="_kHRHlWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="SPARK_LOCAL_VERSION" value="SPARK_2_1_0" xmi:id="_kHRHlmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="SPARK_VERSION" show="false" value="SPARK_2_4_x" xmi:id="_kHRHl2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="SUPPORTED_SPARK_VERSION" show="false" value="SPARK_3_0_x" xmi:id="_kHRHmGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="SPARKSTREAMING" show="false" value="" xmi:id="_kHRHmWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" show="false" value="" xmi:id="_kHRHmmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="** The version of Spark must be 1.3.0 or later." xmi:id="_kHRHm2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="SPARK_API_VERSION" show="false" value="SPARK_200" xmi:id="_kHRHnGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="SET_HDP_VERSION" show="false" value="false" xmi:id="_kHRHnWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="HDP_VERSION" show="false" value="&quot;x.x.x.x-x&quot;" xmi:id="_kHRHnmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="SPARK_MODE" show="false" value="SPARK_LOCAL" xmi:id="_kHRHn2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="RESOURCE_MANAGER" show="false" value="&quot;&quot;" xmi:id="_kHRHoGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="SET_SCHEDULER_ADDRESS" show="false" value="false" xmi:id="_kHRHoWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_SCHEDULER_ADDRESS" show="false" value="&quot;&quot;" xmi:id="_kHRHomxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="SET_JOBHISTORY_ADDRESS" show="false" value="false" xmi:id="_kHRHo2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="JOBHISTORY_ADDRESS" show="false" value="&quot;&quot;" xmi:id="_kHRHpGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="SET_STAGING_DIRECTORY" show="false" value="false" xmi:id="_kHRHpWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="STAGING_DIRECTORY" show="false" value="&quot;/user&quot;" xmi:id="_kHRHpmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_CONF" show="false" value="false" xmi:id="_kHRHp2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="HADOOP_CONF_SPECIFIC_JAR" show="false" value="&quot;path/to/hadoop_conf.jar&quot;" xmi:id="_kHRHqGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="HDINSIGHT_ENDPOINT" show="false" value="&quot;https://xxxx.azurehdinsight.net&quot;" xmi:id="_kHRHqWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="HDINSIGHT_USERNAME" show="false" value="&quot;&quot;" xmi:id="_kHRHqmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="PASSWORD" name="HDINSIGHT_PASSWORD" show="false" value="enc:system.encryption.key.v1:vc/ROzGYyLzwLjHDv233GPMJzEIc/+uX/yNPTsU5" xmi:id="_kHRHq2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="LIVY_HOST" show="false" value="&quot;&quot;" xmi:id="_kHRHrGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="LIVY_PORT" show="false" value="&quot;443&quot;" xmi:id="_kHRHrWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="LIVY_USERNAME" show="false" value="&quot;&quot;" xmi:id="_kHRHrmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="HDINSIGHT_USERNAME" show="false" value="&quot;&quot;" xmi:id="_kHRHr2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="PASSWORD" name="HDINSIGHT_PASSWORD" show="false" value="enc:system.encryption.key.v1:doWt4rMJhmga3ynrc2yLPB+Dg6FY2ieTwCOi77yh" xmi:id="_kHRHsGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="WASB_HOST" show="false" value="&quot;&quot;" xmi:id="_kHRHsWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="WASB_CONTAINER" show="false" value="&quot;&quot;" xmi:id="_kHRHsmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="WASB_USERNAME" show="false" value="&quot;&quot;" xmi:id="_kHRHs2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="PASSWORD" name="WASB_PASSWORD" show="false" value="enc:system.encryption.key.v1:Ft2zIXY/8S6EKwVJ0FMPwFynf03zchosf+aWTea/" xmi:id="_kHRHtGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="REMOTE_FOLDER" show="false" value="&quot;&quot;" xmi:id="_kHRHtWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="SPARK_HOST" show="false" value="&quot;spark://localhost:7077&quot;" xmi:id="_kHRHtmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="SPARK_HOME" show="false" value="&quot;/usr/lib/spark&quot;" xmi:id="_kHRHt2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="DEFINE_HADOOP_HOME_DIR" value="false" xmi:id="_kHRHuGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="HADOOP_HOME_DIR" show="false" value="&quot;C:/Talend/winutils&quot;" xmi:id="_kHRHuWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="DEFINE_SPARK_DRIVER_HOST" show="false" value="false" xmi:id="_kHRHumxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="SPARK_DRIVER_HOST" show="false" value="&quot;127.0.0.1&quot;" xmi:id="_kHRHu2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="STREAMING_BATCH_SIZE" value="1000" xmi:id="_kHRHvGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="DEFINE_DURATION" value="false" xmi:id="_kHRHvWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="STREAMING_DURATION" show="false" value="10000" xmi:id="_kHRHvmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="USE_CHECKPOINT" value="false" xmi:id="_kHRHv2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="CHECKPOINT_DIR" show="false" value="&quot;&quot;" xmi:id="_kHRHwGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="GOOGLE_PROJECT_ID" show="false" value="&quot;my-google-project&quot;" xmi:id="_kHRHwWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="GOOGLE_CLUSTER_ID" show="false" value="&quot;my-cluster-id&quot;" xmi:id="_kHRHwmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="GOOGLE_REGION" show="false" value="&quot;global&quot;" xmi:id="_kHRHw2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="GOOGLE_JARS_BUCKET" show="false" value="&quot;gs://my-bucket/talend/jars&quot;" xmi:id="_kHRHxGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="DEFINE_PATH_TO_GOOGLE_CREDENTIALS" show="false" value="false" xmi:id="_kHRHxWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="PATH_TO_GOOGLE_CREDENTIALS" show="false" value="&quot;&quot;" xmi:id="_kHRHxmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="ALTUS_SET_CREDENTIALS" show="false" value="false" xmi:id="_kHRHx2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="ALTUS_ACCESS_KEY" show="false" value="&quot;&quot;" xmi:id="_kHRHyGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="FILE" name="ALTUS_SECRET_KEY" show="false" value="&quot;&quot;" xmi:id="_kHRHyWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="ALTUS_CLI_PATH" show="false" value="&quot;/opt/altuscli/altusclienv/bin/altus&quot;" xmi:id="_kHRHymxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="ALTUS_REUSE_CLUSTER" show="false" value="false" xmi:id="_kHRHy2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="ALTUS_CLUSTER_NAME" show="false" value="&quot;talend-altus-cluster&quot;" xmi:id="_kHRHzGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="ALTUS_CLOUD_PROVIDER" show="false" value="&quot;AWS&quot;" xmi:id="_kHRHzWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="ALTUS_ENVIRONMENT_NAME" show="false" value="&quot;talend-altus-cluster&quot;" xmi:id="_kHRHzmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="ALTUS_DELETE_AFTER_EXECUTION" show="false" value="false" xmi:id="_kHRHz2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="ALTUS_S3_ACCESS_KEY" show="false" value="&quot;&quot;" xmi:id="_kHRH0GxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="PASSWORD" name="ALTUS_S3_SECRET_KEY" show="false" value="enc:system.encryption.key.v1:8xVXfwtyW9kmvLlppK6dHfs6WSZvKR9owZpfojvF" xmi:id="_kHRH0WxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="OPENED_LIST" name="ALTUS_S3_REGION" show="false" value="&quot;us-east-1&quot;" xmi:id="_kHRH0mxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="ALTUS_BUCKET_NAME" show="false" value="&quot;my-bucket&quot;" xmi:id="_kHRH02xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="ALTUS_JARS_BUCKET" show="false" value="&quot;talend/jars/&quot;" xmi:id="_kHRH1GxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="ALTUS_AZURE_ADLS_ACCOUNT_FQDN" show="false" value="&quot;xxxx.azuredatalakestore.net&quot;" xmi:id="_kHRH1WxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="ALTUS_AZURE_APP_ID" show="false" value="&quot;&quot;" xmi:id="_kHRH1mxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="PASSWORD" name="ALTUS_AZURE_TOKEN_ENDPOINT" show="false" value="enc:system.encryption.key.v1:ybbQAaWblrSwfPfgJ5CdkpR+9ymBdsIKP+9/vgAD" xmi:id="_kHRH12xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="PASSWORD" name="ALTUS_AZURE_APP_KEY" show="false" value="enc:system.encryption.key.v1:M6gx/HZFcxjc55qmNhmvidg4Y93ZObowtcKahRZa" xmi:id="_kHRH2GxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="ALTUS_USE_CUSTOM_JSON" show="false" value="false" xmi:id="_kHRH2WxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="MEMO" name="ALTUS_CUSTOM_JSON" show="false" value="{}" xmi:id="_kHRH2mxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="OPENED_LIST" name="ALTUS_INSTANCE_TYPE" show="false" value="&quot;c4.2xlarge&quot;" xmi:id="_kHRH22xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="OPENED_LIST" name="ALTUS_AZURE_INSTANCE_TYPE" show="false" value="&quot;STANDARD_DS12_V2&quot;" xmi:id="_kHRH3GxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="ALTUS_WORKER_NODE" show="false" value="&quot;10&quot;" xmi:id="_kHRH3WxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="FILE" name="ALTUS_SSH_KEY" show="false" value="" xmi:id="_kHRH3mxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="FILE" name="ALTUS_CUSTOM_BOOTSTRAP_SCRIPT" show="false" value="" xmi:id="_kHRH32xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="ALTUS_CLOUDERA_MANAGER_USERNAME" show="false" value="&quot;altus&quot;" xmi:id="_kHRH4GxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="PASSWORD" name="ALTUS_CLOUDERA_MANAGER_PASSWORD" show="false" value="" xmi:id="_kHRH4WxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="USE_KRB" show="false" value="false" xmi:id="_kHRH4mxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_PRINCIPAL" show="false" value="&quot;yarn/_HOST@EXAMPLE.COM&quot;" xmi:id="_kHRH42xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="JOBHISTORY_PRINCIPAL" show="false" value="&quot;mapred/_HOST@EXAMPLE.COM&quot;" xmi:id="_kHRH5GxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" show="false" value="false" xmi:id="_kHRH5WxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" show="false" value="&quot;hdfs&quot;" xmi:id="_kHRH5mxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" show="false" value="&quot;/tmp/hdfs.headless.keytab&quot;" xmi:id="_kHRH52xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" show="false" value="false" xmi:id="_kHRH6GxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" show="false" value="enc:system.encryption.key.v1:oc81/yjKonKtGbCiM/A0PdDZjLLzxjL8UnDLKlaU" xmi:id="_kHRH6WxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" show="false" value="&quot;demo.mapr.com&quot;" xmi:id="_kHRH6mxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" show="false" value="86400L" xmi:id="_kHRH62xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" show="false" value="false" xmi:id="_kHRH7GxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" show="false" value="&quot;/opt/mapr&quot;" xmi:id="_kHRH7WxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" show="false" value="false" xmi:id="_kHRH7mxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" show="false" value="&quot;kerberos&quot;" xmi:id="_kHRH72xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;&quot;" xmi:id="_kHRH8GxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="ADVANCED_SETTINGS_CHECK" value="false" xmi:id="_kHRH8WxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="SPARK_DRIVER_MEM" show="false" value="&quot;512m&quot;" xmi:id="_kHRH8mxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="SPARK_DRIVER_CORES" show="false" value="&quot;1&quot;" xmi:id="_kHRH82xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="SPARK_YARN_AM_SETTINGS_CHECK" show="false" value="false" xmi:id="_kHRH9GxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="SPARK_YARN_AM_MEM" show="false" value="&quot;512m&quot;" xmi:id="_kHRH9WxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="SPARK_YARN_AM_CORES" show="false" value="&quot;1&quot;" xmi:id="_kHRH9mxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="SPARK_EXECUTOR_MEM" show="false" value="&quot;512m&quot;" xmi:id="_kHRH92xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="SET_SPARK_EXECUTOR_MEM_OVERHEAD" show="false" value="false" xmi:id="_kHRH-GxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="SPARK_EXECUTOR_MEM_OVERHEAD" show="false" value="&quot;384&quot;" xmi:id="_kHRH-WxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="SPARK_EXECUTOR_CORES_CHECK" show="false" value="false" xmi:id="_kHRH-mxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="SPARK_EXECUTOR_CORES" show="false" value="&quot;1&quot;" xmi:id="_kHRH-2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="SPARK_YARN_ALLOC_TYPE" show="false" value="AUTO" xmi:id="_kHRH_GxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="SPARK_EXECUTOR_INSTANCES" show="false" value="&quot;2&quot;" xmi:id="_kHRH_WxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="SPARK_YARN_DYN_INIT" show="false" value="&quot;1&quot;" xmi:id="_kHRH_mxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="SPARK_YARN_DYN_MIN" show="false" value="&quot;0&quot;" xmi:id="_kHRH_2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="SPARK_YARN_DYN_MAX" show="false" value="&quot;MAX&quot;" xmi:id="_kHRIAGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="WEB_UI_PORT_CHECK" show="false" value="false" xmi:id="_kHRIAWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="WEB_UI_PORT" show="false" value="&quot;4040&quot;" xmi:id="_kHRIAmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="SPARK_BROADCAST_FACTORY" show="false" value="AUTO" xmi:id="_kHRIA2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="CUSTOMIZE_SPARK_SERIALIZER" show="false" value="false" xmi:id="_kHRIBGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="SPARK_SERIALIZER" show="false" value="&quot;org.apache.spark.serializer.KryoSerializer&quot;" xmi:id="_kHRIBWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="ENABLE_BACKPRESSURE" show="false" value="false" xmi:id="_kHRIBmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="ENABLE_SPARK_EVENT_LOGGING" show="false" value="false" xmi:id="_kHRIB2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="COMPRESS_SPARK_EVENT_LOGS" show="false" value="false" xmi:id="_kHRICGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="SPARK_EVENT_LOG_DIR" show="false" value="&quot;hdfs://namenode:8020/user/spark/applicationHistory&quot;&#10;&#9;&#9;&#9;" xmi:id="_kHRICWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="SPARKHISTORY_ADDRESS" show="false" value="&quot;sparkHistoryServer:18080&quot;" xmi:id="_kHRICmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="SPARK_SCRATCH_DIR" value="&quot;/tmp&quot;" xmi:id="_kHRIC2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="WAIT_FOR_THE_JOB_TO_COMPLETE" show="false" value="true" xmi:id="_kHRIDGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TABLE" name="SPARK_ADVANCED_PROPERTIES" xmi:id="_kHRIDWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="DATABRICKS_CLOUD_PROVIDER" show="false" value="&quot;AWS&quot;" xmi:id="_kHRIDmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="DATABRICKS_ENDPOINT" show="false" value="&quot;https://westeurope.azuredatabricks.net&quot;" xmi:id="_kHRID2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="DATABRICKS_CLUSTER_ID" show="false" value="&quot;&quot;" xmi:id="_kHRIEGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="PASSWORD" name="DATABRICKS_TOKEN" show="false" value="enc:system.encryption.key.v1:MInpr/503BDldB1DnlbE/SWi67XMLsd3BnMXTNWv" xmi:id="_kHRIEWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="DATABRICKS_DBFS_DEP_FOLDER" show="false" value="&quot;&quot;" xmi:id="_kHRIEmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="DATABRICKS_TIMEOUT_REQUESTS" show="false" value="30000" xmi:id="_kHRIE2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="DATABRICKS_USE_TRANSIENT_CLUSTER" show="false" value="false" xmi:id="_kHRIFGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="DATABRICKS_USE_PRODUCTION_MODE" show="false" value="false" xmi:id="_kHRIFWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="DATABRICKS_AUTOSCALE" show="false" value="false" xmi:id="_kHRIFmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="DATABRICKS_NUM_WORKERS" show="false" value="2" xmi:id="_kHRIF2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="DATABRICKS_AUTOSCALE_MIN" show="false" value="2" xmi:id="_kHRIGGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="DATABRICKS_AUTOSCALE_MAX" show="false" value="10" xmi:id="_kHRIGWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="OPENED_LIST" name="DATABRICKS_NODE_TYPE" show="false" value="&quot;i3.xlarge&quot;" xmi:id="_kHRIGmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="OPENED_LIST" name="DATABRICKS_DRIVER_NODE_TYPE" show="false" value="&quot;i3.xlarge&quot;" xmi:id="_kHRIG2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="OPENED_LIST" name="DATABRICKS_NODE_TYPE_AZURE" show="false" value="&quot;Standard_DS3_v2&quot;" xmi:id="_kHRIHGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="OPENED_LIST" name="DATABRICKS_DRIVER_NODE_TYPE_AZURE" show="false" value="&quot;Standard_DS3_v2&quot;" xmi:id="_kHRIHWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="DATABRICKS_CONFIGURE_INSTANCE_PROFILE_ARN" show="false" value="false" xmi:id="_kHRIHmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="DATABRICKS_INSTANCE_PROFILE_ARN" show="false" value="&quot;&quot;" xmi:id="_kHRIH2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="DATABRICKS_ELASTIC_DISK" show="false" value="false" xmi:id="_kHRIIGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="DATABRICKS_SSH_PUBLIC_KEY" show="false" value="&quot;&quot;" xmi:id="_kHRIIWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="DATABRICKS_CONFIGURE_CLUSTER_LOG" show="false" value="false" xmi:id="_kHRIImxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="DATABRICKS_CLUSTER_LOG_TYPE" show="false" value="&quot;DBFS&quot;" xmi:id="_kHRII2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="DATABRICKS_CLUSTER_LOG_DESTINATION" show="false" value="&quot;dbfs:/my/destination&quot;" xmi:id="_kHRIJGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="OPENED_LIST" name="DATABRICKS_S3_REGION" show="false" value="&quot;us-east-1&quot;" xmi:id="_kHRIJWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="PASSWORD" name="QUBOLE_API_TOKEN" show="false" value="enc:system.encryption.key.v1:PJQU1eiGzbTk6D28l57iLGmL1JlcxmPX44NMkmSr" xmi:id="_kHRIJmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="QUBOLE_CLUSTER" show="false" value="false" xmi:id="_kHRIJ2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="QUBOLE_CLUSTER_LABEL" show="false" value="&quot;&quot;" xmi:id="_kHRIKGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="QUBOLE_ENDPOINT" show="false" value="false" xmi:id="_kHRIKWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="QUBOLE_ENDPOINT_URL" show="false" value="&quot;https://api.qubole.com/api&quot;" xmi:id="_kHRIKmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="QUBOLE_S3_ACCESS_KEY" show="false" value="&quot;&quot;" xmi:id="_kHRIK2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="PASSWORD" name="QUBOLE_S3_SECRET_KEY" show="false" value="enc:system.encryption.key.v1:9sIz9mI1YHAykCUSvHrriwV+5bZjWg8CAumpUAUX" xmi:id="_kHRILGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="QUBOLE_S3_BUCKET_NAME" show="false" value="&quot;&quot;" xmi:id="_kHRILWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="QUBOLE_S3_BUCKET_KEY" show="false" value="&quot;&quot;" xmi:id="_kHRILmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="QUBOLE_S3_REGION" show="false" value="com.amazonaws.regions.Regions.DEFAULT_REGION.getName()" xmi:id="_kHRIL2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="SPARKSTREAMING_INFOS" show="false" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&#10;&lt;SparkStreamingInfos&gt;&#10;  &lt;SparkStreamingInfo&gt;&#10;    &lt;Stats x=&quot;-76&quot; y=&quot;-4&quot; width=&quot;290&quot; height=&quot;90&quot;/&gt;&#10;  &lt;/SparkStreamingInfo&gt;&#10;  &lt;SparkStreamingInfo&gt;&#10;    &lt;Stats x=&quot;116&quot; y=&quot;-4&quot; width=&quot;290&quot; height=&quot;90&quot;/&gt;&#10;  &lt;/SparkStreamingInfo&gt;&#10;  &lt;SparkStreamingInfo&gt;&#10;    &lt;Stats x=&quot;1440&quot; y=&quot;416&quot; width=&quot;290&quot; height=&quot;90&quot;/&gt;&#10;  &lt;/SparkStreamingInfo&gt;&#10;&lt;/SparkStreamingInfos&gt;&#10;" xmi:id="_kHRIMGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="USE_TIMESTAMP_FOR_DATASET" value="true" xmi:id="_kHRIMWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="AMAZON_EMR" xmi:id="_kHRIMmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="SPARK" xmi:id="_kHRIM2xaEe6LRLlRuuap-Q"/>
+    <routinesParameter id="_pGXIwG6jEeqXFo7T3Rtgng" name="DQTechnical" xmi:id="_kHRINGxaEe6LRLlRuuap-Q"/>
+    <routinesParameter id="_pF4AkG6jEeqXFo7T3Rtgng" name="DataMasking" xmi:id="_kHRINWxaEe6LRLlRuuap-Q"/>
+    <routinesParameter id="_pElnIG6jEeqXFo7T3Rtgng" name="DataOperation" xmi:id="_kHRINmxaEe6LRLlRuuap-Q"/>
+    <routinesParameter id="_pGJGUG6jEeqXFo7T3Rtgng" name="DataQualityDependencies" xmi:id="_kHRIN2xaEe6LRLlRuuap-Q"/>
+    <routinesParameter id="_pGBxkG6jEeqXFo7T3Rtgng" name="DataQuality" xmi:id="_kHRIOGxaEe6LRLlRuuap-Q"/>
+    <routinesParameter id="_pGPM8G6jEeqXFo7T3Rtgng" name="DqStringHandling" xmi:id="_kHRIOWxaEe6LRLlRuuap-Q"/>
+    <routinesParameter id="_pEsU0G6jEeqXFo7T3Rtgng" name="Mathematical" xmi:id="_kHRIOmxaEe6LRLlRuuap-Q"/>
+    <routinesParameter id="_pE03sG6jEeqXFo7T3Rtgng" name="Numeric" xmi:id="_kHRIO2xaEe6LRLlRuuap-Q"/>
+    <routinesParameter id="_pE8McG6jEeqXFo7T3Rtgng" name="Relational" xmi:id="_kHRIPGxaEe6LRLlRuuap-Q"/>
+    <routinesParameter id="_pFwEwG6jEeqXFo7T3Rtgng" name="SQLike" xmi:id="_kHRIPWxaEe6LRLlRuuap-Q"/>
+    <routinesParameter id="_pFC6IG6jEeqXFo7T3Rtgng" name="StringHandling" xmi:id="_kHRIPmxaEe6LRLlRuuap-Q"/>
+    <routinesParameter id="_pFMrIG6jEeqXFo7T3Rtgng" name="TalendDataGenerator" xmi:id="_kHRIP2xaEe6LRLlRuuap-Q"/>
+    <routinesParameter id="_pFV1EG6jEeqXFo7T3Rtgng" name="TalendDate" xmi:id="_kHRIQGxaEe6LRLlRuuap-Q"/>
+    <routinesParameter id="_pFoI8G6jEeqXFo7T3Rtgng" name="TalendStringUtil" xmi:id="_kHRIQWxaEe6LRLlRuuap-Q"/>
+    <routinesParameter id="_pFfmEG6jEeqXFo7T3Rtgng" name="TalendString" xmi:id="_kHRIQmxaEe6LRLlRuuap-Q"/>
+  </parameters>
+  <node componentName="tKafkaConfiguration" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="32" xmi:id="_kHRIQ2xaEe6LRLlRuuap-Q">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tKafkaConfiguration_1" xmi:id="_kHRIRGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="BROKER_LIST" value="context.kafka_broker" xmi:id="_kHRIRWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="USE_HTTPS" value="false" xmi:id="_kHRIRmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="COMPONENT_LIST" name="HTTPS_SETTING" show="false" value="" xmi:id="_kHRIR2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="false" xmi:id="_kHRISGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="FILE" name="JAAS_CONF" show="false" value="&quot;/etc/kafka/kafka_client_jaas.conf&quot;" xmi:id="_kHRISWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="KRB_SERVICE_NAME" show="false" value="&quot;kafka&quot;" xmi:id="_kHRISmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="SET_KINIT_PATH" show="false" value="false" xmi:id="_kHRIS2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="FILE" name="KINIT_PATH" show="false" value="&quot;/usr/bin/kinit&quot;" xmi:id="_kHRITGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="SET_KRB5_CONF" show="false" value="false" xmi:id="_kHRITWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="FILE" name="KRB5_CONF" show="false" value="&quot;/etc/kafka/krb5.conf&quot;" xmi:id="_kHRITmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="STORAGE_CONFIGURATION" show="false" value="tSparkConfiguration_1" xmi:id="_kHRIT2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="POOL_MAX_TOTAL" value="8" xmi:id="_kHRIUGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="POOL_MAX_WAIT" value="-1" xmi:id="_kHRIUWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="POOL_MIN_IDLE" value="0" xmi:id="_kHRIUmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="POOL_MAX_IDLE" value="8" xmi:id="_kHRIU2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="POOL_USE_EVICTION" value="false" xmi:id="_kHRIVGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="POOL_TIME_BETWEEN_EVICTION" show="false" value="-1" xmi:id="_kHRIVWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="POOL_EVICTION_MIN_IDLE_TIME" show="false" value="1800000" xmi:id="_kHRIVmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="POOL_EVICTION_SOFT_MIN_IDLE_TIME" show="false" value="0" xmi:id="_kHRIV2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="LABEL" name="NOTE" value="NOTE : the above connection pool settings only apply to&#10;&#9;&#9;&#9;&#9;tKafkaOutput.&#10;&#9;&#9;&#9;" xmi:id="_kHRIWGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="LABEL" value="Kafka Configuration" xmi:id="_kHRIWWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_kHRIWmxaEe6LRLlRuuap-Q"/>
+  </node>
+  <node componentName="tMysqlConfiguration" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="32" xmi:id="_kHRIW2xaEe6LRLlRuuap-Q">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlConfiguration_1" xmi:id="_kHRIXGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8" xmi:id="_kHRIXWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_host" xmi:id="_kHRIXmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL" xmi:id="_kHRIX2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;" xmi:id="_kHRIYGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_db" xmi:id="_kHRIYWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" xmi:id="_kHRIYmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_user" xmi:id="_kHRIY2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:NPw/8WjPGO+Udgb//CyyDqwvGJybC0dKKdkvlOANgR/5o8pe62T83B43/JyCrvwZOU4=" xmi:id="_kHRIZGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;" xmi:id="_kHRIZWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" xmi:id="_kHRIZmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="POOL_MAX_TOTAL" value="8" xmi:id="_kHRIZ2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="POOL_MAX_WAIT" value="-1" xmi:id="_kHRIaGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="POOL_MIN_IDLE" value="0" xmi:id="_kHRIaWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="POOL_MAX_IDLE" value="8" xmi:id="_kHRIamxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="POOL_USE_EVICTION" value="false" xmi:id="_kHRIa2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="POOL_TIME_BETWEEN_EVICTION" show="false" value="-1" xmi:id="_kHRIbGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="POOL_EVICTION_MIN_IDLE_TIME" show="false" value="1800000" xmi:id="_kHRIbWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="POOL_EVICTION_SOFT_MIN_IDLE_TIME" show="false" value="0" xmi:id="_kHRIbmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="LABEL" value="MySQL Configuration" xmi:id="_kHRIb2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_kHRIcGxaEe6LRLlRuuap-Q"/>
+  </node>
+  <node componentName="tKafkaInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="192" xmi:id="_kHRIcWxaEe6LRLlRuuap-Q">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tKafkaInput_1" xmi:id="_kHRIcmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="HADOOP_LIBRARIES" name="SPARKSTREAMING" show="false" value="" xmi:id="_kHRIc2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="OUTPUT_TYPE" value="STRING" xmi:id="_kHRIdGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true" xmi:id="_kHRIdWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tKafkaConfiguration_1" xmi:id="_kHRIdmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="BROKER_LIST" show="false" value="context.kafka_broker" xmi:id="_kHRId2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="AUTO_OFFSET_RESET" value="LARGEST" xmi:id="_kHRIeGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="KAFKA_TOPIC" value="context.kafka_topic_name" xmi:id="_kHRIeWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="GROUP_ID" value="&quot;mygroup&quot;" xmi:id="_kHRIemxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="KAFKA_MAX_RATE_PER_PARTITION_CHECK" value="true" xmi:id="_kHRIe2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="KAFKA_MAX_RATE_PER_PARTITION" value="&quot;1000&quot;" xmi:id="_kHRIfGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="USE_HTTPS" show="false" value="false" xmi:id="_kHRIfWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="COMPONENT_LIST" name="HTTPS_SETTING" show="false" value="" xmi:id="_kHRIfmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="USE_KRB" show="false" value="false" xmi:id="_kHRIf2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="FILE" name="JAAS_CONF" show="false" value="&quot;/etc/kafka/kafka_client_jaas.conf&quot;" xmi:id="_kHRIgGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="KRB_SERVICE_NAME" show="false" value="&quot;kafka&quot;" xmi:id="_kHRIgWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="SET_KINIT_PATH" show="false" value="false" xmi:id="_kHRIgmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="FILE" name="KINIT_PATH" show="false" value="&quot;/usr/bin/kinit&quot;" xmi:id="_kHRIg2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="SET_KRB5_CONF" show="false" value="false" xmi:id="_kHRIhGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="FILE" name="KRB5_CONF" show="false" value="&quot;/etc/kafka/krb5.conf&quot;" xmi:id="_kHRIhWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="STORAGE_CONFIGURATION" show="false" value="tSparkConfiguration_1" xmi:id="_kHRIhmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TABLE" name="KAFKA_CONSUMER_PROPERTIES" xmi:id="_kHRIh2xaEe6LRLlRuuap-Q">
+      <elementValue elementRef="PROPERTY" value="&quot;auto.offset.reset&quot;" xmi:id="_kHRIiGxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="VALUE" value="&quot;earliest&quot;" xmi:id="_kHRIiWxaEe6LRLlRuuap-Q"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CUSTOM_ENCODING" value="false" xmi:id="_kHRIimxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;UTF-8&quot;" xmi:id="_kHRIi2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="UTF-8" xmi:id="_kHRIjGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="LABEL" value="Ingest Kafka Topic" xmi:id="_kHRIjWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_kHRIjmxaEe6LRLlRuuap-Q"/>
+    <metadata connector="FLOW" name="tKafkaInput_1" xmi:id="_kHRIj2xaEe6LRLlRuuap-Q">
+      <column key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRIkGxaEe6LRLlRuuap-Q"/>
+      <column name="partition" type="id_Integer" xmi:id="_kHRIkWxaEe6LRLlRuuap-Q"/>
+      <column name="topic" type="id_String" xmi:id="_kHRIkmxaEe6LRLlRuuap-Q"/>
+      <column name="key" type="id_byte[]" xmi:id="_kHRIk2xaEe6LRLlRuuap-Q"/>
+    </metadata>
+  </node>
+  <node componentName="tExtractDelimitedFields" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="192" xmi:id="_kHRIlGxaEe6LRLlRuuap-Q">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tExtractDelimitedFields_1" xmi:id="_kHRIlWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="FIELD" value="payload" xmi:id="_kHRIlmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" xmi:id="_kHRIl2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;:&quot;" xmi:id="_kHRImGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;" xmi:id="_kHRImWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;" xmi:id="_kHRImmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false" xmi:id="_kHRIm2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false" xmi:id="_kHRInGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;" xmi:id="_kHRInWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;" xmi:id="_kHRInmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;UTF-8&quot;" xmi:id="_kHRIn2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="UTF-8" xmi:id="_kHRIoGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="CUSTOM_ENCODING" value="false" xmi:id="_kHRIoWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false" xmi:id="_kHRIomxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TABLE" name="TRIMSELECT" xmi:id="_kHRIo2xaEe6LRLlRuuap-Q">
+      <elementValue elementRef="SCHEMA_COLUMN" value="transactionId" xmi:id="_kHRIpGxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_kHRIpWxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="step" xmi:id="_kHRIpmxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_kHRIp2xaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type" xmi:id="_kHRIqGxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_kHRIqWxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="amount" xmi:id="_kHRIqmxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_kHRIq2xaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nameOrig" xmi:id="_kHRIrGxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_kHRIrWxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="oldBalanceOrig" xmi:id="_kHRIrmxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_kHRIr2xaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="newBalanceOrig" xmi:id="_kHRIsGxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_kHRIsWxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nameDest" xmi:id="_kHRIsmxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_kHRIs2xaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="oldBalanceDest" xmi:id="_kHRItGxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_kHRItWxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="newBalanceDest" xmi:id="_kHRItmxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_kHRIt2xaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isFraud" xmi:id="_kHRIuGxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_kHRIuWxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isFlaggedFraud" xmi:id="_kHRIumxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_kHRIu2xaEe6LRLlRuuap-Q"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false" xmi:id="_kHRIvGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false" xmi:id="_kHRIvWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false" xmi:id="_kHRIvmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false" xmi:id="_kHRIv2xaEe6LRLlRuuap-Q">
+      <elementValue elementRef="SCHEMA_COLUMN" value="transactionId" xmi:id="_kHRIwGxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_kHRIwWxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="step" xmi:id="_kHRIwmxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_kHRIw2xaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type" xmi:id="_kHRIxGxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_kHRIxWxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="amount" xmi:id="_kHRIxmxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_kHRIx2xaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nameOrig" xmi:id="_kHRIyGxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_kHRIyWxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="oldBalanceOrig" xmi:id="_kHRIymxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_kHRIy2xaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="newBalanceOrig" xmi:id="_kHRIzGxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_kHRIzWxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nameDest" xmi:id="_kHRIzmxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_kHRIz2xaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="oldBalanceDest" xmi:id="_kHRI0GxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_kHRI0WxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="newBalanceDest" xmi:id="_kHRI0mxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_kHRI02xaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isFraud" xmi:id="_kHRI1GxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_kHRI1WxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isFlaggedFraud" xmi:id="_kHRI1mxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="DECODE" value="false" xmi:id="_kHRI12xaEe6LRLlRuuap-Q"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Parse Transaction Payload" xmi:id="_kHRI2GxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_kHRI2WxaEe6LRLlRuuap-Q"/>
+    <metadata connector="FLOW" name="tExtractDelimitedFields_1" xmi:id="_kHRI2mxaEe6LRLlRuuap-Q">
+      <column comment="" key="false" length="32" name="transactionId" nullable="true" originalLength="32" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRI22xaEe6LRLlRuuap-Q"/>
+      <column comment="maps a unit of time in the real world. In this case 1 step is 1 hour of time. Total steps 744 (30 days simulation)" key="false" length="-1" name="step" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_kHRI3GxaEe6LRLlRuuap-Q"/>
+      <column comment="CASH-IN, CASH-OUT, DEBIT, PAYMENT and TRANSFER" key="false" length="-1" name="type" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRI3WxaEe6LRLlRuuap-Q"/>
+      <column comment="amount of the transaction in local currency" key="false" length="-1" name="amount" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRI3mxaEe6LRLlRuuap-Q"/>
+      <column comment="customer who started the transaction" key="false" length="-1" name="nameOrig" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRI32xaEe6LRLlRuuap-Q"/>
+      <column comment="initial balance before the transaction" key="false" length="-1" name="oldBalanceOrig" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRI4GxaEe6LRLlRuuap-Q"/>
+      <column comment="new balance after the transaction" key="false" length="-1" name="newBalanceOrig" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRI4WxaEe6LRLlRuuap-Q"/>
+      <column comment="customer who is the recipient of the transaction" key="false" length="-1" name="nameDest" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRI4mxaEe6LRLlRuuap-Q"/>
+      <column comment="initial balance recipient before the transaction. Note that there is not information for customers that start with M (Merchants)" key="false" length="-1" name="oldBalanceDest" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRI42xaEe6LRLlRuuap-Q"/>
+      <column comment="ew balance recipient after the transaction. Note that there is not information for customers that start with M (Merchants)" key="false" length="-1" name="newBalanceDest" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRI5GxaEe6LRLlRuuap-Q"/>
+      <column comment="This is the transactions made by the fraudulent agents inside the simulation. In this specific dataset the fraudulent behavior of the agents aims to profit by taking control or customers accounts and try to empty the funds by transferring to another account and then cashing out of the system" key="false" length="-1" name="isFraud" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_kHRI5WxaEe6LRLlRuuap-Q"/>
+      <column comment="The business model aims to control massive transfers from one account to another and flags illegal attempts. An illegal attempt in this dataset is an attempt to transfer more than 200.000 in a single transaction" key="false" length="-1" name="isFlaggedFraud" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_kHRI5mxaEe6LRLlRuuap-Q"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT" xmi:id="_kHRI52xaEe6LRLlRuuap-Q">
+      <column comment="" key="false" length="32" name="transactionId" nullable="true" originalLength="32" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRI6GxaEe6LRLlRuuap-Q"/>
+      <column comment="maps a unit of time in the real world. In this case 1 step is 1 hour of time. Total steps 744 (30 days simulation)" key="false" length="-1" name="step" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_kHRI6WxaEe6LRLlRuuap-Q"/>
+      <column comment="CASH-IN, CASH-OUT, DEBIT, PAYMENT and TRANSFER" key="false" length="-1" name="type" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRI6mxaEe6LRLlRuuap-Q"/>
+      <column comment="amount of the transaction in local currency" key="false" length="-1" name="amount" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRI62xaEe6LRLlRuuap-Q"/>
+      <column comment="customer who started the transaction" key="false" length="-1" name="nameOrig" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRI7GxaEe6LRLlRuuap-Q"/>
+      <column comment="initial balance before the transaction" key="false" length="-1" name="oldBalanceOrig" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRI7WxaEe6LRLlRuuap-Q"/>
+      <column comment="new balance after the transaction" key="false" length="-1" name="newBalanceOrig" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRI7mxaEe6LRLlRuuap-Q"/>
+      <column comment="customer who is the recipient of the transaction" key="false" length="-1" name="nameDest" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRI72xaEe6LRLlRuuap-Q"/>
+      <column comment="initial balance recipient before the transaction. Note that there is not information for customers that start with M (Merchants)" key="false" length="-1" name="oldBalanceDest" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRI8GxaEe6LRLlRuuap-Q"/>
+      <column comment="ew balance recipient after the transaction. Note that there is not information for customers that start with M (Merchants)" key="false" length="-1" name="newBalanceDest" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRI8WxaEe6LRLlRuuap-Q"/>
+      <column comment="This is the transactions made by the fraudulent agents inside the simulation. In this specific dataset the fraudulent behavior of the agents aims to profit by taking control or customers accounts and try to empty the funds by transferring to another account and then cashing out of the system" key="false" length="-1" name="isFraud" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_kHRI8mxaEe6LRLlRuuap-Q"/>
+      <column comment="The business model aims to control massive transfers from one account to another and flags illegal attempts. An illegal attempt in this dataset is an attempt to transfer more than 200.000 in a single transaction" key="false" length="-1" name="isFlaggedFraud" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_kHRI82xaEe6LRLlRuuap-Q"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRI9GxaEe6LRLlRuuap-Q"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRI9WxaEe6LRLlRuuap-Q"/>
+      <column defaultValue="" key="false" length="255" name="inputLine" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRI9mxaEe6LRLlRuuap-Q"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="192" xmi:id="_kHRI92xaEe6LRLlRuuap-Q">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1" xmi:id="_kHRI-GxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="EXTERNAL" name="MAP" value="" xmi:id="_kHRI-WxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO" xmi:id="_kHRI-mxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="REPLICATED_JOIN" value="false" xmi:id="_kHRI-2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_aC8M8IZJEeqWHYc-TdPwwg-tMap_1-PREVIEW.bmp" xmi:id="_kHRI_GxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false" xmi:id="_kHRI_WxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0" xmi:id="_kHRI_mxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0" xmi:id="_kHRI_2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_kHRJAGxaEe6LRLlRuuap-Q"/>
+    <metadata connector="FLOW" name="out1" xmi:id="_kHRJAWxaEe6LRLlRuuap-Q">
+      <column comment="" key="false" length="32" name="transactionId" nullable="true" originalLength="32" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJAmxaEe6LRLlRuuap-Q"/>
+      <column comment="" key="false" length="-1" name="transactionTime" nullable="true" originalLength="-1" pattern="&quot;YYYY-MM-DD hh:mm:ss&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJA2xaEe6LRLlRuuap-Q"/>
+      <column comment="maps a unit of time in the real world. In this case 1 step is 1 hour of time. Total steps 744 (30 days simulation)" key="false" length="-1" name="step" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_kHRJBGxaEe6LRLlRuuap-Q"/>
+      <column comment="CASH-IN, CASH-OUT, DEBIT, PAYMENT and TRANSFER" key="false" length="10" name="type" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJBWxaEe6LRLlRuuap-Q"/>
+      <column comment="" key="false" length="-1" name="paymentTypeId" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJBmxaEe6LRLlRuuap-Q"/>
+      <column comment="amount of the transaction in local currency" key="false" length="-1" name="amount" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJB2xaEe6LRLlRuuap-Q"/>
+      <column comment="customer who started the transaction" key="false" length="-1" name="nameOrig" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJCGxaEe6LRLlRuuap-Q"/>
+      <column comment="initial balance before the transaction" key="false" length="-1" name="oldBalanceOrig" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJCWxaEe6LRLlRuuap-Q"/>
+      <column comment="new balance after the transaction" key="false" length="-1" name="newBalanceOrig" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJCmxaEe6LRLlRuuap-Q"/>
+      <column comment="customer who is the recipient of the transaction" key="false" length="-1" name="nameDest" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJC2xaEe6LRLlRuuap-Q"/>
+      <column comment="initial balance recipient before the transaction. Note that there is not information for customers that start with M (Merchants)" key="false" length="-1" name="oldBalanceDest" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJDGxaEe6LRLlRuuap-Q"/>
+      <column comment="ew balance recipient after the transaction. Note that there is not information for customers that start with M (Merchants)" key="false" length="-1" name="newBalanceDest" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJDWxaEe6LRLlRuuap-Q"/>
+      <column comment="This is the transactions made by the fraudulent agents inside the simulation. In this specific dataset the fraudulent behavior of the agents aims to profit by taking control or customers accounts and try to empty the funds by transferring to another account and then cashing out of the system" key="false" length="-1" name="labelOriginal" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_kHRJDmxaEe6LRLlRuuap-Q"/>
+      <column comment="The business model aims to control massive transfers from one account to another and flags illegal attempts. An illegal attempt in this dataset is an attempt to transfer more than 200.000 in a single transaction" key="false" length="-1" name="isFlaggedFraud" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_kHRJD2xaEe6LRLlRuuap-Q"/>
+    </metadata>
+    <nodeData xmi:id="_kHRJEGxaEe6LRLlRuuap-Q" xsi:type="TalendMapper:MapperData">
+      <uiProperties xmi:id="_kHRJEWxaEe6LRLlRuuap-Q"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE" xmi:id="_kHRJEmxaEe6LRLlRuuap-Q"/>
+      <outputTables name="out1" sizeState="INTERMEDIATE" xmi:id="_kHRJE2xaEe6LRLlRuuap-Q">
+        <mapperTableEntries expression="trans.transactionId" name="transactionId" nullable="true" type="id_String" xmi:id="_kHRJFGxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries expression="TalendDate.getDate(&quot;YYYY-MM-DD hh:mm:ss&quot;) " name="transactionTime" nullable="true" type="id_String" xmi:id="_kHRJFWxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries expression="trans.step" name="step" nullable="true" type="id_Integer" xmi:id="_kHRJFmxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries expression="trans.type" name="type" nullable="true" type="id_String" xmi:id="_kHRJF2xaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries expression="pay_types.paymentTypeId" name="paymentTypeId" nullable="true" type="id_Double" xmi:id="_kHRJGGxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries expression="trans.amount" name="amount" nullable="true" type="id_Double" xmi:id="_kHRJGWxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries expression="trans.nameOrig" name="nameOrig" nullable="true" type="id_String" xmi:id="_kHRJGmxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries expression="trans.oldBalanceOrig" name="oldBalanceOrig" nullable="true" type="id_Double" xmi:id="_kHRJG2xaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries expression="trans.newBalanceOrig" name="newBalanceOrig" nullable="true" type="id_Double" xmi:id="_kHRJHGxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries expression="trans.nameDest" name="nameDest" nullable="true" type="id_String" xmi:id="_kHRJHWxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries expression="trans.oldBalanceDest" name="oldBalanceDest" nullable="true" type="id_Double" xmi:id="_kHRJHmxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries expression="trans.newBalanceDest" name="newBalanceDest" nullable="true" type="id_Double" xmi:id="_kHRJH2xaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries expression="trans.isFraud " name="labelOriginal" nullable="true" type="id_Integer" xmi:id="_kHRJIGxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries expression="trans.isFlaggedFraud" name="isFlaggedFraud" nullable="true" type="id_Integer" xmi:id="_kHRJIWxaEe6LRLlRuuap-Q"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="trans" sizeState="INTERMEDIATE" xmi:id="_kHRJImxaEe6LRLlRuuap-Q">
+        <mapperTableEntries name="transactionId" nullable="true" type="id_String" xmi:id="_kHRJI2xaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries name="step" nullable="true" type="id_Integer" xmi:id="_kHRJJGxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries name="type" nullable="true" type="id_String" xmi:id="_kHRJJWxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries name="amount" nullable="true" type="id_Double" xmi:id="_kHRJJmxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries name="nameOrig" nullable="true" type="id_String" xmi:id="_kHRJJ2xaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries name="oldBalanceOrig" nullable="true" type="id_Double" xmi:id="_kHRJKGxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries name="newBalanceOrig" nullable="true" type="id_Double" xmi:id="_kHRJKWxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries name="nameDest" nullable="true" type="id_String" xmi:id="_kHRJKmxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries name="oldBalanceDest" nullable="true" type="id_Double" xmi:id="_kHRJK2xaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries name="newBalanceDest" nullable="true" type="id_Double" xmi:id="_kHRJLGxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries name="isFraud" nullable="true" type="id_Integer" xmi:id="_kHRJLWxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries name="isFlaggedFraud" nullable="true" type="id_Integer" xmi:id="_kHRJLmxaEe6LRLlRuuap-Q"/>
+      </inputTables>
+      <inputTables activateCondensedTool="true" lookupMode="RELOAD" matchingMode="UNIQUE_MATCH" name="pay_types" sizeState="INTERMEDIATE" xmi:id="_kHRJL2xaEe6LRLlRuuap-Q">
+        <mapperTableEntries name="paymentTypeId" nullable="true" type="id_Double" xmi:id="_kHRJMGxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries expression="trans.type " name="paymentType" nullable="true" operator="=" type="id_String" xmi:id="_kHRJMWxaEe6LRLlRuuap-Q"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMysqlLookupInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="352" xmi:id="_kHRJMmxaEe6LRLlRuuap-Q">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlLookupInput_1" xmi:id="_kHRJM2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_5" xmi:id="_kHRJNGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true" xmi:id="_kHRJNWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMysqlConfiguration_1" xmi:id="_kHRJNmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;" xmi:id="_kHRJN2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;3306&quot;" xmi:id="_kHRJOGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;" xmi:id="_kHRJOWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL" xmi:id="_kHRJOmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;" xmi:id="_kHRJO2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:LrnAOquQHP1Kl1U/rgndkPInt082h8LXCo68MlUa" xmi:id="_kHRJPGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;fin_transactions_types&quot;" xmi:id="_kHRJPWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;" xmi:id="_kHRJPmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value="" xmi:id="_kHRJP2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN" xmi:id="_kHRJQGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;" xmi:id="_kHRJQWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;&#13;&#10;  `fin_transactions_types`.`paymentTypeId`, &#10;  `fin_transactions_types`.`paymentType`&#10;&#13;&#10;FROM `fin_transactions_types`&#13;&#10;&#13;&#10;WHERE `fin_transactions_types`.`paymentType` = '&quot; + trans.type + &quot;'&quot;" xmi:id="_kHRJQmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id" xmi:id="_kHRJQ2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;noDatetimeStringSync=true&quot;" xmi:id="_kHRJRGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;" xmi:id="_kHRJRWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" xmi:id="_kHRJRmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false" xmi:id="_kHRJR2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN" xmi:id="_kHRJSGxaEe6LRLlRuuap-Q">
+      <elementValue elementRef="SCHEMA_COLUMN" value="paymentTypeId" xmi:id="_kHRJSWxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_kHRJSmxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="paymentType" xmi:id="_kHRJS2xaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="TRIM" value="false" xmi:id="_kHRJTGxaEe6LRLlRuuap-Q"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="POOL_MAX_TOTAL" show="false" value="8" xmi:id="_kHRJTWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="POOL_MAX_WAIT" show="false" value="-1" xmi:id="_kHRJTmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="POOL_MIN_IDLE" show="false" value="0" xmi:id="_kHRJT2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="POOL_MAX_IDLE" show="false" value="8" xmi:id="_kHRJUGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="POOL_USE_EVICTION" show="false" value="false" xmi:id="_kHRJUWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="POOL_TIME_BETWEEN_EVICTION" show="false" value="-1" xmi:id="_kHRJUmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="POOL_EVICTION_MIN_IDLE_TIME" show="false" value="1800000" xmi:id="_kHRJU2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="POOL_EVICTION_SOFT_MIN_IDLE_TIME" show="false" value="0" xmi:id="_kHRJVGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="LABEL" value="Payment Type Reference Lookup" xmi:id="_kHRJVWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_kHRJVmxaEe6LRLlRuuap-Q"/>
+    <metadata connector="FLOW" name="tMysqlLookupInput_1" xmi:id="_kHRJV2xaEe6LRLlRuuap-Q">
+      <column comment="" key="false" length="-1" name="paymentTypeId" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DOUBLE" type="id_Double" usefulColumn="true" xmi:id="_kHRJWGxaEe6LRLlRuuap-Q"/>
+      <column comment="" key="false" length="25" name="paymentType" nullable="true" originalLength="25" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true" xmi:id="_kHRJWWxaEe6LRLlRuuap-Q"/>
+    </metadata>
+  </node>
+  <node componentName="tFilterRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="192" xmi:id="_kHRJWmxaEe6LRLlRuuap-Q">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFilterRow_1" xmi:id="_kHRJW2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;" xmi:id="_kHRJXGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TABLE" name="CONDITIONS" xmi:id="_kHRJXWxaEe6LRLlRuuap-Q">
+      <elementValue elementRef="INPUT_COLUMN" value="transactionId" xmi:id="_kHRJXmxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="FUNCTION" value="" xmi:id="_kHRJX2xaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="OPERATOR" value="!=" xmi:id="_kHRJYGxaEe6LRLlRuuap-Q"/>
+      <elementValue elementRef="RVALUE" value="null" xmi:id="_kHRJYWxaEe6LRLlRuuap-Q"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false" xmi:id="_kHRJYmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" show="false" value="// code sample : use input_row to define the condition.&#10;&#9;&#9;&#9;&#9;//&#10;&#9;&#9;&#9;&#9;input_row.columnName1.equals(&quot;foo&quot;)||!(input_row.columnName2.equals(&quot;bar&quot;))&#10;&#9;&#9;&#9;&#9;// replace the following expression by your own filter condition&#10;&#9;&#9;&#9;&#9;input_row.columnName1.equals(input_row.columnName2)&#10;&#9;&#9;&#9;" xmi:id="_kHRJY2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="LABEL" value="Filter" xmi:id="_kHRJZGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_kHRJZWxaEe6LRLlRuuap-Q"/>
+    <metadata connector="FLOW" name="tFilterRow_1" xmi:id="_kHRJZmxaEe6LRLlRuuap-Q">
+      <column comment="" key="false" length="32" name="transactionId" nullable="true" originalLength="32" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJZ2xaEe6LRLlRuuap-Q"/>
+      <column comment="" key="false" length="-1" name="transactionTime" nullable="true" originalLength="-1" pattern="&quot;YYYY-MM-DD hh:mm:ss&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJaGxaEe6LRLlRuuap-Q"/>
+      <column comment="maps a unit of time in the real world. In this case 1 step is 1 hour of time. Total steps 744 (30 days simulation)" key="false" length="-1" name="step" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_kHRJaWxaEe6LRLlRuuap-Q"/>
+      <column comment="CASH-IN, CASH-OUT, DEBIT, PAYMENT and TRANSFER" key="false" length="10" name="type" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJamxaEe6LRLlRuuap-Q"/>
+      <column comment="" key="false" length="-1" name="paymentTypeId" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJa2xaEe6LRLlRuuap-Q"/>
+      <column comment="amount of the transaction in local currency" key="false" length="-1" name="amount" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJbGxaEe6LRLlRuuap-Q"/>
+      <column comment="customer who started the transaction" key="false" length="-1" name="nameOrig" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJbWxaEe6LRLlRuuap-Q"/>
+      <column comment="initial balance before the transaction" key="false" length="-1" name="oldBalanceOrig" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJbmxaEe6LRLlRuuap-Q"/>
+      <column comment="new balance after the transaction" key="false" length="-1" name="newBalanceOrig" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJb2xaEe6LRLlRuuap-Q"/>
+      <column comment="customer who is the recipient of the transaction" key="false" length="-1" name="nameDest" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJcGxaEe6LRLlRuuap-Q"/>
+      <column comment="initial balance recipient before the transaction. Note that there is not information for customers that start with M (Merchants)" key="false" length="-1" name="oldBalanceDest" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJcWxaEe6LRLlRuuap-Q"/>
+      <column comment="ew balance recipient after the transaction. Note that there is not information for customers that start with M (Merchants)" key="false" length="-1" name="newBalanceDest" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJcmxaEe6LRLlRuuap-Q"/>
+      <column comment="This is the transactions made by the fraudulent agents inside the simulation. In this specific dataset the fraudulent behavior of the agents aims to profit by taking control or customers accounts and try to empty the funds by transferring to another account and then cashing out of the system" key="false" length="-1" name="labelOriginal" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_kHRJc2xaEe6LRLlRuuap-Q"/>
+      <column comment="The business model aims to control massive transfers from one account to another and flags illegal attempts. An illegal attempt in this dataset is an attempt to transfer more than 200.000 in a single transaction" key="false" length="-1" name="isFlaggedFraud" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_kHRJdGxaEe6LRLlRuuap-Q"/>
+    </metadata>
+    <metadata connector="FILTER" name="FILTER" xmi:id="_kHRJdWxaEe6LRLlRuuap-Q">
+      <column comment="" key="false" length="32" name="transactionId" nullable="true" originalLength="32" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJdmxaEe6LRLlRuuap-Q"/>
+      <column comment="" key="false" length="-1" name="transactionTime" nullable="true" originalLength="-1" pattern="&quot;YYYY-MM-DD hh:mm:ss&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJd2xaEe6LRLlRuuap-Q"/>
+      <column comment="maps a unit of time in the real world. In this case 1 step is 1 hour of time. Total steps 744 (30 days simulation)" key="false" length="-1" name="step" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_kHRJeGxaEe6LRLlRuuap-Q"/>
+      <column comment="CASH-IN, CASH-OUT, DEBIT, PAYMENT and TRANSFER" key="false" length="10" name="type" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJeWxaEe6LRLlRuuap-Q"/>
+      <column comment="" key="false" length="-1" name="paymentTypeId" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJemxaEe6LRLlRuuap-Q"/>
+      <column comment="amount of the transaction in local currency" key="false" length="-1" name="amount" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJe2xaEe6LRLlRuuap-Q"/>
+      <column comment="customer who started the transaction" key="false" length="-1" name="nameOrig" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJfGxaEe6LRLlRuuap-Q"/>
+      <column comment="initial balance before the transaction" key="false" length="-1" name="oldBalanceOrig" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJfWxaEe6LRLlRuuap-Q"/>
+      <column comment="new balance after the transaction" key="false" length="-1" name="newBalanceOrig" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJfmxaEe6LRLlRuuap-Q"/>
+      <column comment="customer who is the recipient of the transaction" key="false" length="-1" name="nameDest" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJf2xaEe6LRLlRuuap-Q"/>
+      <column comment="initial balance recipient before the transaction. Note that there is not information for customers that start with M (Merchants)" key="false" length="-1" name="oldBalanceDest" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJgGxaEe6LRLlRuuap-Q"/>
+      <column comment="ew balance recipient after the transaction. Note that there is not information for customers that start with M (Merchants)" key="false" length="-1" name="newBalanceDest" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJgWxaEe6LRLlRuuap-Q"/>
+      <column comment="This is the transactions made by the fraudulent agents inside the simulation. In this specific dataset the fraudulent behavior of the agents aims to profit by taking control or customers accounts and try to empty the funds by transferring to another account and then cashing out of the system" key="false" length="-1" name="labelOriginal" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_kHRJgmxaEe6LRLlRuuap-Q"/>
+      <column comment="The business model aims to control massive transfers from one account to another and flags illegal attempts. An illegal attempt in this dataset is an attempt to transfer more than 200.000 in a single transaction" key="false" length="-1" name="isFlaggedFraud" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_kHRJg2xaEe6LRLlRuuap-Q"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT" xmi:id="_kHRJhGxaEe6LRLlRuuap-Q">
+      <column comment="" key="false" length="32" name="transactionId" nullable="true" originalLength="32" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJhWxaEe6LRLlRuuap-Q"/>
+      <column comment="" key="false" length="-1" name="transactionTime" nullable="true" originalLength="-1" pattern="&quot;YYYY-MM-DD hh:mm:ss&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJhmxaEe6LRLlRuuap-Q"/>
+      <column comment="maps a unit of time in the real world. In this case 1 step is 1 hour of time. Total steps 744 (30 days simulation)" key="false" length="-1" name="step" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_kHRJh2xaEe6LRLlRuuap-Q"/>
+      <column comment="CASH-IN, CASH-OUT, DEBIT, PAYMENT and TRANSFER" key="false" length="10" name="type" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJiGxaEe6LRLlRuuap-Q"/>
+      <column comment="" key="false" length="-1" name="paymentTypeId" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJiWxaEe6LRLlRuuap-Q"/>
+      <column comment="amount of the transaction in local currency" key="false" length="-1" name="amount" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJimxaEe6LRLlRuuap-Q"/>
+      <column comment="customer who started the transaction" key="false" length="-1" name="nameOrig" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJi2xaEe6LRLlRuuap-Q"/>
+      <column comment="initial balance before the transaction" key="false" length="-1" name="oldBalanceOrig" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJjGxaEe6LRLlRuuap-Q"/>
+      <column comment="new balance after the transaction" key="false" length="-1" name="newBalanceOrig" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJjWxaEe6LRLlRuuap-Q"/>
+      <column comment="customer who is the recipient of the transaction" key="false" length="-1" name="nameDest" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJjmxaEe6LRLlRuuap-Q"/>
+      <column comment="initial balance recipient before the transaction. Note that there is not information for customers that start with M (Merchants)" key="false" length="-1" name="oldBalanceDest" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJj2xaEe6LRLlRuuap-Q"/>
+      <column comment="ew balance recipient after the transaction. Note that there is not information for customers that start with M (Merchants)" key="false" length="-1" name="newBalanceDest" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJkGxaEe6LRLlRuuap-Q"/>
+      <column comment="This is the transactions made by the fraudulent agents inside the simulation. In this specific dataset the fraudulent behavior of the agents aims to profit by taking control or customers accounts and try to empty the funds by transferring to another account and then cashing out of the system" key="false" length="-1" name="labelOriginal" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_kHRJkWxaEe6LRLlRuuap-Q"/>
+      <column comment="The business model aims to control massive transfers from one account to another and flags illegal attempts. An illegal attempt in this dataset is an attempt to transfer more than 200.000 in a single transaction" key="false" length="-1" name="isFlaggedFraud" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_kHRJkmxaEe6LRLlRuuap-Q"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJk2xaEe6LRLlRuuap-Q"/>
+    </metadata>
+  </node>
+  <node componentName="tPredict" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="192" xmi:id="_kHRJlGxaEe6LRLlRuuap-Q">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPredict_1" xmi:id="_kHRJlWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="MODEL_TYPE" value="GRADIENT_BOOSTED" xmi:id="_kHRJlmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="RADIO" name="SAVE_ON_DISK" value="true" xmi:id="_kHRJl2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="DEFINE_STORAGE_CONFIGURATION" value="false" xmi:id="_kHRJmGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="COMPONENT_LIST" name="STORAGE_CONFIGURATION" show="false" value="" xmi:id="_kHRJmWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="BOTH_HADOOP" name="HDFS_FOLDER" value="context.ml_model_parameter_file" xmi:id="_kHRJmmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="IS_USING_SPARK_ML_API" show="false" value="true" xmi:id="_kHRJm2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="NVB_VERSION" show="false" value="SPARK_VERSION_1.4+" xmi:id="_kHRJnGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="DIRECTORY_HADOOP" name="PMML_MODEL_PATH" show="false" value="&quot;/user/model/naiveBayesPMML.model&quot;" xmi:id="_kHRJnWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="RADIO" name="KMEANS_MODEL_COMPUTED" show="false" value="false" xmi:id="_kHRJnmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="COMPONENT_LIST" name="KMEANS_MODEL_LOCATION" show="false" value="" xmi:id="_kHRJn2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="LABEL" value="Score Transaction" xmi:id="_kHRJoGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_kHRJoWxaEe6LRLlRuuap-Q"/>
+    <metadata connector="FLOW" name="tPredict_1" xmi:id="_kHRJomxaEe6LRLlRuuap-Q">
+      <column comment="" key="false" length="32" name="transactionId" nullable="true" originalLength="32" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJo2xaEe6LRLlRuuap-Q"/>
+      <column comment="" key="false" length="-1" name="transactionTime" nullable="true" originalLength="30" pattern="&quot;YYYY-MM-DD hh:mm:ss&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJpGxaEe6LRLlRuuap-Q"/>
+      <column comment="maps a unit of time in the real world. In this case 1 step is 1 hour of time. Total steps 744 (30 days simulation)" key="false" length="-1" name="step" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_kHRJpWxaEe6LRLlRuuap-Q"/>
+      <column comment="CASH-IN, CASH-OUT, DEBIT, PAYMENT and TRANSFER" key="false" length="10" name="type" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJpmxaEe6LRLlRuuap-Q"/>
+      <column comment="" key="false" length="-1" name="paymentTypeId" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJp2xaEe6LRLlRuuap-Q"/>
+      <column comment="amount of the transaction in local currency" key="false" length="-1" name="amount" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJqGxaEe6LRLlRuuap-Q"/>
+      <column comment="customer who started the transaction" key="false" length="-1" name="nameOrig" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJqWxaEe6LRLlRuuap-Q"/>
+      <column comment="initial balance before the transaction" key="false" length="-1" name="oldBalanceOrig" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJqmxaEe6LRLlRuuap-Q"/>
+      <column comment="new balance after the transaction" key="false" length="-1" name="newBalanceOrig" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJq2xaEe6LRLlRuuap-Q"/>
+      <column comment="customer who is the recipient of the transaction" key="false" length="-1" name="nameDest" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJrGxaEe6LRLlRuuap-Q"/>
+      <column comment="initial balance recipient before the transaction. Note that there is not information for customers that start with M (Merchants)" key="false" length="-1" name="oldBalanceDest" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJrWxaEe6LRLlRuuap-Q"/>
+      <column comment="ew balance recipient after the transaction. Note that there is not information for customers that start with M (Merchants)" key="false" length="-1" name="newBalanceDest" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJrmxaEe6LRLlRuuap-Q"/>
+      <column comment="This is the transactions made by the fraudulent agents inside the simulation. In this specific dataset the fraudulent behavior of the agents aims to profit by taking control or customers accounts and try to empty the funds by transferring to another account and then cashing out of the system" key="false" length="-1" name="labelOriginal" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_kHRJr2xaEe6LRLlRuuap-Q"/>
+      <column comment="The business model aims to control massive transfers from one account to another and flags illegal attempts. An illegal attempt in this dataset is an attempt to transfer more than 200.000 in a single transaction" key="false" length="-1" name="isFlaggedFraud" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_kHRJsGxaEe6LRLlRuuap-Q"/>
+      <column key="false" length="0" name="label" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJsWxaEe6LRLlRuuap-Q"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="192" xmi:id="_kHRJsmxaEe6LRLlRuuap-Q">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2" xmi:id="_kHRJs2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="EXTERNAL" name="MAP" value="" xmi:id="_kHRJtGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO" xmi:id="_kHRJtWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="REPLICATED_JOIN" value="false" xmi:id="_kHRJtmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_aC8M8IZJEeqWHYc-TdPwwg-tMap_2-PREVIEW.bmp" xmi:id="_kHRJt2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false" xmi:id="_kHRJuGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0" xmi:id="_kHRJuWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0" xmi:id="_kHRJumxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="LABEL" value="Simplify Output" xmi:id="_kHRJu2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_kHRJvGxaEe6LRLlRuuap-Q"/>
+    <metadata connector="FLOW" name="out2" xmi:id="_kHRJvWxaEe6LRLlRuuap-Q">
+      <column comment="" key="false" length="36" name="transactionId" nullable="true" originalLength="32" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJvmxaEe6LRLlRuuap-Q"/>
+      <column comment="" key="false" length="-1" name="transactionTime" nullable="true" originalLength="30" pattern="&quot;YYYY-MM-DD hh:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true" xmi:id="_kHRJv2xaEe6LRLlRuuap-Q"/>
+      <column comment="maps a unit of time in the real world. In this case 1 step is 1 hour of time. Total steps 744 (30 days simulation)" key="false" length="-1" name="step" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_kHRJwGxaEe6LRLlRuuap-Q"/>
+      <column comment="CASH-IN, CASH-OUT, DEBIT, PAYMENT and TRANSFER" key="false" length="10" name="type" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true" xmi:id="_kHRJwWxaEe6LRLlRuuap-Q"/>
+      <column comment="The business model aims to control massive transfers from one account to another and flags illegal attempts. An illegal attempt in this dataset is an attempt to transfer more than 200.000 in a single transaction" key="false" length="-1" name="isFlaggedFraud" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_kHRJwmxaEe6LRLlRuuap-Q"/>
+      <column comment="This is the transactions made by the fraudulent agents inside the simulation. In this specific dataset the fraudulent behavior of the agents aims to profit by taking control or customers accounts and try to empty the funds by transferring to another account and then cashing out of the system" key="false" length="-1" name="labelOriginal" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_kHRJw2xaEe6LRLlRuuap-Q"/>
+      <column key="false" length="-1" name="label" nullable="true" originalLength="1" precision="-1" sourceType="" type="id_Integer" usefulColumn="true" xmi:id="_kHRJxGxaEe6LRLlRuuap-Q"/>
+      <column comment="amount of the transaction in local currency" key="false" length="-1" name="amount" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true" xmi:id="_kHRJxWxaEe6LRLlRuuap-Q"/>
+    </metadata>
+    <nodeData xmi:id="_kHRJxmxaEe6LRLlRuuap-Q" xsi:type="TalendMapper:MapperData">
+      <uiProperties xmi:id="_kHRJx2xaEe6LRLlRuuap-Q"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE" xmi:id="_kHRJyGxaEe6LRLlRuuap-Q"/>
+      <outputTables name="out2" sizeState="INTERMEDIATE" xmi:id="_kHRJyWxaEe6LRLlRuuap-Q">
+        <mapperTableEntries expression="row3.transactionId " name="transactionId" nullable="true" type="id_String" xmi:id="_kHRJymxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries expression="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,row3.transactionTime) " name="transactionTime" nullable="true" type="id_Date" xmi:id="_kHRJy2xaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries expression="row3.step " name="step" nullable="true" type="id_Integer" xmi:id="_kHRJzGxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries expression="row3.type " name="type" nullable="true" type="id_String" xmi:id="_kHRJzWxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries expression="row3.isFlaggedFraud " name="isFlaggedFraud" nullable="true" type="id_Integer" xmi:id="_kHRJzmxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries expression="row3.labelOriginal " name="labelOriginal" nullable="true" type="id_Integer" xmi:id="_kHRJz2xaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries expression="Integer.parseInt(row3.label)" name="label" nullable="true" type="id_Integer" xmi:id="_kHRJ0GxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries expression="row3.amount " name="amount" nullable="true" type="id_Double" xmi:id="_kHRJ0WxaEe6LRLlRuuap-Q"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE" xmi:id="_kHRJ0mxaEe6LRLlRuuap-Q">
+        <mapperTableEntries name="transactionId" nullable="true" type="id_String" xmi:id="_kHRJ02xaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries name="transactionTime" nullable="true" type="id_String" xmi:id="_kHRJ1GxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries name="step" nullable="true" type="id_Integer" xmi:id="_kHRJ1WxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries name="type" nullable="true" type="id_String" xmi:id="_kHRJ1mxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries name="paymentTypeId" nullable="true" type="id_Double" xmi:id="_kHRJ12xaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries name="amount" nullable="true" type="id_Double" xmi:id="_kHRJ2GxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries name="nameOrig" nullable="true" type="id_String" xmi:id="_kHRJ2WxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries name="oldBalanceOrig" nullable="true" type="id_Double" xmi:id="_kHRJ2mxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries name="newBalanceOrig" nullable="true" type="id_Double" xmi:id="_kHRJ22xaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries name="nameDest" nullable="true" type="id_String" xmi:id="_kHRJ3GxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries name="oldBalanceDest" nullable="true" type="id_Double" xmi:id="_kHRJ3WxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries name="newBalanceDest" nullable="true" type="id_Double" xmi:id="_kHRJ3mxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries name="labelOriginal" nullable="true" type="id_Integer" xmi:id="_kHRJ32xaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries name="isFlaggedFraud" nullable="true" type="id_Integer" xmi:id="_kHRJ4GxaEe6LRLlRuuap-Q"/>
+        <mapperTableEntries name="label" nullable="true" type="id_String" xmi:id="_kHRJ4WxaEe6LRLlRuuap-Q"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1344" posY="192" xmi:id="_kHRJ4mxaEe6LRLlRuuap-Q">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlOutput_1" xmi:id="_kHRJ42xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_5" xmi:id="_kHRJ5GxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true" xmi:id="_kHRJ5WxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMysqlConfiguration_1" xmi:id="_kHRJ5mxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL" xmi:id="_kHRJ52xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.mysql_host" xmi:id="_kHRJ6GxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;3306&quot;" xmi:id="_kHRJ6WxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.mysql_db" xmi:id="_kHRJ6mxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.mysql_user" xmi:id="_kHRJ62xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:nDieurKeJEOD8bxnl0LMebcMoT39F74w4BUBZaTXYS9B8AJt" xmi:id="_kHRJ7GxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="context.mysql_table" xmi:id="_kHRJ7WxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE" xmi:id="_kHRJ7mxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT" xmi:id="_kHRJ72xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" xmi:id="_kHRJ8GxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id" xmi:id="_kHRJ8WxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;noDatetimeStringSync=true&quot;" xmi:id="_kHRJ8mxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true" xmi:id="_kHRJ82xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" xmi:id="_kHRJ9GxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="POOL_MAX_TOTAL" show="false" value="8" xmi:id="_kHRJ9WxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="POOL_MAX_WAIT" show="false" value="-1" xmi:id="_kHRJ9mxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="POOL_MIN_IDLE" show="false" value="0" xmi:id="_kHRJ92xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="POOL_MAX_IDLE" show="false" value="8" xmi:id="_kHRJ-GxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="CHECK" name="POOL_USE_EVICTION" show="false" value="false" xmi:id="_kHRJ-WxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="POOL_TIME_BETWEEN_EVICTION" show="false" value="-1" xmi:id="_kHRJ-mxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="POOL_EVICTION_MIN_IDLE_TIME" show="false" value="1800000" xmi:id="_kHRJ-2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="POOL_EVICTION_SOFT_MIN_IDLE_TIME" show="false" value="0" xmi:id="_kHRJ_GxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="LABEL" value="Output to Database" xmi:id="_kHRJ_WxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_kHRJ_mxaEe6LRLlRuuap-Q"/>
+    <metadata connector="FLOW" name="tMysqlOutput_1" xmi:id="_kHRJ_2xaEe6LRLlRuuap-Q">
+      <column comment="" key="false" length="36" name="transactionId" nullable="true" originalLength="32" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true" xmi:id="_kHRKAGxaEe6LRLlRuuap-Q"/>
+      <column comment="" key="false" length="-1" name="transactionTime" nullable="true" originalLength="30" pattern="&quot;YYYY-MM-DD hh:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true" xmi:id="_kHRKAWxaEe6LRLlRuuap-Q"/>
+      <column comment="maps a unit of time in the real world. In this case 1 step is 1 hour of time. Total steps 744 (30 days simulation)" key="false" length="-1" name="step" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true" xmi:id="_kHRKAmxaEe6LRLlRuuap-Q"/>
+      <column comment="CASH-IN, CASH-OUT, DEBIT, PAYMENT and TRANSFER" key="false" length="10" name="type" nullable="true" originalLength="10" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true" xmi:id="_kHRKA2xaEe6LRLlRuuap-Q"/>
+      <column comment="The business model aims to control massive transfers from one account to another and flags illegal attempts. An illegal attempt in this dataset is an attempt to transfer more than 200.000 in a single transaction" key="false" length="-1" name="isFlaggedFraud" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true" xmi:id="_kHRKBGxaEe6LRLlRuuap-Q"/>
+      <column comment="This is the transactions made by the fraudulent agents inside the simulation. In this specific dataset the fraudulent behavior of the agents aims to profit by taking control or customers accounts and try to empty the funds by transferring to another account and then cashing out of the system" key="false" length="-1" name="labelOriginal" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true" xmi:id="_kHRKBWxaEe6LRLlRuuap-Q"/>
+      <column key="false" length="-1" name="label" nullable="true" originalLength="1" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true" xmi:id="_kHRKBmxaEe6LRLlRuuap-Q"/>
+      <column comment="amount of the transaction in local currency" key="false" length="-1" name="amount" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="DOUBLE" type="id_Double" usefulColumn="true" xmi:id="_kHRKB2xaEe6LRLlRuuap-Q"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tKafkaInput_1" offsetLabelX="0" offsetLabelY="0" source="tKafkaInput_1" target="tExtractDelimitedFields_1" xmi:id="_kHRKCGxaEe6LRLlRuuap-Q">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false" xmi:id="_kHRKCWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1" xmi:id="_kHRKCmxaEe6LRLlRuuap-Q"/>
+  </connection>
+  <connection connectorName="FLOW" label="trans" lineStyle="0" metaname="tExtractDelimitedFields_1" offsetLabelX="0" offsetLabelY="0" source="tExtractDelimitedFields_1" target="tMap_1" xmi:id="_kHRKC2xaEe6LRLlRuuap-Q">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false" xmi:id="_kHRKDGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="trans" xmi:id="_kHRKDWxaEe6LRLlRuuap-Q"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFilterRow_1" xmi:id="_kHRKDmxaEe6LRLlRuuap-Q">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false" xmi:id="_kHRKD2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1" xmi:id="_kHRKEGxaEe6LRLlRuuap-Q"/>
+  </connection>
+  <connection connectorName="FLOW" label="pay_types" lineStyle="8" metaname="tMysqlLookupInput_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlLookupInput_1" target="tMap_1" xmi:id="_kHRKEWxaEe6LRLlRuuap-Q">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false" xmi:id="_kHRKEmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="pay_types" xmi:id="_kHRKE2xaEe6LRLlRuuap-Q"/>
+  </connection>
+  <connection connectorName="FILTER" label="row5" lineStyle="0" metaname="tFilterRow_1" offsetLabelX="0" offsetLabelY="0" source="tFilterRow_1" target="tPredict_1" xmi:id="_kHRKFGxaEe6LRLlRuuap-Q">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false" xmi:id="_kHRKFWxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5" xmi:id="_kHRKFmxaEe6LRLlRuuap-Q"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tPredict_1" offsetLabelX="0" offsetLabelY="0" source="tPredict_1" target="tMap_2" xmi:id="_kHRKF2xaEe6LRLlRuuap-Q">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false" xmi:id="_kHRKGGxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3" xmi:id="_kHRKGWxaEe6LRLlRuuap-Q"/>
+  </connection>
+  <connection connectorName="FLOW" label="out2" lineStyle="0" metaname="out2" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tMysqlOutput_1" xmi:id="_kHRKGmxaEe6LRLlRuuap-Q">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false" xmi:id="_kHRKG2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out2" xmi:id="_kHRKHGxaEe6LRLlRuuap-Q"/>
+  </connection>
+  <subjob xmi:id="_kHRKHWxaEe6LRLlRuuap-Q">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tKafkaConfiguration_1" xmi:id="_kHRKHmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150" xmi:id="_kHRKH2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_kHRKIGxaEe6LRLlRuuap-Q"/>
+  </subjob>
+  <subjob xmi:id="_kHRKIWxaEe6LRLlRuuap-Q">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlConfiguration_1" xmi:id="_kHRKImxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150" xmi:id="_kHRKI2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_kHRKJGxaEe6LRLlRuuap-Q"/>
+  </subjob>
+  <subjob xmi:id="_kHRKJWxaEe6LRLlRuuap-Q">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tKafkaInput_1" xmi:id="_kHRKJmxaEe6LRLlRuuap-Q"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150" xmi:id="_kHRKJ2xaEe6LRLlRuuap-Q"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_kHRKKGxaEe6LRLlRuuap-Q"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d425fe04-c320-46ee-9df3-42ac99671459"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dJyu838MyVMF0iqUZTUjx/n1MmDN93Clttxl+zavrGLzpcfb+vZS5kz6YqE0efjBK/IO2Chq2J2+&#13;
+xOQat6cHTA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_194d33f5-76f1-49d4-b712-15ae514785fd"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5rRsXg4szsiQAmR9uu+vSv1jQcwkBw5FI31BYVG/5qCoxnZNZntFt4pCEnsLGC7vYlfMpag/TJIH&#13;
+Z/4CQgE7Lg==</DigestValue></Reference></SignedInfo><SignatureValue>R4EwbSAEuJYTJesJnzSdQNgD1jkvrIiZt1+Aa7x4wiIOI2OpfR7ikbec9XcKgzxYSo9TDPEerssz&#13;
+piyIq/nX7MzukD/M7oAAheZu90fLVNGHopYORXLFPJ5CIYT+sQq86PsGCg3XoIXdLDYWPJO8Z7Kc&#13;
+HVscSA28eSBCd+y7kkAtewXtIit3sJRN7mfwvlRgLZeAL7IYmQZ9pLjMBTdDDpnqXq1x5O51S2Jd&#13;
+PiMy/j6JR8M/z2iWthr76vjJ9vAe3woeXozNrZSo0DLwyogj25alnLnYMd09hhfSJv7jtZ0rWLhV&#13;
+RxE0zLwqGkdNyxfBY9Zsk74LDQ1opD+DI8kkag==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_194d33f5-76f1-49d4-b712-15ae514785fd" Target="#_d425fe04-c320-46ee-9df3-42ac99671459"><Timestamp>2023-10-16 19:31:12</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

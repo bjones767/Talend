@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='190' id='1' V190='11' inStruct='Structures/DEMO_BANK/DATA_INTEGRATION/GENERIC/TDI017_TDM_mainframe_processing/Transactions_copybook/TDI017_TDM_mainframe_processing_TRANSACTIONS.xml' outStruct='Structures/Jobs/TDI017_Mainframe_Proc_spark/tHMapInput_1/OutputWrapper.xml' inputRep='173' nextMap='' inputStructUserName='TDI017_TDM_mainframe_processing_TRANSACTIONS' outputStructUserName='OutputWrapper' V1='4' name='tHMapInput_1' incarnation='287'>
+  <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='53' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRANSACTIONS'>
+    <mapNode t='190' idref='1'/>
+    <child t='200' id='3' V200='8' input='true' rowElem='true' structElemExists='true' usedCount='45' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Record'>
+      <mapNode t='190' idref='1'/>
+      <child t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='2' maxSize='2' dataType='22' dataFormat='200' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='POSTING_TRANSIT' description='9(3)'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='5' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='4' maxSize='4' dataType='16' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='POSTING_ACCT_NUM' description='9(5)'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='6' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='19' maxSize='19' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='BUSINESS_DATE' description='X(19)'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='7' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='22' dataFormat='200' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SYSTEM_TIME' description='9(12)'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='8' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='19' maxSize='19' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='POSTING_DATE' description='X(19)'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='9' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='BUSINESS_DATE_IND' description='X'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='10' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='6' maxSize='6' dataType='22' dataFormat='202' decimalPositions='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TXN_AMT' description='9(8)V99'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='11' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DR_CR_IND' description='X'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='12' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='8' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PROC_DT' description='X(8)'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='13' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='2' maxSize='2' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='STATE'>
+        <mapNode t='190' idref='1'/>
+      </child>
+    </child>
+  </inputMapElem>
+  <outputMapElem t='200' id='14' V200='8' structElemExists='true' usedCount='74' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='root'>
+    <mapNode t='190' idref='1'/>
+    <loop>SimpleLoop([autoAdded="true"],in$/TRANSACTIONS,{Filter},{Sort Keys},{Contexts})</loop>
+    <child t='200' id='15' V200='8' structElemExists='true' usedCount='64' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/TDI017_Mainframe_Proc_spark/tHMapInput_1/transactions.xml' V281='13' modifiedFromParent_io='true' V1='4' name='transactions'>
+      <mapNode t='190' idref='1'/>
+      <repRuntime t='699' id='16' V699='1' V690='1' rowElemPath='/root/transactionsRecord'>
+      </repRuntime>
+      <io>WriteURL([repName="AVRO"],{URL})</io>
+      <child t='200' id='61' V200='8' structElemExists='true' usedCount='55' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Jobs/TDI017_Mainframe_Proc_spark/tHMapInput_1/transactionsRecord.xml' V281='13' modifiedFromParent_loop='true' V1='4' name='transactionsRecord'>
+        <mapNode t='190' idref='1'/>
+        <loop>SimpleLoop(in$/TRANSACTIONS/Record,{Filter},{Sort Keys},{Contexts})</loop>
+        <child t='200' id='62' V200='8' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' modifiedFromParent_value='true' V1='4' name='posting_transit'>
+          <mapNode t='190' idref='1'/>
+          <value>in$/TRANSACTIONS/Record/POSTING_TRANSIT</value>
+        </child>
+        <child t='200' id='63' V200='8' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' modifiedFromParent_value='true' V1='4' name='posting_acct_num'>
+          <mapNode t='190' idref='1'/>
+          <value>in$/TRANSACTIONS/Record/POSTING_ACCT_NUM</value>
+        </child>
+        <child t='200' id='64' V200='8' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' modifiedFromParent_value='true' V1='4' name='business_date'>
+          <mapNode t='190' idref='1'/>
+          <value>in$/TRANSACTIONS/Record/BUSINESS_DATE</value>
+        </child>
+        <child t='200' id='65' V200='8' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' modifiedFromParent_value='true' V1='4' name='system_time'>
+          <mapNode t='190' idref='1'/>
+          <value>in$/TRANSACTIONS/Record/SYSTEM_TIME</value>
+        </child>
+        <child t='200' id='66' V200='8' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' modifiedFromParent_value='true' V1='4' name='posting_date'>
+          <mapNode t='190' idref='1'/>
+          <value>in$/TRANSACTIONS/Record/POSTING_DATE</value>
+        </child>
+        <child t='200' id='67' V200='8' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' modifiedFromParent_value='true' V1='4' name='business_date_indi'>
+          <mapNode t='190' idref='1'/>
+          <value>in$/TRANSACTIONS/Record/BUSINESS_DATE_IND</value>
+        </child>
+        <child t='200' id='68' V200='8' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' modifiedFromParent_value='true' V1='4' name='txn_amt'>
+          <mapNode t='190' idref='1'/>
+          <value>in$/TRANSACTIONS/Record/TXN_AMT</value>
+        </child>
+        <child t='200' id='69' V200='8' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' modifiedFromParent_value='true' V1='4' name='dr_cr_ind'>
+          <mapNode t='190' idref='1'/>
+          <value>in$/TRANSACTIONS/Record/DR_CR_IND</value>
+        </child>
+        <child t='200' id='70' V200='8' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' modifiedFromParent_value='true' V1='4' name='proc_dt'>
+          <mapNode t='190' idref='1'/>
+          <value>in$/TRANSACTIONS/Record/PROC_DT</value>
+        </child>
+        <child t='200' id='71' V200='8' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' modifiedFromParent_value='true' V1='4' name='state'>
+          <mapNode t='190' idref='1'/>
+          <value>in$/TRANSACTIONS/Record/STATE</value>
+        </child>
+      </child>
+    </child>
+  </outputMapElem>
+  <inputRepRuntime t='693' id='59' V693='1' delimiter=',' physicalEncoding='1' numberEncoding='1' positional='true' padOccurs='true' structName='Structures/DEMO_BANK/DATA_INTEGRATION/GENERIC/TDI017_TDM_mainframe_processing/Transactions_copybook/TDI017_TDM_mainframe_processing_TRANSACTIONS.xml' V690='1' padOutput='true' encoding='IBM037' trimInput='true'>
+  </inputRepRuntime>
+  <valueSets></valueSets>
+  <inputXmlRepRuntime t='692' id='60' V692='1' V690='1'>
+  </inputXmlRepRuntime>
+  <child t='165' id='17' V1='4' name='Document Bindings'>
+    <child t='166' id='18' V166='5' docType='2' V1='4' name='out$/root/transactions'>
+      <elemNode t='200' idref='15'/>
+    </child>
+    <child t='166' id='19' V166='5' docType='1' docReposPath='/DEMOBANK_7_3/Sample Data/DEMO_BANK/DATA_INTEGRATION/GENERIC/TDI017_TDM_mainframe_processing/Transactions_copybook/TDI017_TDM_mainframe_processing_TRANSACTIONS/TDI017_TDM_mainframe_processing.dat' V1='4' name='in$/TRANSACTIONS'>
+      <elemNode t='200' idref='2'/>
+    </child>
+  </child>
+  <child t='201' id='20' V1='4' name='Inherits From'>
+  </child>
+</root>

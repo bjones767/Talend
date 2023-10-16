@@ -1,0 +1,26 @@
+package org.talend.survivorship.company 
+
+import java.util.Date
+import java.math.BigDecimal
+
+global org.talend.survivorship.model.DataSet dataset
+
+declare  RecordIn 
+
+    TALEND_INTERNAL_ID : int  
+    guid : String  
+    company_name_std : String  
+    phone : String  
+    street : String  
+    city : String  
+    region : String  
+    country : String  
+    email : String  
+    gid : String  
+    grp_size : Integer  
+    master : Boolean  
+    score : Double  
+    grp_quality : Double  
+end
+
+

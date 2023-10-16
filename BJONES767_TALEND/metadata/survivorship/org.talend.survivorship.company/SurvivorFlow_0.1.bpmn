@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<definitions id="Definition"
+             targetNamespace="http://www.jboss.org/drools"
+             typeLanguage="http://www.java.com/javaTypes"
+             expressionLanguage="http://www.mvel.org/2.0"
+             xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd"
+             xmlns:g="http://www.jboss.org/drools/flow/gpd"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+             xmlns:tns="http://www.jboss.org/drools">
+
+  <process processType="Private" isExecutable="true" id="org.talend.survivorship.company.SurvivorFlow" name="SurvivorFlow" >
+
+    <!-- nodes -->
+    <startEvent id="_jbpm-unique-7" name="start"  isInterrupting="false">
+    </startEvent>
+    <businessRuleTask id="_jbpm-unique-8" name="guid" g:ruleFlowGroup="guidGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-9" name="name" g:ruleFlowGroup="nameGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-10" name="phone" g:ruleFlowGroup="phoneGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-11" name="address" g:ruleFlowGroup="addressGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-12" name="email" g:ruleFlowGroup="emailGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <endEvent id="_jbpm-unique-13" name="end" >
+        <terminateEventDefinition />
+    </endEvent>
+
+    <!-- connections -->
+    <sequenceFlow id="_jbpm-unique-7-_jbpm-unique-8" sourceRef="_jbpm-unique-7" targetRef="_jbpm-unique-8" />
+    <sequenceFlow id="_jbpm-unique-8-_jbpm-unique-9" sourceRef="_jbpm-unique-8" targetRef="_jbpm-unique-9" />
+    <sequenceFlow id="_jbpm-unique-9-_jbpm-unique-10" sourceRef="_jbpm-unique-9" targetRef="_jbpm-unique-10" />
+    <sequenceFlow id="_jbpm-unique-10-_jbpm-unique-11" sourceRef="_jbpm-unique-10" targetRef="_jbpm-unique-11" />
+    <sequenceFlow id="_jbpm-unique-11-_jbpm-unique-12" sourceRef="_jbpm-unique-11" targetRef="_jbpm-unique-12" />
+    <sequenceFlow id="_jbpm-unique-12-_jbpm-unique-13" sourceRef="_jbpm-unique-12" targetRef="_jbpm-unique-13" />
+
+  </process>
+
+  <bpmndi:BPMNDiagram>
+    <bpmndi:BPMNPlane bpmnElement="org.talend.survivorship.company.SurvivorFlow" >
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-7" >
+        <dc:Bounds x="32" y="16" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-8" >
+        <dc:Bounds x="16" y="96" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-9" >
+        <dc:Bounds x="16" y="176" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-10" >
+        <dc:Bounds x="16" y="256" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-11" >
+        <dc:Bounds x="16" y="336" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-12" >
+        <dc:Bounds x="16" y="416" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-13" >
+        <dc:Bounds x="32" y="496" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-7-_jbpm-unique-8" >
+        <di:waypoint x="56" y="40" />
+        <di:waypoint x="56" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-8-_jbpm-unique-9" >
+        <di:waypoint x="56" y="120" />
+        <di:waypoint x="56" y="200" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-9-_jbpm-unique-10" >
+        <di:waypoint x="56" y="200" />
+        <di:waypoint x="56" y="280" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-10-_jbpm-unique-11" >
+        <di:waypoint x="56" y="280" />
+        <di:waypoint x="56" y="360" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-11-_jbpm-unique-12" >
+        <di:waypoint x="56" y="360" />
+        <di:waypoint x="56" y="440" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-12-_jbpm-unique-13" >
+        <di:waypoint x="56" y="440" />
+        <di:waypoint x="56" y="520" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+
+</definitions>

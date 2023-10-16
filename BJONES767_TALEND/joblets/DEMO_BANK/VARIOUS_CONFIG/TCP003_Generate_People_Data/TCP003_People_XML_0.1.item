@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:model="http://www.talend.com/joblet.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <model:JobletProcess defaultContext="Default" jobType="Standard">
+    <context confirmationNeeded="false" name="Default">
+      <contextParameter comment="" internalId="_bdxGcMCEEeq8_boSsrrDsQ" name="People_Record_Count_Min" prompt="People_Record_Count_Min?" promptNeeded="false" repositoryContextId="_1-kH0KdaEeq79rfxjFUMvg" type="id_Integer" value="3"/>
+      <contextParameter comment="" internalId="_bdxGccCEEeq8_boSsrrDsQ" name="People_Record_Count_Max" prompt="People_Record_Count_Max?" promptNeeded="false" repositoryContextId="_1-kH0KdaEeq79rfxjFUMvg" type="id_Integer" value="10"/>
+      <contextParameter comment="" internalId="_bdxGcsCEEeq8_boSsrrDsQ" name="People_Record_ID_Max_Value" prompt="People_Record_ID_Max_Value?" promptNeeded="false" repositoryContextId="_1-kH0KdaEeq79rfxjFUMvg" type="id_Integer" value="1000"/>
+    </context>
+    <parameters>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" show="false" value="false"/>
+      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" show="false" value="25000"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="ICON_SELECTION" name="ICONSELECTION" value=""/>
+      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;C:/Talend/7.3.1/workspace/in.csv&quot;"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+      <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+      <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+      <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value="ORACLE_12"/>
+      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:tMnnplCTGYPWsCuCEbhnsQ3CEpnplKAffRa4tors"/>
+      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="true"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="true"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+      <routinesParameter id="_pGXIwG6jEeqXFo7T3Rtgng" name="DQTechnical"/>
+      <routinesParameter id="_pF4AkG6jEeqXFo7T3Rtgng" name="DataMasking"/>
+      <routinesParameter id="_pElnIG6jEeqXFo7T3Rtgng" name="DataOperation"/>
+      <routinesParameter id="_pGJGUG6jEeqXFo7T3Rtgng" name="DataQualityDependencies"/>
+      <routinesParameter id="_pGBxkG6jEeqXFo7T3Rtgng" name="DataQuality"/>
+      <routinesParameter id="_pGPM8G6jEeqXFo7T3Rtgng" name="DqStringHandling"/>
+      <routinesParameter id="_pEsU0G6jEeqXFo7T3Rtgng" name="Mathematical"/>
+      <routinesParameter id="_pE03sG6jEeqXFo7T3Rtgng" name="Numeric"/>
+      <routinesParameter id="_pE8McG6jEeqXFo7T3Rtgng" name="Relational"/>
+      <routinesParameter id="_pFwEwG6jEeqXFo7T3Rtgng" name="SQLike"/>
+      <routinesParameter id="_pFC6IG6jEeqXFo7T3Rtgng" name="StringHandling"/>
+      <routinesParameter id="_pFMrIG6jEeqXFo7T3Rtgng" name="TalendDataGenerator"/>
+      <routinesParameter id="_pFV1EG6jEeqXFo7T3Rtgng" name="TalendDate"/>
+      <routinesParameter id="_pFoI8G6jEeqXFo7T3Rtgng" name="TalendStringUtil"/>
+      <routinesParameter id="_pFfmEG6jEeqXFo7T3Rtgng" name="TalendString"/>
+    </parameters>
+    <node componentName="TCP003_People_Dataset" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="160" posY="224">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TCP003_People_Dataset_1"/>
+      <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+      <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+      <elementParameter field="CHECK" name="DUMMY" show="false" value="false"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+      <elementParameter field="CHECK" name="START" show="false" value="false"/>
+      <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+      <elementParameter field="CLOSED_LIST" name="TRIGGER_INPUT_1" value="COMPONENT_OK"/>
+      <elementParameter field="COMPONENT_LIST" name="TRIGGER_INPUT_1:COMPONENT_LIST" value="TRIGGER_INPUT_1"/>
+      <elementParameter field="TEXT" name="LABEL" value="TCP003_People_Dataset"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="OUTPUT_1" name="OUTPUT_1">
+        <column comment="" defaultValue="" key="false" length="-1" name="Updated" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true">
+          <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getCurrentDate&quot;,&quot;PARAMETERS&quot;:[],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendDate&quot;}"/>
+        </column>
+        <column comment="" key="true" length="-1" name="ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true">
+          <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;random&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;min value&quot;,&quot;PARAMETER_VALUE&quot;:&quot;1 &quot;},{&quot;PARAMETER_NAME&quot;:&quot;max value&quot;,&quot;PARAMETER_VALUE&quot;:&quot;context.People_Record_ID_Max_Value &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;Numeric&quot;}"/>
+        </column>
+        <column comment="" key="false" length="-1" name="FirstName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+          <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getFirstName&quot;,&quot;PARAMETERS&quot;:[],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendDataGenerator&quot;}"/>
+        </column>
+        <column comment="" key="false" length="-1" name="LastName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+          <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getLastName&quot;,&quot;PARAMETERS&quot;:[],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendDataGenerator&quot;}"/>
+        </column>
+        <column comment="" key="false" length="-1" name="Address" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+          <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot; Numeric.random(100,9999) + \&quot; \&quot; + TalendDataGenerator.getUsStreet() &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
+        </column>
+        <column comment="" key="false" length="-1" name="City" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+          <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getUsCity&quot;,&quot;PARAMETERS&quot;:[],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendDataGenerator&quot;}"/>
+        </column>
+        <column comment="" key="false" length="-1" name="State" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+          <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getUsStateId&quot;,&quot;PARAMETERS&quot;:[],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendDataGenerator&quot;}"/>
+        </column>
+        <column comment="" key="false" length="-1" name="Type" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+          <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;\&quot;A\&quot;, \&quot;B\&quot;, \&quot;C\&quot; &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
+        </column>
+      </metadata>
+    </node>
+    <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="224">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
+      <elementParameter field="EXTERNAL" name="MAP" value=""/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+      <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="people_xml" name="people_xml">
+        <column comment="" key="false" length="-1" name="people" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+      </metadata>
+      <nodeData xsi:type="TalendXMLMap:XmlMapData">
+        <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="people">
+          <nodes name="ID" outgoingConnections="/0/@node.1/@nodeData/@connections.1" type="id_Integer" xpath="people/ID"/>
+          <nodes name="FirstName" outgoingConnections="/0/@node.1/@nodeData/@connections.2" type="id_String" xpath="people/FirstName"/>
+          <nodes name="LastName" outgoingConnections="/0/@node.1/@nodeData/@connections.3" type="id_String" xpath="people/LastName"/>
+          <nodes name="Address" outgoingConnections="/0/@node.1/@nodeData/@connections.4" type="id_String" xpath="people/Address"/>
+          <nodes name="City" outgoingConnections="/0/@node.1/@nodeData/@connections.5" type="id_String" xpath="people/City"/>
+          <nodes name="State" outgoingConnections="/0/@node.1/@nodeData/@connections.6" type="id_String" xpath="people/State"/>
+          <nodes name="Type" outgoingConnections="/0/@node.1/@nodeData/@connections.0" type="id_String" xpath="people/Type"/>
+        </inputTrees>
+        <outputTrees activateCondensedTool="true" allInOne="true" enableEmptyElement="false" name="people_xml">
+          <nodes expression="" name="people" type="id_Document" xpath="people_xml/people">
+            <children expression="" main="true" name="People" type="id_String" xpath="people_xml.people:/People" xsi:type="TalendXMLMap:OutputTreeNode">
+              <children expression="" loop="true" main="true" name="Person" type="id_String" xpath="people_xml.people:/People/Person" xsi:type="TalendXMLMap:OutputTreeNode">
+                <children expression="people.Type" incomingConnections="/0/@node.1/@nodeData/@connections.0" name="Type" nodeType="ATTRIBUT" type="id_String" xpath="people_xml.people:/People/Person/@Type" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;,TalendDate.getCurrentDate()) " name="Updated" nodeType="ATTRIBUT" type="id_String" xpath="people_xml.people:/People/Person/@Updated" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression="people.ID" incomingConnections="/0/@node.1/@nodeData/@connections.1" name="ID" type="id_String" xpath="people_xml.people:/People/Person/ID" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression="people.FirstName" incomingConnections="/0/@node.1/@nodeData/@connections.2" name="FirstName" type="id_String" xpath="people_xml.people:/People/Person/FirstName" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression="people.LastName" incomingConnections="/0/@node.1/@nodeData/@connections.3" name="LastName" type="id_String" xpath="people_xml.people:/People/Person/LastName" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression="people.Address" incomingConnections="/0/@node.1/@nodeData/@connections.4" name="Address" type="id_String" xpath="people_xml.people:/People/Person/Address" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression="people.City" incomingConnections="/0/@node.1/@nodeData/@connections.5" name="City" type="id_String" xpath="people_xml.people:/People/Person/City" xsi:type="TalendXMLMap:OutputTreeNode"/>
+                <children expression="people.State" incomingConnections="/0/@node.1/@nodeData/@connections.6" name="State" type="id_String" xpath="people_xml.people:/People/Person/State" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              </children>
+            </children>
+          </nodes>
+        </outputTrees>
+        <varTables minimized="true" name="Var"/>
+        <connections source="/0/@node.1/@nodeData/@inputTrees.0/@nodes.6" target="/0/@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0" xsi:type="TalendXMLMap:Connection"/>
+        <connections source="/0/@node.1/@nodeData/@inputTrees.0/@nodes.0" target="/0/@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
+        <connections source="/0/@node.1/@nodeData/@inputTrees.0/@nodes.1" target="/0/@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.3" xsi:type="TalendXMLMap:Connection"/>
+        <connections source="/0/@node.1/@nodeData/@inputTrees.0/@nodes.2" target="/0/@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.4" xsi:type="TalendXMLMap:Connection"/>
+        <connections source="/0/@node.1/@nodeData/@inputTrees.0/@nodes.3" target="/0/@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.5" xsi:type="TalendXMLMap:Connection"/>
+        <connections source="/0/@node.1/@nodeData/@inputTrees.0/@nodes.4" target="/0/@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.6" xsi:type="TalendXMLMap:Connection"/>
+        <connections source="/0/@node.1/@nodeData/@inputTrees.0/@nodes.5" target="/0/@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.7" xsi:type="TalendXMLMap:Connection"/>
+      </nodeData>
+    </node>
+    <connection connectorName="OUTPUT_1" label="people" lineStyle="0" metaname="OUTPUT_1" offsetLabelX="0" offsetLabelY="0" source="TCP003_People_Dataset_1" target="tXMLMap_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="people"/>
+    </connection>
+    <connection connectorName="FLOW" label="people_xml" lineStyle="0" metaname="people_xml" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="OUTPUT_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="people_xml"/>
+    </connection>
+    <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="TRIGGER_INPUT_1" offsetLabelX="0" offsetLabelY="0" source="TRIGGER_INPUT_1" target="TCP003_People_Dataset_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+    </connection>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="TCP003_People_Dataset_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="TRIGGER_INPUT_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <jobletNodes componentName="OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="224">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OUTPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="false"/>
+      <elementParameter field="CHECK" name="START" show="false" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" label="out" name="OUTPUT_1">
+        <column comment="" key="false" length="-1" name="people" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+    <jobletNodes componentName="TRIGGER_INPUT" componentVersion="0.1" input="true" offsetLabelX="0" offsetLabelY="0" posX="160" posY="64" trigger="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_INPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+      <elementParameter field="CHECK" name="START" show="false" value="true"/>
+      <elementParameter field="TEXT" name="LABEL" value="TRIGGER_INPUT_2"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+    </jobletNodes>
+  </model:JobletProcess>
+  <TalendProperties:ByteArray innerContent="89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7AF4000002F449444154789CDD974B4C53411486D9B856773E62A289D1950BC585892B564617C485A2F2D0421104A43C12458211030A71214181DAA21028465440CB4BD0F2908712248A5537C407892C7C813431B1E5DE96DF39C39DA6D5B6B4455AE3245F2EB79D9EF3CD99D3B93402404438096BF2FF52601563B372F55F202EBD084BA0500916C98861E4331219518C357E0B04338484E6EC95524A2ECBF6E616E3D8D4FBC9AF03ECBE8491C058BF6C0249D9A59CDCC24A0C3F7BD543C955A98D387C548FBA86C16F8A848AB1615904F4865627ADDD43A8D29BACC919F7A039DD8FD8C41A54D7F47D5724D48C9D4B16F8FCC5E246FFB0D98D0ADD439040F6992164E50D2021D94052B356AB745F91A0BE58199440756D3F2FED62A464B67201812AF5362A75268B4B5FEC7595F05BE040EC55B7C081909CD1C23F3F32FAD6AC48EC17122111205235ED38185789AE47E6778AC43EC68A900910E939DD8889D762E8C9C41B163293B135A402C489AC0E14971AAD2C643963774805D272BA5805AAC25381144D1BEB810A987A5F4F20D43DA04E6FE69F1F7BFEE185923C1A817E0BE81C3894706D518E9F34BA241F041DCDEC30B27C9C9AE95592EF4130E7008DE9991F3EA9AD1F703B09E3D5F5D0EA7B661D8EF926F83A09ADB9ABE10B5BF136CC69A321DD4AF38ADC731935BA362E9079AA0F4754D761B8D10E65D5498C1DF0F62C1089EC2F8D704C3CE67FCF4F4F42EE2D8774379BAF7EAE2C0AD6BCB590BB2EF07BDBA55DB08F36706C2591903B8BD079E701169E863A34193A9954194D3D86C59E86CE955EDCCE83CB1DE731FF7316B6824D4E0192A1398EA9F1050136D73E52C7B1156C84644884346EE4129F9E76F0E4D2CD149ABACE5B728F5B40C98504DD9300C9105405BAFE2E40F3E83D92A04A488D197CCB6CE7B6C057728F0214F00F01B61DB435625B3C09F00AB24AD076D055BC169000AD82865835251102AEBDE04DC0130109D0FE8A80B4626A4A2140FD4055117D22045C07BDB62481E5C02F8160FF27F43494587EFF96F87704FE26010B8493B00BFC02DAEB3F28391811080000000049454E44AE426082"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a097b481-7ef2-47c5-8dfb-ce6644657070"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>I+Hm6G+fiXJvxIqJWhE7mUR7GI7cG4bMqQDerQyaq2o7QP8g/JuXsf24UpCg4glhyVVa9xr/OeAI&#13;
+p6+Z1ovRPw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_45628335-ff3f-420a-846e-24181d95f563"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>AVeQK4qVSFCG60Khj6VO//FwuZoCmGJ70lChjgvZlDAQ3i0AqP888YtIKyQJZsLRdS9VLMCVsx+y&#13;
+KtS0gTi7fw==</DigestValue></Reference></SignedInfo><SignatureValue>V1dyYmsbHhaIclB6SvbVUaw05gGorEOnqnX2nL6WqbP5Eu4dX5RNv0NCW0TegXu0zQxFoBWSaUi4&#13;
+0SeYJoO5FykGj3G+/Tw7zcd8c6z229IRcIpESasA1JodLq8YSlV23DlymKFV096i2aVfKWOGoyFe&#13;
+W3QrLKQ7seCZcH5VwGh1miAHID+eLYofINBkwTzjlTrX4iNdvl3n2T+RmGKPcWQLwF/iHM4Du48t&#13;
+kKYCt8dHHAVfenXaEfJ8eEn0uBB8VhTXgtCRZJdenR+VK6VJBv6JhPFD1dDDyn/StfaauIqa/c3z&#13;
+QyvbSXz2obkgIuJPORwSmqaBIw81yWajAv/Ohw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_45628335-ff3f-420a-846e-24181d95f563" Target="#_a097b481-7ef2-47c5-8dfb-ce6644657070"><Timestamp>2023-10-16 19:30:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

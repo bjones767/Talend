@@ -1,0 +1,26 @@
+{
+  "itemId" : "_OjTE8EwhEeqzJrdFJd4phA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_h3rABbxsEeqpcuzGNioURw",
+    "parameterList" : [ {
+      "id" : "_c9M44MCEEeq8_boSsrrDsQ",
+      "name" : "People_XML_Feed_Interval_ms"
+    }, {
+      "id" : "_c9M44cCEEeq8_boSsrrDsQ",
+      "name" : "People_XML_Feed_Repeat_count"
+    }, {
+      "id" : "_c9M44sCEEeq8_boSsrrDsQ",
+      "name" : "People_XML_Feed_Delay_ms"
+    }, {
+      "id" : "_c9M448CEEeq8_boSsrrDsQ",
+      "name" : "People_XML_Feed_Record_Count_Min"
+    }, {
+      "id" : "_c9M45MCEEeq8_boSsrrDsQ",
+      "name" : "People_XML_Feed_Record_Count_Max"
+    }, {
+      "id" : "_c9M45cCEEeq8_boSsrrDsQ",
+      "name" : "People_XML_Feed_Direct_Channel_Name"
+    } ]
+  } ]
+}

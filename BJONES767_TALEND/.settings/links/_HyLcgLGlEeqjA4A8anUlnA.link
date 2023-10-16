@@ -1,0 +1,17 @@
+{
+  "itemId" : "_HyLcgLGlEeqjA4A8anUlnA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_1-kH0KdaEeq79rfxjFUMvg",
+    "parameterList" : [ {
+      "id" : "_bdxGcMCEEeq8_boSsrrDsQ",
+      "name" : "People_Record_Count_Min"
+    }, {
+      "id" : "_bdxGccCEEeq8_boSsrrDsQ",
+      "name" : "People_Record_Count_Max"
+    }, {
+      "id" : "_bdxGcsCEEeq8_boSsrrDsQ",
+      "name" : "People_Record_ID_Max_Value"
+    } ]
+  } ]
+}

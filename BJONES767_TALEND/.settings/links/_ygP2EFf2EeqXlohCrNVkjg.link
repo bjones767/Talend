@@ -1,0 +1,21 @@
+{
+  "itemId" : "_ygP2EFf2EeqXlohCrNVkjg",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_1-kH0KdaEeq79rfxjFUMvg",
+    "parameterList" : [ {
+      "id" : "_bdxGcsCEEeq8_boSsrrDsQ",
+      "name" : "People_Record_ID_Max_Value"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_sE8iMLItEeqjA4A8anUlnA",
+    "parameterList" : [ {
+      "id" : "_bpjfsMCEEeq8_boSsrrDsQ",
+      "name" : "People_HSQLDB_Table_Name"
+    }, {
+      "id" : "_bpjfscCEEeq8_boSsrrDsQ",
+      "name" : "People_HSQLDB_Database_Name"
+    } ]
+  } ]
+}

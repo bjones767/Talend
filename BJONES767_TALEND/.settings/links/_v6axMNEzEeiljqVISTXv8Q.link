@@ -1,0 +1,20 @@
+{
+  "itemId" : "_v6axMNEzEeiljqVISTXv8Q",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_BJeZsNeAEeiMIbU1qA32Eg",
+    "parameterList" : [ {
+      "id" : "_EbZOcXmgEeqgmeJrUPNDog",
+      "name" : "ADLS_GEN1_ACCOUNT"
+    }, {
+      "id" : "_EbZOcnmgEeqgmeJrUPNDog",
+      "name" : "ADLS_GEN1_CLIENT_ID"
+    }, {
+      "id" : "_EbZOdHmgEeqgmeJrUPNDog",
+      "name" : "ADLS_GEN1_CLIENT_KEY"
+    }, {
+      "id" : "_EbZOc3mgEeqgmeJrUPNDog",
+      "name" : "ADLS_GEN1_TOKEN_ENDPOINT"
+    } ]
+  } ]
+}

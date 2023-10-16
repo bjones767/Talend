@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='150' id='1' V150='13' creationTimestamp='0x16c96aefbfb' V1='4' name='NACHA_IAT_CSV' incarnation='55'>
+  <rootElem t='167' id='2' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='csv'>
+    <structNode t='150' idref='1'/>
+    <child t='167' id='3' V167='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='row' checksumValid='true' checksum='bc+BIMrWO4AbH35aGfmTTs1Y7Ts='>
+      <structNode t='150' idref='1'/>
+      <child t='167' id='4' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Record_Type_Code'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='5' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Service_Class_Code1'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='6' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Service_Class_Code2'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='7' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Foreign_Exchange_Indicator'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='8' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Foreign_Exchange_Reference_Indicator'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='9' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Foreign_Exchange_Reference'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='10' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='ISO_Destination_Country_Code'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='11' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Originator_ID'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='12' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Entry_Class'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='13' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Entry_Description'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='14' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='ISO_Orig_Curr_Code'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='15' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='ISO_Dest_Curr_Code'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='16' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Date'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='17' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Settlement_Date'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='18' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Originator_Status_Code'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='19' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Originating_ID'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='20' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Batch_Sequence_Number'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='21' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Record_Type_Code'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='22' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Transaction_Code'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='23' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Detail_Transit'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='24' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Check_Digit'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='25' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Num_Addenda_Records'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='26' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Filler'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='27' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Amount'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='28' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Account_Number'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='29' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Filler'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='30' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Filler'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='31' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Filler'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='32' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Addenda'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='33' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Trace_Number'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>\t</delimTerminator>
+      </child>
+      <child t='167' id='34' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Detail_Addenda_Record_Indicator'>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='35' V167='21' V283='2' occurMaxTimes='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='__osdtTerminator'>
+        <structNode t='150' idref='1'/>
+        <delimInitiator>\n</delimInitiator>
+      </child>
+    </child>
+  </rootElem>
+  <defaultRep t='183' id='36' V183='1' V170='10' V706='1' defaultHeader='Col' delimiter=',' quoteCharacter='"' quoteMode='4' newLineType='2' newLine='&#xD;&#xA;' V690='1' encoding='UTF-8' importDate='Thu Aug 15 12:09:11 PDT 2019' importFile='file:/C:/Talend/work/wu/filecreator/example_out/IAT_CSV.txt' ignoreExcluded='true' fixInvalidCharacters='true' V1='4' name='CSV'>
+  </defaultRep>
+  <rowElem t='167' idref='3'/>
+  <child t='162' id='37' V1='4' name='Representations'>
+    <child t='183' idref='36'/>
+    <child t='172' id='38' V172='6' autoFixNamespaceMismatch='true' V170='10' V692='1' V690='1' ignoreExcluded='true' fixInvalidCharacters='true' V1='4' name='XML'>
+    </child>
+    <child t='173' id='40' V170='10' V693='1' delimiter='\t' outputDelimitedHeader='true' structName='Structures/NACHA_IAT_CSV.xml' V690='1' padOutput='true' trimInput='true' ignoreExcluded='true' fixInvalidCharacters='true' V1='4' name='Flat'>
+    </child>
+  </child>
+  <child t='165' id='39' V1='4' name='Document Bindings'>
+    <child t='166' id='41' V166='5' docType='1' docReposPath='/LOCAL_DEMO/Sample Data/NACHA_IAT_CSV/IAT_CSV' V1='4' name='/csv'>
+      <elemNode t='167' idref='2'/>
+    </child>
+  </child>
+</root>

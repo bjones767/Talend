@@ -1,0 +1,14 @@
+package org.talend.survivorship.company 
+
+rule "guid"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "guidGroup"
+when
+    $input : RecordIn( guid != null, master == true )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "guid", drools.getRule().getName());
+
+end
+
+

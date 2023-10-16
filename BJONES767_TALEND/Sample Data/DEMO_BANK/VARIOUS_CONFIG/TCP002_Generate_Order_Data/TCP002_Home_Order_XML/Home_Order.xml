@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order>
+	<Transaction_ID>9917b937-ab51-431c-9ae5-aaea6814b56b</Transaction_ID>
+	<FirstName>Martin</FirstName>
+	<LastName>Hayes</LastName>
+	<Address>1432 Santa Monica Road</Address>
+	<City>Austin</City>
+	<State>IL</State>
+	<product>
+		<SKU>35434546</SKU>
+		<Name>Spray Paint, Orange</Name>
+		<Category>Paint</Category>
+		<UOM>16 oz Can</UOM>
+		<Price>6.53</Price>
+		<Quantity>2</Quantity>
+	</product>
+	<product>
+		<SKU>35445468</SKU>
+		<Name>Primer, Grey</Name>
+		<Category>Paint</Category>
+		<UOM>16 oz Can</UOM>
+		<Price>46.33</Price>
+		<Quantity>9</Quantity>
+	</product>
+	<product>
+		<SKU>53768445</SKU>
+		<Name>Breaker, 15A</Name>
+		<Category>Electrical</Category>
+		<UOM>EA</UOM>
+		<Price>5.99</Price>
+		<Quantity>8</Quantity>
+	</product>
+	<product>
+		<SKU>35732168</SKU>
+		<Name>3 in #6 Machine Screws</Name>
+		<Category>Hardware</Category>
+		<UOM>PKG</UOM>
+		<Price>4.28</Price>
+		<Quantity>10</Quantity>
+	</product>
+	<product>
+		<SKU>24354795</SKU>
+		<Name>Paint, Candy Apple</Name>
+		<Category>Paint</Category>
+		<UOM>QT</UOM>
+		<Price>8.98</Price>
+		<Quantity>3</Quantity>
+	</product>
+	<product>
+		<SKU>24354795</SKU>
+		<Name>Paint, Candy Apple</Name>
+		<Category>Paint</Category>
+		<UOM>QT</UOM>
+		<Price>8.98</Price>
+		<Quantity>7</Quantity>
+	</product>
+	<product>
+		<SKU>84546681</SKU>
+		<Name>Topsoil</Name>
+		<Category>Garden</Category>
+		<UOM>Yd</UOM>
+		<Price>38.99</Price>
+		<Quantity>1</Quantity>
+	</product>
+	<OrderTotal>649.54</OrderTotal>
+</order>

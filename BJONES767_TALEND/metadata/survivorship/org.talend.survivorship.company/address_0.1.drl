@@ -1,0 +1,17 @@
+package org.talend.survivorship.company 
+
+rule "address"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "addressGroup"
+when
+    $input : RecordIn( dataset.isShortest( street, "street", false) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "street", drools.getRule().getName());
+    dataset.survive( $input.TALEND_INTERNAL_ID, "city", drools.getRule().getName());
+    dataset.survive( $input.TALEND_INTERNAL_ID, "region", drools.getRule().getName());
+    dataset.survive( $input.TALEND_INTERNAL_ID, "country", drools.getRule().getName());
+
+end
+
+

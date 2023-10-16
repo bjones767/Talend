@@ -1,0 +1,62 @@
+package routines;
+
+import com.sun.istack.internal.NotNull;
+
+public class TDI005_Util {
+
+    /**
+     * stripBrackets: Returns the string stripped of brackets
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("[world]") input: The string
+     * 
+     * {example} stripBrackets("[world]") # world.
+     */
+    public static String stripBrackets(String s) {
+   	    if (s == null || s.trim() == "") 
+            return s;
+        
+        if (s.length() > 2 && s.indexOf('[') == 0) {
+        	return s.substring(1, s.lastIndexOf(']'));
+        }
+        return s;
+    }
+    
+    public static String choose(String[] array) {
+    	return array[(new java.util.Random()).nextInt(array.length)];
+    }
+    
+    public static Object getDefaultIfNull(Object value, Object defaultVal) {
+    	return value == null ? defaultVal : value;
+    }
+    
+    public static Object thisOrThat(Object thisValue, Object thatValue) {
+    	return thisValue == null ? thatValue : thisValue;
+    }
+    
+    public static Object thisOrThatNeverNull(Object thisValue, Object thatValue, @NotNull Object defaultVal) {
+    	return thisValue != null ? thisValue : thatValue != null ? thatValue : defaultVal;
+    }
+    
+    public static String toTitleCase(String input) {
+        StringBuilder titleCase = new StringBuilder();
+        boolean nextTitleCase = true;
+
+        for (char c : input.toCharArray()) {
+            if (Character.isSpaceChar(c)) {
+                nextTitleCase = true;
+            } else if (nextTitleCase) {
+                c = Character.toTitleCase(c);
+                nextTitleCase = false;
+            }
+
+            titleCase.append(c);
+        }
+
+        return titleCase.toString();
+    }
+}

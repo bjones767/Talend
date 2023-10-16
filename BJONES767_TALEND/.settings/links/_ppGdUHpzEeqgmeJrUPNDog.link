@@ -1,0 +1,33 @@
+{
+  "itemId" : "_ppGdUHpzEeqgmeJrUPNDog",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_BPZ-EHplEeqgmeJrUPNDog",
+    "parameterList" : [ {
+      "id" : "_PzBYgHplEeqgmeJrUPNDog",
+      "name" : "ADLS_GEN2_ACCOUNT_NAME"
+    }, {
+      "id" : "_PzBYgnplEeqgmeJrUPNDog",
+      "name" : "ADLS_GEN2_FILE_SYSTEM"
+    }, {
+      "id" : "_PzBYgXplEeqgmeJrUPNDog",
+      "name" : "ADLS_GEN2_SHARED_KEY"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_TzPacGpaEemulb6Kit1byQ",
+    "parameterList" : [ {
+      "id" : "_EZoT4XmgEeqgmeJrUPNDog",
+      "name" : "DATABRICKS_ACCESS_TOKEN"
+    }, {
+      "id" : "_EZoT43mgEeqgmeJrUPNDog",
+      "name" : "DATABRICKS_DEPENDENCY_FOLDER"
+    }, {
+      "id" : "_EZoT5HmgEeqgmeJrUPNDog",
+      "name" : "DATABRICKS_ENDPOINT"
+    }, {
+      "id" : "_qqp6oHmnEeqgmeJrUPNDog",
+      "name" : "DATABRICKS_WORKSPACE_ID"
+    } ]
+  } ]
+}

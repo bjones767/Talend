@@ -1,0 +1,167 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "No description",
+    "version" : "1.0.0",
+    "title" : "Student API",
+    "contact" : { }
+  },
+  "host" : "127.0.0.1:8090",
+  "basePath" : "/student-api",
+  "schemes" : [ "http" ],
+  "consumes" : [ "application/json" ],
+  "produces" : [ "application/json" ],
+  "paths" : {
+    "/student/{id}/" : {
+      "get" : {
+        "summary" : "Get by Student ID",
+        "description" : "Get Students using the Student ID",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Status 200",
+            "schema" : {
+              "$ref" : "#/definitions/Student JSON"
+            }
+          }
+        }
+      },
+      "delete" : {
+        "summary" : "Delete Student",
+        "description" : "Delete the student by ID",
+        "parameters" : [ ],
+        "responses" : {
+          "202" : {
+            "description" : "Status 202"
+          }
+        }
+      },
+      "parameters" : [ {
+        "name" : "id",
+        "in" : "path",
+        "required" : true,
+        "type" : "string"
+      } ]
+    },
+    "/student/" : {
+      "get" : {
+        "summary" : "Get Students",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "lastName",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "description" : "Student Last Name"
+        }, {
+          "name" : "entryTerm",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "description" : "Student Entry Term"
+        }, {
+          "name" : "firstName",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "description" : "Student First Name"
+        }, {
+          "name" : "applicantStatus",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "description" : "Student Applicant Status",
+          "enum" : [ "accepted", "denied", "withdraw", "enrolled" ]
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Status 200",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Student JSON"
+              }
+            },
+            "examples" : {
+              "application/json" : "{  \n   \"student\":[  \n      {  \n         \"studentId\":145003,\n         \"firstName\":\"Benjamin\",\n         \"middleName\":\"Woodrow\",\n         \"lastName\":\"Fillmore\",\n         \"applicantStatus\":\"withdraw\",\n         \"entryTerm\":201702,\n         \"address\":\"539 Cleveland Ave.\",\n         \"city\":\"Helena\",\n         \"state\":\"Mississippi\",\n         \"zip\":3657\n      },\n      {  \n         \"studentId\":145013,\n         \"firstName\":\"Andrew\",\n         \"middleName\":\"Warren\",\n         \"lastName\":\"Fillmore\",\n         \"applicantStatus\":\"accepted\",\n         \"entryTerm\":201701,\n         \"address\":\"1229 Bailard Avenue\",\n         \"city\":\"Trenton\",\n         \"state\":\"South Carolina\",\n         \"zip\":63959\n      },\n      {  \n         \"studentId\":145091,\n         \"firstName\":\"Millard\",\n         \"middleName\":\"Richard\",\n         \"lastName\":\"Fillmore\",\n         \"applicantStatus\":\"enrolled\",\n         \"entryTerm\":201701,\n         \"address\":\"1090 Carpinteria North\",\n         \"city\":\"Providence\",\n         \"state\":\"Maine\",\n         \"zip\":57472\n      }\n   ]\n}"
+            }
+          }
+        }
+      },
+      "post" : {
+        "summary" : "Add a new Student",
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Student JSON"
+          },
+          "x-examples" : {
+            "application/json" : "{\n  \"student\": {\n    \"studentId\": 55555,\n    \"firstName\": \"Andrew\",\n    \"middleName\": \"Franklin\",\n    \"lastName\": \"Quincy\",\n    \"applicantStatus\": \"accepted\",\n    \"entryTerm\": 201702,\n    \"address\": \"1793 East Main Street\",\n    \"city\": \"Columbia\",\n    \"state\": \"Hawaii\",\n    \"zip\": 62433\n  }\n}"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          }
+        }
+      },
+      "parameters" : [ ]
+    }
+  },
+  "definitions" : {
+    "applicantStatus" : {
+      "type" : "string",
+      "description" : "The Student Applicant Status",
+      "enum" : [ "accepted", "denied", "withdraw", "enrolled" ]
+    },
+    "Student JSON" : {
+      "type" : "object",
+      "properties" : {
+        "Student" : {
+          "type" : "object",
+          "properties" : {
+            "zip" : {
+              "type" : "number",
+              "description" : "US Postal Code"
+            },
+            "city" : {
+              "type" : "string"
+            },
+            "state" : {
+              "type" : "string"
+            },
+            "address" : {
+              "type" : "string"
+            },
+            "lastName" : {
+              "type" : "string"
+            },
+            "entryTerm" : {
+              "type" : "number",
+              "example" : 201701.0
+            },
+            "firstName" : {
+              "type" : "string"
+            },
+            "studentId" : {
+              "type" : "number",
+              "example" : 145001.0
+            },
+            "middleName" : {
+              "type" : "string"
+            },
+            "applicantStatus" : {
+              "$ref" : "#/definitions/applicantStatus"
+            }
+          }
+        }
+      },
+      "description" : "Student JSON Structure",
+      "example" : "{\n  \"student\": {\n    \"studentId\": 145025,\n    \"firstName\": \"Andrew\",\n    \"middleName\": \"Franklin\",\n    \"lastName\": \"Quincy\",\n    \"applicantStatus\": \"accepted\",\n    \"entryTerm\": 201702,\n    \"address\": \"1793 East Main Street\",\n    \"city\": \"Columbia\",\n    \"state\": \"Hawaii\",\n    \"zip\": 62433\n  }\n}"
+    }
+  }
+}

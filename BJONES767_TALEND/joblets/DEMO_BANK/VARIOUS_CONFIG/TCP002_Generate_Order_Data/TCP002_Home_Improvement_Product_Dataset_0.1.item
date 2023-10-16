@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore" xmi:version="2.0">
+  <model:JobletProcess defaultContext="Default" jobType="Standard">
+    <context confirmationNeeded="false" name="Default"/>
+    <parameters>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" show="false" value="false"/>
+      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" show="false" value="25000"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="ICON_SELECTION" name="ICONSELECTION" value=""/>
+      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;C:/Talend/7.1.1/Studio/workspace/in.csv&quot;"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+      <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+      <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+      <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value="ORACLE_12"/>
+      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:C2Zdd7w/uiDiSx7DmXem22D7ZAxFuSP5ES5s0OKQ"/>
+      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="true"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="true"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+      <routinesParameter id="_tCTRAH48Eemc8KCbM8roeg" name="DQTechnical"/>
+      <routinesParameter id="_tAFqgH48Eemc8KCbM8roeg" name="DataMasking"/>
+      <routinesParameter id="_tCZ-sH48Eemc8KCbM8roeg" name="DataOperation"/>
+      <routinesParameter id="_tCEngH48Eemc8KCbM8roeg" name="DataQualityDependencies"/>
+      <routinesParameter id="_tB950H48Eemc8KCbM8roeg" name="DataQuality"/>
+      <routinesParameter id="_tCMjUH48Eemc8KCbM8roeg" name="DqStringHandling"/>
+      <routinesParameter id="_tChTcH48Eemc8KCbM8roeg" name="Mathematical"/>
+      <routinesParameter id="_tCoBIH48Eemc8KCbM8roeg" name="Numeric"/>
+      <routinesParameter id="_tCtgsH48Eemc8KCbM8roeg" name="Relational"/>
+      <routinesParameter id="_tDXoAH48Eemc8KCbM8roeg" name="SQLike"/>
+      <routinesParameter id="_tCznUH48Eemc8KCbM8roeg" name="StringHandling"/>
+      <routinesParameter id="_tC68EH48Eemc8KCbM8roeg" name="TalendDataGenerator"/>
+      <routinesParameter id="_tDBpwH48Eemc8KCbM8roeg" name="TalendDate"/>
+      <routinesParameter id="_tDPFIH48Eemc8KCbM8roeg" name="TalendStringUtil"/>
+      <routinesParameter id="_tDI-gH48Eemc8KCbM8roeg" name="TalendString"/>
+    </parameters>
+    <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="96">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
+      <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+      <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
+      <elementParameter field="TABLE" name="VALUES" show="false">
+        <elementValue elementRef="SCHEMA_COLUMN" value="SKU"/>
+        <elementValue elementRef="VALUE" value=""/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+        <elementValue elementRef="VALUE" value=""/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="UOM"/>
+        <elementValue elementRef="VALUE" value=""/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="Price"/>
+        <elementValue elementRef="VALUE" value=""/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="Category"/>
+        <elementValue elementRef="VALUE" value=""/>
+      </elementParameter>
+      <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+      <elementParameter field="TABLE" name="INTABLE" show="false"/>
+      <elementParameter field="RADIO" name="USE_INLINECONTENT" value="true"/>
+      <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+      <elementParameter field="MEMO" name="INLINECONTENT" value="43049232|Crepe Myrtle Tree|EA|48.99|Garden&#13;&#10;38574968|10 ft Hose|EA|19.99|Garden&#13;&#10;84546681|Topsoil|Yd|38.99|Garden&#13;&#10;86741354|Terracotta Pot|EA|8.99|Garden&#13;&#10;76435246|River Rock|40lb Bag|6.89|Garden&#13;&#10;98465134|Holland Paver|EA|3.88|Garden&#13;&#10;78645352|Firepit Ring|EA|139.88|Garden&#13;&#10;74851354|Sand|Yd|115.88|Garden&#13;&#10;34854786|Roses|Plant|32.89|Garden&#13;&#10;16437465|Pergola|EA|389.65|Garden&#13;&#10;86435168|Paint, Candy Apple|GAL|32.99|Paint&#13;&#10;89461374|Paint, Soft Lavendar|GAL|28.96|Paint&#13;&#10;24354795|Paint, Candy Apple|QT|8.98|Paint&#13;&#10;68746846|Paint, Soft Lavendar|QT|8.59|Paint&#13;&#10;86427485|Spray Paint, Red|16 oz Can|6.53|Paint&#13;&#10;35434546|Spray Paint, Orange|16 oz Can|6.53|Paint&#13;&#10;68152418|Spray Paint, Yellow|16 oz Can|6.53|Paint&#13;&#10;54465467|Spray Paint, Green|16 oz Can|6.53|Paint&#13;&#10;72313546|Spray Paint, Blue|16 oz Can|6.53|Paint&#13;&#10;73153465|Spray Paint, Indigo|16 oz Can|6.53|Paint&#13;&#10;35468547|Spray Paint, Violet|16 oz Can|6.53|Paint&#13;&#10;54698135|Spray Paint Primer, Grey|16 oz Can|7.55|Paint&#13;&#10;35445468|Primer, Grey|16 oz Can|46.33|Paint&#13;&#10;23438415|Paint Brush, 4 in|EA|4.99|Paint&#13;&#10;56873574|Paint Brush, 3 in|EA|3.99|Paint&#13;&#10;35486416|Paint Brush, 2 in|EA|2.99|Paint&#13;&#10;45315678|Paint Brush, 1.5 in|EA|2.49|Paint&#13;&#10;35886914|Paint Brush, 1 in|EA|1.99|Paint&#13;&#10;35486456|Paint Roller|EA|12.99|Paint&#13;&#10;53879645|Roller brushes (5)|PKG|8.99|Paint&#13;&#10;16846134|1/4 in 4 in Bolt|PKG|8.99|Hardware&#13;&#10;86413513|3/8 in 3.5 in Bolt|PKG|6.88|Hardware&#13;&#10;68464246|4 in Hinge|EA|5.49|Hardware&#13;&#10;64968453|2 in Hinge|EA|2.99|Hardware&#13;&#10;68153546|2 1/2 in Deck Screw|PKG|5.99|Hardware&#13;&#10;86461335|3 1/2 in Deck Screw|PKG|6.88|Hardware&#13;&#10;86513513|1 5/8 in Deck Screws|PKG|3.99|Hardware&#13;&#10;23874686|2 in #8 Machine Screws|PKG|3.49|Hardware&#13;&#10;63487864|1 in #6 Machine Screws|PKG|2.99|Hardware&#13;&#10;10638435|1 in #10 Machine Screws|PKG|1.99|Hardware&#13;&#10;35732168|3 in #6 Machine Screws|PKG|4.28|Hardware&#13;&#10;23134856|1/4 in Nuts|PKG|1.19|Hardware&#13;&#10;35434357|3/8 in Nuts|PKG|1.49|Hardware&#13;&#10;48743845|#6 Nuts|PKG|0.59|Hardware&#13;&#10;46463987|#8 Nuts|PKG|0.49|Hardware&#13;&#10;78543546|#10 Nuts|PKG|0.45|Hardware&#13;&#10;53575716|2 Gang Box, New Work|EA|2.59|Electrical&#13;&#10;46876866|2 Gang Box, Old Work|EA|2.99|Electrical&#13;&#10;15638524|1 Gang Box, New Work|EA|1.59|Electrical&#13;&#10;56743513|1 Gang Box, Old Work|EA|2.59|Electrical&#13;&#10;88463213|Outlet, 15A|EA|2.99|Electrical&#13;&#10;57685186|Outlet, 20A|EA|3.49|Electrical&#13;&#10;18643547|Outlet Cover, 1 Gang|EA|0.59|Electrical&#13;&#10;52378461|Blank Cover, 1 Gang|EA|0.59|Electrical&#13;&#10;68461364|Outlet Cover, 2 Gang|EA|0.79|Electrical&#13;&#10;83185467|Blank Cover, 2 Gang|EA|0.79|Electrical&#13;&#10;53768445|Breaker, 15A|EA|5.99|Electrical&#13;&#10;21746841|Breaker, 20A|EA|6.99|Electrical&#13;&#10;35788168|Breaker, 30A|EA|7.99|Electrical&#13;&#10;83746846|Breaker, 50A|EA|8.99|Electrical&#13;&#10;38468481|Wire, 2/12|100 ft|52.99|Electrical&#13;&#10;47685437|Wire, 2/14|100 ft|38.99|Electrical&#13;&#10;94163854|Wire, 3/12|100 ft|65.99|Electrical&#13;&#10;86341564|Wire, 3/14|100 ft|45.89|Electrical&#13;&#10;38434138|Wire, 2/12|50 ft|27.88|Electrical&#13;&#10;54354359|Wire, 2/14|50 ft|19.89|Electrical&#13;&#10;68415135|Wire, 3/12|50 ft|36.49|Electrical&#13;&#10;16384656|Wire, 3/14|50 ft|25.69|Electrical"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tFixedFlowInput_1">
+        <column comment="" key="true" length="8" name="SKU" nullable="true" originalLength="8" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="150" name="Name" nullable="true" originalLength="150" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="UOM" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="7" name="Price" nullable="true" originalLength="7" pattern="" precision="2" sourceType="" type="id_Float" usefulColumn="true"/>
+        <column comment="" key="false" length="30" name="Category" nullable="true" originalLength="30" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="OUTPUT_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="UOM"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="Category"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="Price"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="SKU"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="Name"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+    </connection>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <jobletNodes componentName="OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="96">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OUTPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="false"/>
+      <elementParameter field="CHECK" name="START" show="false" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" name="OUTPUT_1">
+        <column comment="" key="true" length="8" name="SKU" nullable="true" originalLength="8" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="150" name="Name" nullable="true" originalLength="150" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="UOM" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="7" name="Price" nullable="true" originalLength="7" pattern="" precision="2" sourceType="" type="id_Float" usefulColumn="true"/>
+        <column comment="" key="false" length="30" name="Category" nullable="true" originalLength="30" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+  </model:JobletProcess>
+  <TalendProperties:ByteArray innerContent="89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7AF40000034749444154789CC5965B4853711CC77DEAA5877C142289089FC287F2A187420A2AC2B00435D31993D9963335B3BC404420AD5E0299B7AD79ED82496ADE50716CF3929A2D2B2B03B30B6941D9C53D18A29BFDFA7F4FE78CB38B9BC79C1B7C18FBFFCEEFF7FDFE7FE777FE67214414120042193BF96F9FD706427C0F239151C448631C608405CC407CB2D609BFE344BBDDD1D4DC6A9D79FF71B69FFDD63052195B43BC7DD628BC7905D0F62288CB550D94745A4F757706BEF326E48C6DFF6B209C6FA9DC07D72A0DA6B9F4CC16CACEB750725A35DDAA36FFE24D2818516B3510CE17D07C9AFE61F18560E07CE120E514F4536AFA6D2AD71BE71616961EF235B0892D520D204953A633DAD05A7F28B3DA38030272D57D42AE682E8E72262418486034B26173292C85F4CC6642FEC8E8D4386FE2C4861A00AAEC0E4A4829A3EEDEF17730B1E106803AB787126515343834F93A2806C0D99C4E2ABEDEBA10140319B9DDAC03E5C1E98032BB9DCD4029194DAF26377C0614EA26EE29B08E7D78C63F05B16B3A074EA656923FCE9C6B15890F108E667618D9A6677E9A78F123E273403862137C90C1A864B47CFD667BE90B7DB5795E7C12CA14F5A43398E69797FF0CF335AE328E41D7E588458BFDD0C1B030467DF0A6AAB66F1106B22E99E994DC4075770717B1CE78C2E8E56B71EF06676B0BAB8CB608B9965643A4B2C22B87F2EBE9E68361AA6918A27F6F431DE9EAFA48D769A5028391A22FD4386B404F18426EB8B0B83422F3CAAA63562539DE96927DF631757598A9AD7F82963FB79363AA82EC63591E79D09564E04B573C15AB76D1BEC850EAD11E7489BDB817C3C54A2EC7D1EF8912724C376297649FD0D0D253B5D79A2B1A785475986AAFECA5A996E32E2210450C423BC236B9C4702DE240161341F6E77914A5D63BCDA11E101BF76A4010888B0EF310114027BCC56002B94D37F67B7407E2C8C1B74F03364B12570006F077C15D0471C4DC45840E2962B77BDC1E20D4F47B0BB0838B29119C90370388036FF32118C44ED10D714C58F36B001761C880BB016DDE6E6E0DBB046211B4163910023022C4B021AC210735FC0E211CA380FB10E237EEA7805844C813D657CA13D794FC18AE774C3020F9245C0FC427A19477C17AE27C17ACF66DB8DE402F5CCAFF81801074037F01C2F86878ADF24F370000000049454E44AE426082"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9671d54f-9024-4f42-b53b-e8d1e74665b7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qhvoMUDONNryRNqo8gpeR7IU0UEgKbCnqFF3fv8IH0vWsa3fl77gG3fmFAw5TxdLEukuVpNGeIaj&#13;
+jH4uYl6ddw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c593bbde-6a4b-4418-9cf0-b00af8c56ae5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KsfMSLKLhsZGyl31gR4yOGGTkWyHr7G4Zt8OOonRNwNv14sXZd3NRWX3PgEDIdLNULAciGKg0F1d&#13;
+oqa7g1BEMw==</DigestValue></Reference></SignedInfo><SignatureValue>Z4YK85c5rNKLbB87L7pi4M0O0wPveUhLMm+WL1X9T7Jp69Hdzo9Yj2pp3kE911IABB68N3K+mVoI&#13;
+PXXnu9Zpv521Y7pXVAog1N7Ot4pD+UZ7/OIkNFazIw8jiHzH2ueAasZBluYYsm15+O3vxMcqMfAf&#13;
+DX/YN+5hFBTfni/fIm3NJOqAtoJQmRmqEI3T2jrSdya5bVuFGRbxRt2EayoWWstLUaIdQGQqSv98&#13;
+dBsOt/3ROEb33cb9F1IQT1mnGmk0duktAqgm3G7gkxYUEVHVza9zB34Xz1pG4HfIXJaf9r5UkQVu&#13;
+4DDnHxjE4xNA/U6UKCnnxXQDiZgcUMEwWzLwhQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c593bbde-6a4b-4418-9cf0-b00af8c56ae5" Target="#_9671d54f-9024-4f42-b53b-e8d1e74665b7"><Timestamp>2023-10-16 19:30:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

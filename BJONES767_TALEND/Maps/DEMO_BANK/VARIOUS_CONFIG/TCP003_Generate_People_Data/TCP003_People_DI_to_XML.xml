@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='190' id='1' V190='11' inStruct='Structures/DEMO_BANK/VARIOUS_CONFIG/TCP003_Generate_People_Data/TCP003_People_DI.xml' outStruct='Structures/DEMO_BANK/VARIOUS_CONFIG/TCP003_Generate_People_Data/TCP003_People_XML.xml' inputRep='178' outputRep='172' nextMap='' inputStructUserName='TCP003_People_DI' outputStructUserName='TCP003_People_XML' V1='4' name='tHMap_1' incarnation='365'>
+  <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='60' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
+    <mapNode t='190' idref='1'/>
+    <child t='200' id='11' V200='8' input='true' structElemExists='true' usedCount='45' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='row'>
+      <mapNode t='190' idref='1'/>
+      <child t='200' id='12' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Updated'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='13' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ID'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='14' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='FirstName'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='15' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LastName'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='16' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Address'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='17' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='City'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='18' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='State'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='19' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Type'>
+        <mapNode t='190' idref='1'/>
+      </child>
+    </child>
+  </inputMapElem>
+  <outputMapElem t='200' id='3' V200='8' structElemExists='true' usedCount='70' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='People'>
+    <mapNode t='190' idref='1'/>
+    <loop>SimpleLoop([autoAdded="true"],in$/root,{Filter},{Sort Keys},{Contexts})</loop>
+    <child t='200' id='20' V200='8' structElemExists='true' usedCount='54' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='Person'>
+      <mapNode t='190' idref='1'/>
+      <loop>SimpleLoop(in$/root/row,{Filter},{Sort Keys},{Contexts})</loop>
+      <child t='200' id='21' V200='8' structElemExists='true' usedCount='12' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='3' repHandlerStruct='' inheritsFrom='' V281='13' V1='4' name='Attributes'>
+        <mapNode t='190' idref='1'/>
+        <child t='200' id='22' V200='8' structElemExists='true' usedCount='6' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' elemType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Type'>
+          <mapNode t='190' idref='1'/>
+          <value>in$/root/row/Type</value>
+        </child>
+        <child t='200' id='23' V200='8' structElemExists='true' usedCount='6' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' elemType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Updated'>
+          <mapNode t='190' idref='1'/>
+          <value>in$/root/row/Updated</value>
+        </child>
+      </child>
+      <child t='200' id='24' V200='8' structElemExists='true' usedCount='6' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='ID'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/root/row/ID</value>
+      </child>
+      <child t='200' id='25' V200='8' structElemExists='true' usedCount='6' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='FirstName'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/root/row/FirstName</value>
+      </child>
+      <child t='200' id='26' V200='8' structElemExists='true' usedCount='6' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='LastName'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/root/row/LastName</value>
+      </child>
+      <child t='200' id='27' V200='8' structElemExists='true' usedCount='6' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Address'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/root/row/Address</value>
+      </child>
+      <child t='200' id='28' V200='8' structElemExists='true' usedCount='6' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='City'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/root/row/City</value>
+      </child>
+      <child t='200' id='29' V200='8' structElemExists='true' usedCount='6' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='State'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/root/row/State</value>
+      </child>
+    </child>
+  </outputMapElem>
+  <inputRepRuntime t='698' id='31' V698='1' V690='1' padOutput='true'>
+  </inputRepRuntime>
+  <outputRepRuntime t='692' id='5' V692='1' unnamedElemsNamespace='1' V690='1'>
+    <namespaceContainers t='220' ref='Namespace Containers/DEMO_BANK_VARIOUS_CONFIG_TCP003_Generate_People_Data.xml'/>
+  </outputRepRuntime>
+  <valueSets></valueSets>
+  <outputXmlRepRuntime t='692' idref='5'/>
+  <child t='165' id='6' V1='4' name='Document Bindings'>
+    <child t='166' id='7' V166='5' docType='1' V1='4' name='in$/root'>
+      <elemNode t='200' idref='2'/>
+    </child>
+    <child t='166' id='8' V166='5' docType='2' docReposPath='/DEMOBANK_7_3/Sample Data/DEMO_BANK/VARIOUS_CONFIG/TCP003_Generate_People_Data/TCP003_People_XML/People.xml' V1='4' name='out$/People'>
+      <elemNode t='200' idref='3'/>
+    </child>
+  </child>
+  <child t='201' id='9' V1='4' name='Inherits From'>
+  </child>
+</root>

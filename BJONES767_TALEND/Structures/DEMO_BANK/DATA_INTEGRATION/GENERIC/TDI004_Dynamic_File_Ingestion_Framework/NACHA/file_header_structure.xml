@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='150' id='1' V150='13' creationTimestamp='0x16c87d15d1f' V1='4' name='file_header_structure' incarnation='75'>
+  <rootElem t='167' id='55' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Root'>
+    <structNode t='150' idref='1'/>
+    <child t='167' id='56' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Row' checksumValid='true' checksum='B7P/YwVa890RDTPYQ3D7LeAVIgU='>
+      <structNode t='150' idref='1'/>
+      <child t='167' id='57' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Record_Type_Code_' description='  '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='58' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='2' maxSize='2' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Priority_Code_' description='  '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='59' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='10' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Destination_ID_' description='Fill with zeros to the left '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='60' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='10' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Company_ID_' description='Left-justified '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='61' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='6' maxSize='6' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Creation_Date_' description='YYMMDD '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='62' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='4' maxSize='4' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Creation_Time_' description='HHMM '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='63' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='File_ID_' description='Uppercase A-Z Numeric 0-9 '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='64' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='3' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Record_Size_' description='  '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='65' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='2' maxSize='2' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Blocking_Factor_' description='  '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='66' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Format_Code_' description='  '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='67' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='23' maxSize='23' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Destination_Name_' description='Left-justified '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='68' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='23' maxSize='23' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Company_Name_' description='Left-justified '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='69' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Return_' description='  '>
+        <structNode t='150' idref='1'/>
+      </child>
+    </child>
+  </rootElem>
+  <child t='162' id='17' V1='4' name='Representations'>
+  </child>
+  <child t='165' id='18' V1='4' name='Document Bindings'>
+    <child t='166' id='54' V166='5' docType='1' V1='4' name='/Root'>
+      <elemNode t='167' id='39' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Root'>
+        <structNode t='150' idref='1'/>
+        <child t='167' id='40' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Row' checksumValid='true' checksum='OVrnRVNA0krd80iJXHvO+dRXSVg='>
+          <structNode t='150' idref='1'/>
+          <child t='167' id='41' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Record_Type_Code_' description='  '>
+            <structNode t='150' idref='1'/>
+          </child>
+          <child t='167' id='42' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Priority_Code_' description='  '>
+            <structNode t='150' idref='1'/>
+          </child>
+          <child t='167' id='43' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Destination_ID_' description='Fill with zeros to the left '>
+            <structNode t='150' idref='1'/>
+          </child>
+          <child t='167' id='44' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Company_ID_' description='Left-justified '>
+            <structNode t='150' idref='1'/>
+          </child>
+          <child t='167' id='45' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Creation_Date_' description='YYMMDD '>
+            <structNode t='150' idref='1'/>
+          </child>
+          <child t='167' id='46' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Creation_Time_' description='HHMM '>
+            <structNode t='150' idref='1'/>
+          </child>
+          <child t='167' id='47' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='File_ID_' description='Uppercase A-Z Numeric 0-9 '>
+            <structNode t='150' idref='1'/>
+          </child>
+          <child t='167' id='48' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Record_Size_' description='  '>
+            <structNode t='150' idref='1'/>
+          </child>
+          <child t='167' id='49' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Blocking_Factor_' description='  '>
+            <structNode t='150' idref='1'/>
+          </child>
+          <child t='167' id='50' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Format_Code_' description='  '>
+            <structNode t='150' idref='1'/>
+          </child>
+          <child t='167' id='51' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Destination_Name_' description='Left-justified '>
+            <structNode t='150' idref='1'/>
+          </child>
+          <child t='167' id='52' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Company_Name_' description='Left-justified '>
+            <structNode t='150' idref='1'/>
+          </child>
+          <child t='167' id='53' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Return_' description='  '>
+            <structNode t='150' idref='1'/>
+          </child>
+        </child>
+      </elemNode>
+    </child>
+  </child>
+</root>

@@ -1,0 +1,19 @@
+package beans;
+
+import org.apache.camel.Exchange;
+import org.apache.camel.AggregationStrategy ;
+
+//simply preserve the sap header in the Exchange from the override 
+
+public class RTE009_AggregationStrategy implements AggregationStrategy {
+
+  public Exchange aggregate(Exchange oldExchange, Exchange newExchange) {
+      if (oldExchange == null) {
+          return newExchange;
+      }
+
+      	//Add the SAP header to the old Exchange that already contains salesforce and meteo header
+      oldExchange.getIn().setHeader("sap", newExchange.getIn().getHeader("sap"));
+      return oldExchange;
+  }
+}

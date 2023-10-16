@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='190' id='1' V190='11' inStruct='Structures/DEMO_BANK/BIG_DATA/RTS003/userInfo_avro/userInfo.xml' outStruct='Structures/DEMO_BANK/BIG_DATA/RTS003/Jobs/Kafka_Avro_flat_SchemaValidation/tHMapRecord_1/OutputWrapper.xml' inputRep='179' outputRep='179' nextMap='' inputStructUserName='userInfo' outputStructUserName='OutputWrapper' V1='4' name='tHMapRecord_1' incarnation='276'>
+  <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='119' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroNamespace='my.example' V281='13' V1='4' name='userInfo'>
+    <mapNode t='190' idref='1'/>
+    <child t='200' id='3' V200='8' input='true' structElemExists='true' usedCount='14' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='username'>
+      <mapNode t='190' idref='1'/>
+    </child>
+    <child t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='14' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='age'>
+      <mapNode t='190' idref='1'/>
+    </child>
+    <child t='200' id='5' V200='8' input='true' structElemExists='true' usedCount='14' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='phone'>
+      <mapNode t='190' idref='1'/>
+    </child>
+    <child t='200' id='6' V200='8' input='true' structElemExists='true' usedCount='14' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='housenum'>
+      <mapNode t='190' idref='1'/>
+    </child>
+    <child t='200' id='7' V200='8' input='true' structElemExists='true' usedCount='14' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='street'>
+      <mapNode t='190' idref='1'/>
+    </child>
+    <child t='200' id='8' V200='8' input='true' structElemExists='true' usedCount='14' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='city'>
+      <mapNode t='190' idref='1'/>
+    </child>
+    <child t='200' id='9' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='state_province'>
+      <mapNode t='190' idref='1'/>
+    </child>
+    <child t='200' id='10' V200='8' input='true' structElemExists='true' usedCount='14' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='country'>
+      <mapNode t='190' idref='1'/>
+    </child>
+    <child t='200' id='11' V200='8' input='true' structElemExists='true' usedCount='14' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='zip'>
+      <mapNode t='190' idref='1'/>
+    </child>
+  </inputMapElem>
+  <outputMapElem t='200' id='12' V200='8' structElemExists='true' usedCount='140' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='root'>
+    <mapNode t='190' idref='1'/>
+    <loop>SimpleLoop([autoAdded="true"],in$/userInfo,{Filter},{Sort Keys},{Contexts})</loop>
+    <child t='200' id='13' V200='8' differentFromInherited='true' structElemExists='true' usedCount='125' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_io='true' V1='4' name='out'>
+      <mapNode t='190' idref='1'/>
+      <io>WriteURL([repName="AVRO"],{URL})</io>
+      <child t='200' id='15' V200='8' differentFromInherited='true' structElemExists='true' usedCount='113' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='outRecord'>
+        <mapNode t='190' idref='1'/>
+        <child t='200' id='16' V200='8' structElemExists='true' usedCount='15' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' modifiedFromParent_value='true' V1='4' name='username'>
+          <mapNode t='190' idref='1'/>
+          <value>in$/userInfo/username</value>
+        </child>
+        <child t='200' id='17' V200='8' structElemExists='true' usedCount='15' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' avroNullPosition='1' V281='13' modifiedFromParent_value='true' V1='4' name='age'>
+          <mapNode t='190' idref='1'/>
+          <value>in$/userInfo/age</value>
+        </child>
+        <child t='200' id='18' V200='8' structElemExists='true' usedCount='15' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' modifiedFromParent_value='true' V1='4' name='phone'>
+          <mapNode t='190' idref='1'/>
+          <value>in$/userInfo/phone</value>
+        </child>
+        <child t='200' id='19' V200='8' structElemExists='true' usedCount='15' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' modifiedFromParent_value='true' V1='4' name='country'>
+          <mapNode t='190' idref='1'/>
+          <value>in$/userInfo/country</value>
+        </child>
+        <child t='200' id='20' V200='8' structElemExists='true' usedCount='15' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' modifiedFromParent_value='true' V1='4' name='housenum'>
+          <mapNode t='190' idref='1'/>
+          <value>in$/userInfo/housenum</value>
+        </child>
+        <child t='200' id='21' V200='8' structElemExists='true' usedCount='15' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' modifiedFromParent_value='true' V1='4' name='street'>
+          <mapNode t='190' idref='1'/>
+          <value>in$/userInfo/street</value>
+        </child>
+        <child t='200' id='22' V200='8' structElemExists='true' usedCount='15' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' modifiedFromParent_value='true' V1='4' name='zip'>
+          <mapNode t='190' idref='1'/>
+          <value>in$/userInfo/zip</value>
+        </child>
+        <child t='200' id='23' V200='8' structElemExists='true' usedCount='15' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' avroJavaClass='java.lang.String' avroNullPosition='1' V281='13' modifiedFromParent_value='true' V1='4' name='city'>
+          <mapNode t='190' idref='1'/>
+          <value>in$/userInfo/city</value>
+        </child>
+      </child>
+    </child>
+  </outputMapElem>
+  <inputRepRuntime t='699' id='41' V699='1' avroNamespace='my.example' V690='1'>
+  </inputRepRuntime>
+  <outputRepRuntime t='699' id='42' V699='1' V690='1'>
+  </outputRepRuntime>
+  <valueSets></valueSets>
+  <inputXmlRepRuntime t='692' id='43' V692='1' V690='1'>
+  </inputXmlRepRuntime>
+  <outputXmlRepRuntime t='692' id='44' V692='1' V690='1'>
+  </outputXmlRepRuntime>
+  <child t='165' id='28' V1='4' name='Document Bindings'>
+    <child t='166' id='29' V166='5' docType='2' V1='4' name='out$/root/out'>
+      <elemNode t='200' idref='13'/>
+    </child>
+    <child t='166' id='30' V166='5' docType='1' V1='4' name='in$/userInfo'>
+      <elemNode t='200' idref='2'/>
+    </child>
+    <child t='166' id='45' V166='5' docType='2' V1='4' name='out$/root'>
+      <elemNode t='200' idref='12'/>
+    </child>
+  </child>
+  <child t='201' id='31' V1='4' name='Inherits From'>
+  </child>
+</root>

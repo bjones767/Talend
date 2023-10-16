@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore" xmi:version="2.0">
+  <model:JobletProcess defaultContext="Default" jobType="Standard">
+    <context confirmationNeeded="false" name="Default"/>
+    <parameters>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" show="false" value="false"/>
+      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" show="false" value="25000"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="ICON_SELECTION" name="ICONSELECTION" value=""/>
+      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;/mnt/HDD2TB/Workspace/TLND711/in.csv&quot;"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value="ORACLE_12"/>
+      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:l4pYpxbukoyf2NAr95ltbpG7ikFQ2BpPT6dbfCpO"/>
+      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="true"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="true"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+      <routinesParameter id="_idpC0GX7EemEfY8_mbFFzg" name="DataMasking"/>
+      <routinesParameter id="_ifsRQGX7EemEfY8_mbFFzg" name="DataQuality"/>
+      <routinesParameter id="_ifutgGX7EemEfY8_mbFFzg" name="DataQualityDependencies"/>
+      <routinesParameter id="_ifyX4GX7EemEfY8_mbFFzg" name="DQTechnical"/>
+      <routinesParameter id="_if00IGX7EemEfY8_mbFFzg" name="DqStringHandling"/>
+      <routinesParameter id="_if2pUGX7EemEfY8_mbFFzg" name="TalendDataGenerator"/>
+      <routinesParameter id="_if4egGX7EemEfY8_mbFFzg" name="Numeric"/>
+      <routinesParameter id="_if6TsGX7EemEfY8_mbFFzg" name="TalendString"/>
+      <routinesParameter id="_if8v8GX7EemEfY8_mbFFzg" name="Relational"/>
+      <routinesParameter id="_igaC8GX7EemEfY8_mbFFzg" name="TalendDate"/>
+      <routinesParameter id="_igb4IGX7EemEfY8_mbFFzg" name="DataOperation"/>
+      <routinesParameter id="_igdtUGX7EemEfY8_mbFFzg" name="Mathematical"/>
+      <routinesParameter id="_iggJkGX7EemEfY8_mbFFzg" name="TalendStringUtil"/>
+      <routinesParameter id="_igh-wGX7EemEfY8_mbFFzg" name="StringHandling"/>
+      <routinesParameter id="_igjz8GX7EemEfY8_mbFFzg" name="SQLike"/>
+      <routinesParameter id="_iguzEGX7EemEfY8_mbFFzg" name="MDM"/>
+    </parameters>
+    <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="96">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFlowToIterate_1"/>
+      <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+      <elementParameter field="TABLE" name="MAP" show="false">
+        <elementValue elementRef="KEY" value="&quot;SP_TENANT&quot;"/>
+        <elementValue elementRef="VALUE" value="sp_tenant"/>
+        <elementValue elementRef="KEY" value="&quot;SP_SITE&quot;"/>
+        <elementValue elementRef="VALUE" value="sp_tenant"/>
+        <elementValue elementRef="KEY" value="&quot;SP_FOLDER&quot;"/>
+        <elementValue elementRef="VALUE" value="sp_tenant"/>
+        <elementValue elementRef="KEY" value="&quot;SP_COOKIE&quot;"/>
+        <elementValue elementRef="VALUE" value="sp_tenant"/>
+      </elementParameter>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tFlowToIterate_1"/>
+    </node>
+    <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="96">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTClient_1"/>
+      <elementParameter field="TEXT" name="URL" value="&quot;https://&quot; + globalMap.get(&quot;IN.sp_tenant&quot;) + &quot;.sharepoint.com&quot;"/>
+      <elementParameter field="TEXT" name="PATH" value="&quot;/&quot; + globalMap.get(&quot;IN.sp_site&quot;) + &quot;/_api/Web/GetFolderByServerRelativeUrl('&quot; + globalMap.get(&quot;IN.sp_folder&quot;) + &quot;')/Folders&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="METHOD" value="GET"/>
+      <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" show="false" value="application/xml"/>
+      <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" value="application/xml"/>
+      <elementParameter field="TABLE" name="QUERY"/>
+      <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+      <elementParameter field="TEXT" name="SERVICE_NAMESPACE" show="false" value="&quot;http://www.talend.org/rest/&quot;"/>
+      <elementParameter field="TEXT" name="SERVICE_NAME" show="false" value="&quot;&quot;"/>
+      <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+      <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+      <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" show="false" value="BASIC"/>
+      <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="&quot;username&quot;"/>
+      <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:nPPxQaJ6zMmQyUU2xeDrIindpf9D2eg1RlGoI/21stH73pmol2I="/>
+      <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" show="false" value="&quot;&quot;"/>
+      <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
+      <elementParameter field="TEXT" name="ROLE" show="false" value="&quot;&quot;"/>
+      <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+      <elementParameter field="TEXT" name="CORRELATION_VALUE" show="false" value="&quot;&quot;"/>
+      <elementParameter field="CHECK" name="CHECK_SERVER_IDENTITY" value="true"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+      <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+      <elementParameter field="CHECK" name="FOLLOW_REDIRECTS" value="true"/>
+      <elementParameter field="CHECK" name="REDIRECT_NON_SAME_HOST" value="true"/>
+      <elementParameter field="CHECK" name="ENABLE_WEBCLIENT_OPERATION_REPORTING" value="true"/>
+      <elementParameter field="CHECK" name="CONVERT_RESPONSE_TO_DOM" value="true"/>
+      <elementParameter field="CHECK" name="UNWRAP_JSON_REQUEST" show="false" value="false"/>
+      <elementParameter field="CHECK" name="WRAP_JSON_RESPONSE" show="false" value="true"/>
+      <elementParameter field="CHECK" name="CONVERT_TYPES_TO_STRINGS" show="false" value="false"/>
+      <elementParameter field="TABLE" name="HEADERS">
+        <elementValue elementRef="NAME" value="&quot;Cookie&quot;"/>
+        <elementValue elementRef="VALUE" value="(String)globalMap.get(&quot;IN.sp_cookies&quot;)"/>
+      </elementParameter>
+      <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+      <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_CHUNKED_ENCODING" show="false" value="false"/>
+      <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="30"/>
+      <elementParameter field="LABEL" name="CONNECTION_TIMEOUT_DESC" value=""/>
+      <elementParameter field="TEXT" name="RECEIVE_TIMEOUT" value="60"/>
+      <elementParameter field="LABEL" name="RECEIVE_TIMEOUT_DESC" value="(See tRESTClient doc. to configure timeouts for Talend Runtime)"/>
+      <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+      <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
+      <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8080"/>
+      <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
+      <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:ptZSUFvSGAOm7PMOAJT9p2BZmpQ+22fsN8YQ9Idd"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tRESTClient_1">
+        <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="4048" name="string" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      </metadata>
+      <metadata connector="RESPONSE" name="RESPONSE">
+        <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+        <column key="false" length="4048" name="string" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      </metadata>
+      <metadata connector="FAULT" name="FAULT">
+        <column defaultValue="" key="false" length="0" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column key="false" length="1024" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tExtractXMLField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="96">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tExtractXMLField_1"/>
+      <elementParameter field="PREV_COLUMN_LIST" name="XMLFIELD" value="body"/>
+      <elementParameter field="CHECK" name="USE_ITEMS" show="false" value="false"/>
+      <elementParameter field="TEXT" name="LOOP_QUERY_BASE" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/feed/entry&quot;"/>
+      <elementParameter field="TABLE" name="MAPPING">
+        <elementValue elementRef="SCHEMA_COLUMN" value="sp_foldername"/>
+        <elementValue elementRef="QUERY" value="&quot;content/m:properties/d:Name&quot;"/>
+        <elementValue elementRef="NODECHECK" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="sp_foldermodified"/>
+        <elementValue elementRef="QUERY" value="&quot;content/m:properties/d:TimeLastModified&quot;"/>
+        <elementValue elementRef="NODECHECK" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="sp_folderhref"/>
+        <elementValue elementRef="QUERY" value="&quot;link/@href&quot;"/>
+        <elementValue elementRef="NODECHECK" value="false"/>
+      </elementParameter>
+      <elementParameter field="TEXT" name="LIMIT" value="50"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_ECq0QGaiEemEfY8_mbFFzg - metadata"/>
+      <elementParameter field="CHECK" name="USE_XML_FIELD" show="false" value="false"/>
+      <elementParameter field="TEXT" name="XML_TEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="XML_PREFIX" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+      <elementParameter field="CHECK" name="IGNORE_NS" value="false"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="metadata" name="tExtractXMLField_1">
+        <column comment="" key="false" length="6" name="sp_foldername" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="sp_foldermodified" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="sp_folderhref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      </metadata>
+      <metadata connector="REJECT" label="metadata" name="REJECT">
+        <column comment="" key="false" length="6" name="sp_foldername" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="sp_foldermodified" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="sp_folderhref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="errorXMLField" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="192">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="HTTP_ERR.errorMessage"/>
+      <elementParameter field="TEXT" name="CODE" value="HTTP_ERR.errorCode"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+      <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tDie_1">
+        <column defaultValue="" key="false" length="0" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column key="false" length="1024" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="192">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_2"/>
+      <elementParameter field="TEXT" name="MESSAGE" value="XML_ERR.errorXMLField + &quot;|&quot; + XML_ERR.errorMessage"/>
+      <elementParameter field="TEXT" name="CODE" value="XML_ERR.errorCode"/>
+      <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+      <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="metadata" name="tDie_2">
+        <column comment="" key="false" length="6" name="sp_foldername" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="sp_foldermodified" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="sp_folderhref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="errorXMLField" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <connection connectorName="FLOW" label="IN" lineStyle="0" metaname="INPUT_1" offsetLabelX="0" offsetLabelY="0" source="INPUT_1" target="tFlowToIterate_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="IN"/>
+    </connection>
+    <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_1" target="tRESTClient_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+    </connection>
+    <connection connectorName="RESPONSE" label="row2" lineStyle="0" metaname="RESPONSE" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tRESTClient_1" target="tExtractXMLField_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+    </connection>
+    <connection connectorName="FAULT" label="HTTP_ERR" lineStyle="0" metaname="FAULT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tRESTClient_1" target="tDie_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="HTTP_ERR"/>
+    </connection>
+    <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tExtractXMLField_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tExtractXMLField_1" target="OUTPUT_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
+    </connection>
+    <connection connectorName="REJECT" label="XML_ERR" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tExtractXMLField_1" target="tDie_2">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="XML_ERR"/>
+    </connection>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="INPUT_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTClient_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <jobletNodes componentName="INPUT" componentVersion="0.1" input="true" offsetLabelX="0" offsetLabelY="0" posX="32" posY="96">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+      <elementParameter field="CHECK" name="START" show="false" value="true"/>
+      <elementParameter field="TEXT" name="LABEL" value="IN_PARAMS"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" name="INPUT_1">
+        <column comment="" key="false" length="-1" name="sp_tenant" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="sp_site" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="sp_folder" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="sp_cookies" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+    <jobletNodes componentName="OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="704" posY="96">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OUTPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="false"/>
+      <elementParameter field="CHECK" name="START" show="false" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="OUT_HTTP_OK"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" label="metadata" name="OUTPUT_1">
+        <column comment="" key="false" length="6" name="sp_foldername" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="sp_foldermodified" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="sp_folderhref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+  </model:JobletProcess>
+  <TalendProperties:ByteArray innerContent="89504E470D0A1A0A0000000D4948445200000020000000200802000000FC18EDA3000006B849444154789C7D565B6C1455183E8B141E48301A5F04A231C6187D800713857289F141A30F263EF86662D016905EB63741028844502350281A04C120A0800D2424286AA8D0766777BB6D77BBDDB5C542815ED9B6DBBDCDECDC6777FCCE9CEDEC74896E267F6667CEFCF7FFFB7E629A6646E00DC3C86452AAAAA6D369DC0B82A8698694154D4335F3AAA2284331FE42F783EAD6A1575BC26F9F8848A2A068AA28CAEC131C80D4759DE779C8542AA5695A2291C8E7F3047F545D4BA793BAAE66B33C5E24D3A95456BE3F950A8EA4F65EBBB7BEA5FFB19D01B2B99D6CBEE17273A4D6832786AE0A82204952369B358C3C24F4663219D8830DB80899CBE5A09C20023E2B44C6856B91586BDFF4BE3F46DEF82EF2C4CE2E52C7B936B593AD9DA4D64BEFEBBDAE7A3F95759DAB0F0565290BAF45C4A128D0C5249C8355486689C544CA0FF7ADDCDFFBE49EC0926D5D500175D4CDBAC265E92D5C0BEAAC1BB76F9D1501BC9665D14AA6867BF80B8DD00BED2C5778924C2609A9BCB9A0C1E754F4D0E59967C3CDAD3E14420D92823C369DE12595265955A10B1967DA917DC8783C4E6B403EBC51A2EE617B05DFD9E5E6D61DEE374DDD5571936CF62CD9E6BBD413432D6003712057B6446488C369C04F1A8A8A1CF79E79F6DCDC2B0783A62193EA0E7AAC9E5BD4E8FD3D3A05DF590DE03BCB1562C213E2724400DF1FA92F71DF5F9A313B82AA8E822BD55CE5F961565B566DD88025F4122C11F2C15F0FAB20351C6D1E5C55DE9252B31A60386080BD827C7487FFB7FE695196D05DB22C0B02B5C46222A4A2CD9974F211F7D2D77DDF7B27CFFA477F094D9FE4269010E22E6489D4F916B8B9B547C2665E2B4650E7A3DD5CE5A9387F5B9414F88EFCA083594CB406C5366FF25E0D8FA99A41C74757D12ABA265DE899442845276804851AB03AADD8DDFD636F0CF381571F5F19C684B349460D90A5795D54F9D32D4D95A17D702C79DC33F9EDCD51CFED99D381313A1C8E14AD69EE03843CBD27B07C57A0FC70D87F379E37D581497E61A397D4748646534941526411732E8A2233403350D6E46B0D4DE14556945FDCDF4B2A3B5C9B3A518C67F7F5D0A16B986B2DB70F0654459A4989430F92664E93C40CB28FAAAC3A1042C11FDFD1B5A1257AAE6BDC9A44D98EC05FD6E03FE31BD7359AC4836D23E871E84566EC22CF4D32B7B6398C636C92F18316D394CB9B43F649EA5035772F0E4D42314578FAD6B130AA846F90E28107E9774FFDBDA4C96BBBCFCEC000D0051158BAA9C47DDF6862313CB032411A2C59EB5D73248AD4110CA4630EB8F7CF4491C17C0E6D46656038FED46701679BC2060CA054508D0166062EF74D2D6CF2159DB054918D6D189752A8C0EB153BFCD5AD7732A282D85192897806105D1C694470884600EDD00F89DEEF1B4B97395080EA717BE9C097182826B19A73D57A062752AA92354DE5F9FD41E8B5BBA8FC40B0D024982C00AA8833FA866FA2C56673D31ADC994C698A4E078D3D4593BD793CFADCE73D644B87AB825E076F8CE60C051FBFF0552FBE4191AD2EA245468AA693D9A1583AA74AA6AE085909C7561E08BB6ABC60A7979B433F774FCAB25A2C32BE2C6BEC3A1F884D24F8AB91D80FDCF8B5708C17445D961299EC823A0722597390CFA9CFECED59F66960ED9168C73F53D0DE3F36B3A8D147AA3DC191649217AD2EA094574C11E6E044FBFD9CA15126D22892C8AA82A3503797C04EAB3D3CEB5A2216D815BA63F9EEAE93DC18A3A9ED57EEA6F939C231F394321D35F02C6EF2BF773A7AA177FA6CF7C4C59EE986CB4374389D638C3A5B608706031631FC80618A45359D1BCFDD42AE182D3358C53D33C098804E16C5D12A0FC5192A7DF366A7C11EB4880DD7E87ABC5ABABDEBCF81194B3B451A463E8C1EA881120A9BF3EB3F78D4EDA3706DC84E3EA83837C8889369B70887D24E01AE4B39EBFF2F06D768F0ADED2CE885F5DCF5C1382348E77AC1A8ADD845258A9C0851007364B291F201AB01DD94B6742CFDC4772914C3D8CFD18058B2C8D008F019536133D43C4BF36DC300D61634DBE44C7A7C5688A70A0489FD8AD100DA0F0B0B249ECCCECE920D47C3ABBE082EDBE5B7F622AF732FB27D870D075CD3085491E69A2D136C7584766689AD8E9005C231F33238A87B78A66D30713118FBF2FAC8EBC7A2D8ECE8DC02B1D14BB5F30B6E913E457591C2BDDD33ACF74B489F5266DEC8F17C9A6D9356A1D28AAAC753E9D1A4ECBB9BD8F3EBF0FAA3117088B59BB633B846048A2C58ABA3C8C81D35608B225B1D59FF200EE48A600BC322CD8262C68BDBB20620029998588A013B80176CD7AF1DED7FE7D480AED29E0112D0DAEA9ABDA438975FAC7574920DA3D0529076E9ED3161FB333043A5F4A08240806EC028B6BEE16D49CFB00F9DCBEFBF38B5FD92D823B9480000000049454E44AE426082"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f98eba68-cf93-4af4-aa19-05eb38f1af23"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mAQ2HuU48ane4IkgwKDuJAvnyItD1loF1hjpB2bzBwdAnioNXrNCs1kNxudBX/5qeM1XTHeBJDcF&#13;
+ADjUJcdkJw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6bb68ae6-547d-46e3-b738-cc16745bd666"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>woq4mln3VFePtvsbSt/3BoDRS7s9k3NrsNF4udit87rwBUGFLfjQl7oZtSuY7UVIfwF6hJLsK3tp&#13;
+McgeEpVSJg==</DigestValue></Reference></SignedInfo><SignatureValue>PTl7Ix5C76P6f7YlpbwslOK1iLNmJ+R0xAEW/jDQamGrN/c2mKUhWNQvJbNYDvB0yUDXVA6JU7cQ&#13;
+Y/7lK9MBvHebRCEL7QSTD2/2SB8EdrIUvcczYbB32azTcNXop6zoB3wAHvTiu7PiWHGxEDvkiPX8&#13;
+P0ufvmnl7Nvc68pw1DK1t64IVeDMQfTx8D0Eyd6FHIwpd8jD6H9mCv34WrAneOCwtbJksf24vdZR&#13;
+YBwo8ZitfiJ1iAYmgcxLurmZSbgsrL/iQ9879BkVFRBf2hXfUL38IG24yYaPBFKbLZvLxpRVR0Ou&#13;
+9h+a9wvS5XBN2ZU7f9c/8WUn7ydh6WKbWDQSVg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6bb68ae6-547d-46e3-b738-cc16745bd666" Target="#_f98eba68-cf93-4af4-aa19-05eb38f1af23"><Timestamp>2023-10-16 19:30:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

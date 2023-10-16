@@ -1,0 +1,36 @@
+{
+  "itemId" : "_o9_VsN3YEeiDoYLBQGUyZw",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_BJeZsNeAEeiMIbU1qA32Eg",
+    "parameterList" : [ {
+      "id" : "_EbZOcXmgEeqgmeJrUPNDog",
+      "name" : "ADLS_GEN1_ACCOUNT"
+    }, {
+      "id" : "_EbZOcnmgEeqgmeJrUPNDog",
+      "name" : "ADLS_GEN1_CLIENT_ID"
+    }, {
+      "id" : "_EbZOdHmgEeqgmeJrUPNDog",
+      "name" : "ADLS_GEN1_CLIENT_KEY"
+    }, {
+      "id" : "_EbZOc3mgEeqgmeJrUPNDog",
+      "name" : "ADLS_GEN1_TOKEN_ENDPOINT"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_TzPacGpaEemulb6Kit1byQ",
+    "parameterList" : [ {
+      "id" : "_EZoT4XmgEeqgmeJrUPNDog",
+      "name" : "DATABRICKS_ACCESS_TOKEN"
+    }, {
+      "id" : "_EZoT4nmgEeqgmeJrUPNDog",
+      "name" : "DATABRICKS_CLUSTER_ID"
+    }, {
+      "id" : "_EZoT43mgEeqgmeJrUPNDog",
+      "name" : "DATABRICKS_DEPENDENCY_FOLDER"
+    }, {
+      "id" : "_EZoT5HmgEeqgmeJrUPNDog",
+      "name" : "DATABRICKS_ENDPOINT"
+    } ]
+  } ]
+}

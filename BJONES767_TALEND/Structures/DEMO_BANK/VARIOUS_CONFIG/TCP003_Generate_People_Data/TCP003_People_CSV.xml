@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='150' id='1' V150='13' creationTimestamp='0x172cd1a8185' V1='4' name='TCP003_People_CSV' incarnation='34'>
+  <rootElem t='167' id='2' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='csv'>
+    <structNode t='150' idref='1'/>
+    <child t='167' id='3' V167='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='row' checksumValid='true' checksum='IY6a94plP8dMhlsFTx0ByCPTbIc='>
+      <structNode t='150' idref='1'/>
+      <child t='167' id='4' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Updated'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>;</delimTerminator>
+      </child>
+      <child t='167' id='5' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='ID'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>;</delimTerminator>
+      </child>
+      <child t='167' id='6' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='FirstName'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>;</delimTerminator>
+      </child>
+      <child t='167' id='7' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='LastName'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>;</delimTerminator>
+      </child>
+      <child t='167' id='8' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Address'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>;</delimTerminator>
+      </child>
+      <child t='167' id='9' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='City'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>;</delimTerminator>
+      </child>
+      <child t='167' id='10' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='State'>
+        <structNode t='150' idref='1'/>
+        <delimTerminator>;</delimTerminator>
+      </child>
+      <child t='167' id='11' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Type'>
+        <structNode t='150' idref='1'/>
+      </child>
+    </child>
+  </rootElem>
+  <defaultRep t='183' id='12' V183='1' V170='10' V706='1' defaultHeader='Col' delimiter=';' quoteCharacter='"' quoteMode='4' newLine='&#xD;&#xA;' V690='1' encoding='UTF-8' importDate='Fri Jun 19 11:03:18 EDT 2020' importFile='file:/C:/temp/people.csv' ignoreExcluded='true' fixInvalidCharacters='true' V1='4' name='CSV'>
+  </defaultRep>
+  <rowElem t='167' idref='3'/>
+  <child t='162' id='13' V1='4' name='Representations'>
+    <child t='183' idref='12'/>
+    <child t='172' id='14' V172='6' autoFixNamespaceMismatch='true' V170='10' V692='1' V690='1' ignoreExcluded='true' fixInvalidCharacters='true' V1='4' name='XML'>
+    </child>
+  </child>
+  <child t='165' id='15' V1='4' name='Document Bindings'>
+    <child t='166' id='16' V166='5' docType='1' docReposPath='/DEMOBANK_7_3/Sample Data/DEMO_BANK/VARIOUS_CONFIG/TCP003_Generate_People_Data/TCP003_People_CSV/People.csv' V1='4' name='/csv'>
+      <elemNode t='167' idref='2'/>
+    </child>
+  </child>
+</root>

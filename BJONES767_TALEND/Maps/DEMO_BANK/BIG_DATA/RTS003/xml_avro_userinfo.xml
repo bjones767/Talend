@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='190' id='1' V190='11' inStruct='Structures/DEMO_BANK/BIG_DATA/RTS003/userInfo/userxml.xml' outStruct='Structures/DEMO_BANK/BIG_DATA/RTS003/userInfo/userInfo.xml' inputRep='172' outputRep='179' nextMap='' inputStructUserName='userxml' outputStructUserName='userInfo' V1='4' name='xml_avro_userinfo' incarnation='181'>
+  <inputMapElem t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='163' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='csv'>
+    <mapNode t='190' idref='1'/>
+    <child t='200' id='5' V200='8' input='true' structElemExists='true' usedCount='132' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='row'>
+      <mapNode t='190' idref='1'/>
+      <child t='200' id='6' V200='8' input='true' structElemExists='true' usedCount='30' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='username'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='7' V200='8' input='true' structElemExists='true' usedCount='30' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='age'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='8' V200='8' input='true' structElemExists='true' usedCount='30' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='phone'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='9' V200='8' input='true' structElemExists='true' usedCount='30' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='country'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='25' V200='8' input='true' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='street'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='26' V200='8' input='true' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='housenum'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='27' V200='8' input='true' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='zip'>
+        <mapNode t='190' idref='1'/>
+      </child>
+    </child>
+  </inputMapElem>
+  <outputMapElem t='200' id='10' V200='8' structElemExists='true' usedCount='171' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroNamespace='my.example' V281='13' modifiedFromParent_loop='true' V1='4' name='userInfo'>
+    <mapNode t='190' idref='1'/>
+    <loop>SimpleLoop([autoAdded="true"],in$/csv,{Filter},{Sort Keys},{Contexts})</loop>
+    <child t='200' id='11' V200='8' structElemExists='true' usedCount='32' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='username'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/csv/row/username</value>
+    </child>
+    <child t='200' id='12' V200='8' structElemExists='true' usedCount='32' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='age'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/csv/row/age</value>
+    </child>
+    <child t='200' id='13' V200='8' structElemExists='true' usedCount='32' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='phone'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/csv/row/phone</value>
+    </child>
+    <child t='200' id='14' V200='8' structElemExists='true' usedCount='6' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='housenum'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/csv/row/housenum</value>
+    </child>
+    <child t='200' id='15' V200='8' structElemExists='true' usedCount='6' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='street'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/csv/row/street</value>
+    </child>
+    <child t='200' id='16' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='city'>
+      <mapNode t='190' idref='1'/>
+    </child>
+    <child t='200' id='17' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='state_province'>
+      <mapNode t='190' idref='1'/>
+    </child>
+    <child t='200' id='18' V200='8' structElemExists='true' usedCount='32' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='country'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/csv/row/country</value>
+    </child>
+    <child t='200' id='19' V200='8' structElemExists='true' usedCount='6' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='zip'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/csv/row/zip</value>
+    </child>
+  </outputMapElem>
+  <inputRepRuntime t='692' id='33' V692='1' unnamedElemsNamespace='1' V690='1'>
+    <namespaceContainers t='220' ref='Namespace Containers/userInfo.xml'/>
+  </inputRepRuntime>
+  <outputRepRuntime t='699' id='34' V699='1' avroNamespace='my.example' V690='1'>
+  </outputRepRuntime>
+  <valueSets></valueSets>
+  <inputXmlRepRuntime t='692' idref='33'/>
+  <outputXmlRepRuntime t='692' id='35' V692='1' V690='1'>
+  </outputXmlRepRuntime>
+  <child t='165' id='2' V1='4' name='Document Bindings'>
+    <child t='166' id='21' V166='5' docType='1' docReposPath='/HELLWEEK71/Sample Data/userInfo/userxml/out' V1='4' name='in$/csv'>
+      <elemNode t='200' idref='4'/>
+    </child>
+    <child t='166' id='29' V166='5' docType='2' V1='4' name='out$/userInfo'>
+      <elemNode t='200' idref='10'/>
+    </child>
+  </child>
+  <child t='201' id='3' V1='4' name='Inherits From'>
+  </child>
+</root>

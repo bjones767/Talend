@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='150' id='1' V150='13' creationTimestamp='0x16c8c2b60fc' V1='4' name='IAT_Detail_structure' incarnation='21'>
+  <rootElem t='167' id='2' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Root'>
+    <structNode t='150' idref='1'/>
+    <child t='167' id='3' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Row' checksumValid='true' checksum='WebkTmqSBL9iRg87x/TlMCKfCOM='>
+      <structNode t='150' idref='1'/>
+      <child t='167' id='4' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Record_Type_Code_' description='  '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='5' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='2' maxSize='2' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Transaction_Code_' description='Numeric '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='6' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='8' maxSize='8' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Detail_Transit_' description='Fill with zeros to left '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='7' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Check_Digit_' description='Numeric '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='8' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='4' maxSize='4' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Num_Addenda_Records_' description='  '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='9' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='13' maxSize='13' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Filler_' description='Blanks '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='10' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='10' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Amount_' description='Fill with zeros to left (no decimal point) '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='11' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='35' maxSize='35' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Account_Number_' description='Left-justified '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='12' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='2' maxSize='2' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Filler_' description='Blanks '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='13' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Filler_' description='Blanks '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='14' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Filler_' description='Blanks '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='15' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Addenda_' description='Numeric '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='16' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Trace_Number_' description='  '>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='17' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Detail_Addenda_Record_Indicator_' description='  '>
+        <structNode t='150' idref='1'/>
+      </child>
+    </child>
+  </rootElem>
+  <child t='162' id='18' V1='4' name='Representations'>
+  </child>
+  <child t='165' id='19' V1='4' name='Document Bindings'>
+  </child>
+</root>

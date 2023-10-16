@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<batch_header>
+	<first_addenda/>
+	<Service_Class_Code1>5 </Service_Class_Code1>
+	<second_addenda/>
+	<third_addenda/>
+	<fifth_addenda/>
+	<Foreign_Exchange_Indicator> CA</Foreign_Exchange_Indicator>
+	<detail>
+		<Trace_Number> 5</Trace_Number>
+		<Amount> Jackson </Amount>
+		<Transaction_Code>2 </Transaction_Code>
+		<Detail_Transit> James </Detail_Transit>
+	</detail>
+	<sixth_addenda/>
+	<batch_control/>
+	<fourth_addenda/>
+	<seventh_addenda/>
+</batch_header>
+<batch_header>
+	<first_addenda/>
+	<Service_Class_Code1>39 </Service_Class_Code1>
+	<second_addenda/>
+	<third_addenda/>
+	<fifth_addenda/>
+	<Foreign_Exchange_Indicator> RI</Foreign_Exchange_Indicator>
+	<detail>
+		<Trace_Number> 39</Trace_Number>
+		<Amount> Grant </Amount>
+		<Transaction_Code>4 </Transaction_Code>
+		<Detail_Transit> Dwight </Detail_Transit>
+	</detail>
+	<detail>
+		<Trace_Number> 39</Trace_Number>
+		<Amount> Polk </Amount>
+		<Transaction_Code>49 </Transaction_Code>
+		<Detail_Transit> John </Detail_Transit>
+	</detail>
+	<sixth_addenda/>
+	<batch_control/>
+	<fourth_addenda/>
+	<seventh_addenda/>
+</batch_header>
+<batch_header>
+	<first_addenda/>
+	<Service_Class_Code1>40 </Service_Class_Code1>
+	<second_addenda/>
+	<third_addenda/>
+	<fifth_addenda/>
+	<Foreign_Exchange_Indicator> SC</Foreign_Exchange_Indicator>
+	<sixth_addenda/>
+	<batch_control/>
+	<fourth_addenda/>
+	<seventh_addenda/>
+</batch_header>
+<batch_header>
+	<first_addenda/>
+	<Service_Class_Code1>41 </Service_Class_Code1>
+	<second_addenda/>
+	<third_addenda/>
+	<fifth_addenda/>
+	<Foreign_Exchange_Indicator> SD</Foreign_Exchange_Indicator>
+	<detail>
+		<Trace_Number> 41</Trace_Number>
+		<Amount> Harrison </Amount>
+		<Transaction_Code>1 </Transaction_Code>
+		<Detail_Transit> Woodrow </Detail_Transit>
+	</detail>
+	<sixth_addenda/>
+	<batch_control/>
+	<fourth_addenda/>
+	<seventh_addenda/>
+</batch_header>
+<file_header/>
+<file_control/>
+</root>

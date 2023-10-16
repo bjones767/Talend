@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='190' id='1' V190='11' inStruct='Structures/DEMO_BANK/DATA_INTEGRATION/GENERIC/TDI004_Dynamic_File_Ingestion_Framework/NACHA_IAT_JSON.xml' outStruct='Structures/DEMO_BANK/DATA_INTEGRATION/GENERIC/TDI004_Dynamic_File_Ingestion_Framework/NACHA/NACHA_Outer.xml' inputRep='177' outputRep='173' nextMap='' inputStructUserName='NACHA_IAT_JSON' outputStructUserName='NACHA_Outer' V1='4' name='JSON_to_NACHA' incarnation='987'>
+  <inputMapElem t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='91' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='Root'>
+    <mapNode t='190' idref='1'/>
+    <child t='200' id='5' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='file_header'>
+      <mapNode t='190' idref='1'/>
+    </child>
+    <child t='200' id='6' V200='8' input='true' structElemExists='true' usedCount='81' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='batch_header'>
+      <mapNode t='190' idref='1'/>
+      <child t='200' id='7' V200='8' input='true' structElemExists='true' usedCount='11' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='Service_Class_Code1'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='8' V200='8' input='true' structElemExists='true' usedCount='11' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='Foreign_Exchange_Indicator'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='9' V200='8' input='true' structElemExists='true' usedCount='51' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='detail'>
+        <mapNode t='190' idref='1'/>
+        <child t='200' id='10' V200='8' input='true' structElemExists='true' usedCount='11' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='Transaction_Code'>
+          <mapNode t='190' idref='1'/>
+        </child>
+        <child t='200' id='11' V200='8' input='true' structElemExists='true' usedCount='11' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='Detail_Transit'>
+          <mapNode t='190' idref='1'/>
+        </child>
+        <child t='200' id='12' V200='8' input='true' structElemExists='true' usedCount='11' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='Amount'>
+          <mapNode t='190' idref='1'/>
+        </child>
+        <child t='200' id='13' V200='8' input='true' structElemExists='true' usedCount='11' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='Trace_Number'>
+          <mapNode t='190' idref='1'/>
+        </child>
+      </child>
+      <child t='200' id='14' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='first_addenda'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='15' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='second_addenda'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='16' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='third_addenda'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='17' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='fourth_addenda'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='18' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='fifth_addenda'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='19' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='sixth_addenda'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='20' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='seventh_addenda'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='21' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='batch_control'>
+        <mapNode t='190' idref='1'/>
+      </child>
+    </child>
+    <child t='200' id='22' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='file_control'>
+      <mapNode t='190' idref='1'/>
+    </child>
+  </inputMapElem>
+  <outputMapElem t='200' id='23' V200='8' structElemExists='true' usedCount='111' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='Root'>
+    <mapNode t='190' idref='1'/>
+    <loop>SimpleLoop([autoAdded="true"],in$/Root,{Filter},{Sort Keys},{Contexts})</loop>
+    <child t='200' id='24' V200='8' structElemExists='true' usedCount='100' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='Row'>
+      <mapNode t='190' idref='1'/>
+      <loop>SimpleLoop(in$/Root/batch_header,{Filter},{Sort Keys},{Contexts})</loop>
+      <child t='200' id='25' V200='8' differentFromInherited='true' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/DEMO_BANK/DATA_INTEGRATION/GENERIC/TDI004_Dynamic_File_Ingestion_Framework/NACHA/file_header_structure.xml' V281='13' V1='4' name='File_Header'>
+        <mapNode t='190' idref='1'/>
+        <child t='200' id='26' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Row'>
+          <mapNode t='190' idref='1'/>
+          <child t='200' id='27' V200='8' differentFromInherited='true' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' delimIncludeInitiator='true' V281='13' V1='4' name='Record_Type_Code_' description='  '>
+            <mapNode t='190' idref='1'/>
+            <delimInitiator>1</delimInitiator>
+          </child>
+          <child t='200' id='28' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='2' maxSize='2' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Priority_Code_' description='  '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='29' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='10' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Destination_ID_' description='Fill with zeros to the left '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='30' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='10' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Company_ID_' description='Left-justified '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='31' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='6' maxSize='6' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Creation_Date_' description='YYMMDD '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='32' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='4' maxSize='4' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Creation_Time_' description='HHMM '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='33' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='File_ID_' description='Uppercase A-Z Numeric 0-9 '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='34' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='3' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Record_Size_' description='  '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='35' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='2' maxSize='2' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Blocking_Factor_' description='  '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='36' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Format_Code_' description='  '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='37' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='23' maxSize='23' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Destination_Name_' description='Left-justified '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='38' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='23' maxSize='23' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Company_Name_' description='Left-justified '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='39' V200='8' differentFromInherited='true' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Return_' description='  '>
+            <mapNode t='190' idref='1'/>
+            <delimTerminator>\n</delimTerminator>
+          </child>
+        </child>
+      </child>
+      <child t='200' id='40' V200='8' differentFromInherited='true' structElemExists='true' usedCount='34' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/DEMO_BANK/DATA_INTEGRATION/GENERIC/TDI004_Dynamic_File_Ingestion_Framework/NACHA/Batch_Header_Record_IAT_structure.xml' V281='13' V1='4' name='Batch_Header_Record_IAT'>
+        <mapNode t='190' idref='1'/>
+        <child t='200' id='41' V200='8' structElemExists='true' usedCount='34' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='Row'>
+          <mapNode t='190' idref='1'/>
+          <loop>SimpleLoop(in$/Root/batch_header,{Filter},{Sort Keys},{Contexts})</loop>
+          <child t='200' id='42' V200='8' differentFromInherited='true' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' delimIncludeInitiator='true' V281='13' V1='4' name='Record_Type_Code_' description='  '>
+            <mapNode t='190' idref='1'/>
+            <delimInitiator>5</delimInitiator>
+          </child>
+          <child t='200' id='43' V200='8' structElemExists='true' usedCount='12' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='3' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Service_Class_Code_' description='  '>
+            <mapNode t='190' idref='1'/>
+            <value>in$/Root/batch_header/Service_Class_Code1</value>
+          </child>
+          <child t='200' id='44' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='16' maxSize='16' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Filler__' description='Blanks '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='45' V200='8' structElemExists='true' usedCount='12' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='2' maxSize='2' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Foreign_Exchange_Indicator_' description='  '>
+            <mapNode t='190' idref='1'/>
+            <value>in$/Root/batch_header/Foreign_Exchange_Indicator</value>
+          </child>
+          <child t='200' id='46' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Foreign_Exchange_Reference_Indicator_' description='  '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='47' V200='8' differentFromInherited='true' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='15' maxSize='15' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Foreign_Exchange_Reference_' description='Space filled '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='48' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='2' maxSize='2' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ISO_Destination_Country_Code_' description='  '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='49' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='10' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Originator_ID_' description='fill 0 to left '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='50' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='3' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Entry_Class_' description='Alphabetic '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='51' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='10' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Entry_Description_' description='Left-justified, alphanumeric '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='52' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='3' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ISO_Orig_Curr_Code_' description='  '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='53' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='3' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ISO_Dest_Curr_Code_' description='  '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='54' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='6' maxSize='6' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Date_' description='MMDDYY '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='55' V200='8' differentFromInherited='true' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='3' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Settlement_Date_' description='Blank '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='56' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Originator_Status_Code_' description='  '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='57' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='8' maxSize='8' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Originating_ID_' description='Fill with zeros to left '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='58' V200='8' differentFromInherited='true' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='7' maxSize='7' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Batch_Sequence_Number_' description='Fill with zeros to left '>
+            <mapNode t='190' idref='1'/>
+            <delimTerminator>\n</delimTerminator>
+          </child>
+        </child>
+      </child>
+      <child t='200' id='59' V200='8' differentFromInherited='true' structElemExists='true' usedCount='56' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/DEMO_BANK/DATA_INTEGRATION/GENERIC/TDI004_Dynamic_File_Ingestion_Framework/NACHA/IAT_Detail_structure.xml' V281='13' V1='4' name='IAT_Detail'>
+        <mapNode t='190' idref='1'/>
+        <child t='200' id='60' V200='8' structElemExists='true' usedCount='56' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='Row'>
+          <mapNode t='190' idref='1'/>
+          <loop>SimpleLoop(in$/Root/batch_header/detail,{Filter},{Sort Keys},{Contexts})</loop>
+          <child t='200' id='61' V200='8' differentFromInherited='true' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' delimIncludeInitiator='true' V281='13' V1='4' name='Record_Type_Code_' description='  '>
+            <mapNode t='190' idref='1'/>
+            <delimInitiator>6</delimInitiator>
+          </child>
+          <child t='200' id='62' V200='8' structElemExists='true' usedCount='12' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='2' maxSize='2' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Transaction_Code_' description='Numeric '>
+            <mapNode t='190' idref='1'/>
+            <value>in$/Root/batch_header/detail/Transaction_Code</value>
+          </child>
+          <child t='200' id='63' V200='8' structElemExists='true' usedCount='12' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='8' maxSize='8' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Detail_Transit_' description='Fill with zeros to left '>
+            <mapNode t='190' idref='1'/>
+            <value>in$/Root/batch_header/detail/Detail_Transit</value>
+          </child>
+          <child t='200' id='64' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Check_Digit_' description='Numeric '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='65' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='4' maxSize='4' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Num_Addenda_Records_' description='  '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='66' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='13' maxSize='13' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Filler_' description='Blanks '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='67' V200='8' structElemExists='true' usedCount='12' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='10' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Amount_' description='Fill with zeros to left (no decimal point) '>
+            <mapNode t='190' idref='1'/>
+            <value>in$/Root/batch_header/detail/Amount</value>
+          </child>
+          <child t='200' id='68' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='35' maxSize='35' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Account_Number_' description='Left-justified '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='69' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='2' maxSize='2' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Filler_' description='Blanks '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='70' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Filler_' description='Blanks '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='71' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Filler_' description='Blanks '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='72' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Addenda_' description='Numeric '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='73' V200='8' differentFromInherited='true' structElemExists='true' usedCount='12' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Trace_Number_' description='  '>
+            <mapNode t='190' idref='1'/>
+            <delimTerminator>\n</delimTerminator>
+            <value>in$/Root/batch_header/detail/Trace_Number</value>
+          </child>
+        </child>
+      </child>
+      <child t='200' id='74' V200='8' differentFromInherited='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/DEMO_BANK/DATA_INTEGRATION/GENERIC/TDI004_Dynamic_File_Ingestion_Framework/NACHA/Batch_Control_structure.xml' V281='13' V1='4' name='Batch_Control'>
+        <mapNode t='190' idref='1'/>
+        <child t='200' id='75' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Row'>
+          <mapNode t='190' idref='1'/>
+          <child t='200' id='76' V200='8' differentFromInherited='true' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' delimIncludeInitiator='true' V281='13' V1='4' name='Record_Type_Code_' description='  '>
+            <mapNode t='190' idref='1'/>
+            <delimInitiator>8</delimInitiator>
+          </child>
+          <child t='200' id='77' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='3' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Service_Class_' description='Numeric '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='78' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='6' maxSize='6' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Entry_Count_' description='Numeric. Fill with zeros to left '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='79' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='10' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Entry_Hash_' description='Numeric '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='80' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='12' maxSize='12' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Total_Debit_Amount_' description='Numeric. Fill with zeros to left '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='81' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='12' maxSize='12' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Total_Credit_Amount_' description='Numeric. Fill with zeros to left '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='82' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='10' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Company_ID_' description='  '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='83' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='25' maxSize='25' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Filler_' description='Blanks '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='84' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='8' maxSize='8' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Origination_ID_' description='Numeric. Fill with zeros to left '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='85' V200='8' differentFromInherited='true' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Sequence_' description='Numeric. Fill with zeros to left '>
+            <mapNode t='190' idref='1'/>
+            <delimTerminator>\n</delimTerminator>
+          </child>
+        </child>
+      </child>
+      <child t='200' id='86' V200='8' differentFromInherited='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/DEMO_BANK/DATA_INTEGRATION/GENERIC/TDI004_Dynamic_File_Ingestion_Framework/NACHA/File_Control_structure.xml' V281='13' V1='4' name='File_Control'>
+        <mapNode t='190' idref='1'/>
+        <child t='200' id='87' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Row'>
+          <mapNode t='190' idref='1'/>
+          <child t='200' id='88' V200='8' differentFromInherited='true' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' delimIncludeInitiator='true' V281='13' V1='4' name='Record_Type_Code_' description='  '>
+            <mapNode t='190' idref='1'/>
+            <delimInitiator>9</delimInitiator>
+          </child>
+          <child t='200' id='89' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='6' maxSize='6' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Batch_Count_' description='Numeric. Fill with zeros to left '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='90' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='6' maxSize='6' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Block_Count_' description='Numeric. Fill with zeros to left '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='91' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='8' maxSize='8' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Entry_Count_' description='Numeric. Fill with zeros to left '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='92' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='10' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Entry_Hash_' description='Numeric. Fill with zeros to left '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='93' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='12' maxSize='12' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Total_Debit_' description='Numeric. Fill with zeros to left '>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='94' V200='8' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Total_Credit_' description='Numeric. Fill with zeros to left '>
+            <mapNode t='190' idref='1'/>
+            <delimTerminator>\n</delimTerminator>
+          </child>
+        </child>
+      </child>
+    </child>
+  </outputMapElem>
+  <inputRepRuntime t='697' id='105' V697='1' V690='1' padOutput='true'>
+  </inputRepRuntime>
+  <outputRepRuntime t='693' id='106' V693='1' delimiter=',' structName='Structures/DEMO_BANK/DATA_INTEGRATION/GENERIC/TDI004_Dynamic_File_Ingestion_Framework/NACHA/NACHA_Outer.xml' V690='1' padOutput='true' trimInput='true'>
+  </outputRepRuntime>
+  <valueSets></valueSets>
+  <inputXmlRepRuntime t='692' id='107' V692='1' V690='1'>
+  </inputXmlRepRuntime>
+  <outputXmlRepRuntime t='692' id='108' V692='1' V690='1'>
+  </outputXmlRepRuntime>
+  <child t='165' id='2' V1='4' name='Document Bindings'>
+    <child t='166' id='99' V166='5' docType='1' docReposPath='/LOCAL_DEMO/Sample Data/NACHA_JSON/final' V1='4' name='in$/Root'>
+      <elemNode t='200' idref='4'/>
+    </child>
+    <child t='166' id='100' V166='5' docType='2' docReposPath='/LOCAL_DEMO/Sample Data/NACHA/NACHA_Outer/NACHA_Input.txt' V1='4' name='out$/Root'>
+      <elemNode t='200' idref='23'/>
+    </child>
+  </child>
+  <child t='201' id='3' V1='4' name='Inherits From'>
+  </child>
+</root>
